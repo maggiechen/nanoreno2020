@@ -1,0 +1,14 @@
+{
+    "dialogueLines": [
+        {
+            "id": 1,
+            "actorName": "blah",
+            "dialogueText": "asdf"
+        },
+        {
+            "id": 2,
+            "actorName": "ddd",
+            "dialogueText": "fdsa"
+        }
+    ]
+}
