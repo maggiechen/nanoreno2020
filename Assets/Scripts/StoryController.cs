@@ -27,6 +27,7 @@ public class StoryController : MonoBehaviour {
 
     public void OnDialogueClicked() {
         currentChapter.MoveNext();
+        Debug.LogError(currentChapter.state);
         SetTextWithCurrentDialogue();
     }
 }

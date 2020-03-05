@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class Chapter {
     private Dialogue currentLine;
-    
+    public DialogueState state;
     public string currentName => currentLine.actorName;
     public string currentDialogueText => currentLine.dialogueText;
     public List<Dialogue> dialogueLines = new List<Dialogue>();
@@ -35,7 +35,19 @@ public class Chapter {
             previousLine.nextLines.Add(line);
         }
         currentLine = dialogueLines[0];
+
     }
+
+    void UpdateState() {
+        if (currentLine.nextLines.Count > 1) {
+            state = DialogueState.CHOICE;
+        } else if (currentLine.nextLines.Count == 1) {
+            state = DialogueState.TEXT;            
+        } else {
+            state = DialogueState.ENDING;
+        }
+    }
+
 
     public void MoveNext() {
         if (currentLine.nextLines.Count > 1) {
@@ -45,5 +57,7 @@ public class Chapter {
         } else {
             Debug.LogError("End of story");
         }
+
+        UpdateState();
     }
 }
