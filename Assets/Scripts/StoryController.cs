@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 
 public class StoryController : MonoBehaviour {
-    Chapter currentChapter;
+    public Chapter currentChapter;
     public Image nextDialogueIcon;
     public TextMeshProUGUI dialogueTextMesh;
     public TextMeshProUGUI nameTextMesh;
@@ -13,6 +13,7 @@ public class StoryController : MonoBehaviour {
     void Awake() {
         using (var reader = new StreamReader("Assets/Data/Chapter.json")) {
             string json = reader.ReadToEnd();
+            json = $"{{\"dialogueLines\":{json}}}";
             currentChapter = JsonConvert.DeserializeObject<Chapter>(json);
             currentChapter.PrepareStories();
             Debug.Log(currentChapter);
@@ -27,7 +28,6 @@ public class StoryController : MonoBehaviour {
 
     public void OnDialogueClicked() {
         currentChapter.MoveNext();
-        Debug.LogError(currentChapter.state);
         SetTextWithCurrentDialogue();
     }
 }

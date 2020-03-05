@@ -113,7 +113,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 124
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -142,7 +142,7 @@ MonoBehaviour:
     spaceCount: 64
     wordCount: 65
     linkCount: 0
-    lineCount: 4
+    lineCount: 14
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -633,6 +633,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ff935ad74cb1428caa6696f3af76799, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentChapter:
+    currentLine:
+      id: 0
+      actorName: 
+      dialogueText: 
+      nextLineIds: 
+    state: 0
+    dialogueLines: []
   nextDialogueIcon: {fileID: 493780445482959917}
   dialogueTextMesh: {fileID: 2088495197125541524}
   nameTextMesh: {fileID: 8338551554593916880}

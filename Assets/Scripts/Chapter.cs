@@ -1,11 +1,16 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+
+[Serializable]
 public class Chapter {
-    private Dialogue currentLine;
+
+    public Dialogue currentLine;
     public DialogueState state;
+    public List<Dialogue> dialogueLines = new List<Dialogue>();
+
     public string currentName => currentLine.actorName;
     public string currentDialogueText => currentLine.dialogueText;
-    public List<Dialogue> dialogueLines = new List<Dialogue>();
     public Dictionary<int, Dialogue> dialogueLinesDict = new Dictionary<int, Dialogue>();
     public override string ToString() {
         string output = string.Join("\n", dialogueLines);
@@ -32,16 +37,16 @@ public class Chapter {
                 }
                 previousLine = dialogueLinesDict[line.id - 1];
             }
-            previousLine.nextLines.Add(line);
+            previousLine.nextLineIds.Add(line.id);
         }
         currentLine = dialogueLines[0];
 
     }
 
     void UpdateState() {
-        if (currentLine.nextLines.Count > 1) {
+        if (currentLine.nextLineIds.Count > 1) {
             state = DialogueState.CHOICE;
-        } else if (currentLine.nextLines.Count == 1) {
+        } else if (currentLine.nextLineIds.Count == 1) {
             state = DialogueState.TEXT;            
         } else {
             state = DialogueState.ENDING;
@@ -50,10 +55,10 @@ public class Chapter {
 
 
     public void MoveNext() {
-        if (currentLine.nextLines.Count > 1) {
+        if (currentLine.nextLineIds.Count > 1) {
             Debug.LogError("Choice");
-        } else if (currentLine.nextLines.Count == 1) {
-            currentLine = currentLine.nextLines[0];
+        } else if (currentLine.nextLineIds.Count == 1) {
+            currentLine = dialogueLinesDict[currentLine.nextLineIds[0]];
         } else {
             Debug.LogError("End of story");
         }
