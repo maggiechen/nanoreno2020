@@ -3,6 +3,7 @@ using System;
 using System.IO;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class StoryController : MonoBehaviour {
@@ -24,6 +25,11 @@ public class StoryController : MonoBehaviour {
     private Button nextTextButtonArea = null;
 
     [SerializeField]
+    private Button replayButton = null;
+    [SerializeField]
+    private Button mainMenuButton = null;
+
+    [SerializeField]
     private ChoiceListController choiceListController = null;
 
 
@@ -38,11 +44,17 @@ public class StoryController : MonoBehaviour {
             Debug.Log(currentChapter);
         }
 
+        ResetProgress();
+    }
+
+    void ResetProgress() {
         // Assume we always start with a text dialogue
+        currentChapter.Reset();
         storyControllerState = StoryControllerState.DEFAULT;
         DisableAll();
         EnableText();
         SetTextWithCurrentDialogue();
+        nextTextButtonArea.enabled = true;
     }
 
     void SetTextWithCurrentDialogue() {
@@ -61,11 +73,23 @@ public class StoryController : MonoBehaviour {
 
     void SetEnd() {
         dialogueTextMesh.text = "[END]";
+        EnableEnd();
+    }
+
+    void DisableEnd() {
+        replayButton.gameObject.SetActive(false);
+        mainMenuButton.gameObject.SetActive(false);
+    }
+
+    void EnableEnd() {
+        replayButton.gameObject.SetActive(true);
+        mainMenuButton.gameObject.SetActive(true);
     }
 
     void DisableAll() {
         DisableText();
         DisableChoice();
+        DisableEnd();
     }
 
     void DisableText() {
@@ -123,4 +147,16 @@ public class StoryController : MonoBehaviour {
             throw new Exception($"Unknown dialogue state {currentChapter.state}");
         }
     }
+
+    public void Replay() {
+        SceneTransitionController.Instance.StartTransition(ResetProgress);
+    }
+
+    public void LoadMainMenu() {
+        SceneTransitionController.Instance.StartSceneTransition(() => {
+            SceneManager.LoadScene("Load");
+        });
+    }
+
+
 }

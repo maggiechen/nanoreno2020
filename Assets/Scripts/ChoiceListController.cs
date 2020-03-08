@@ -31,6 +31,7 @@ public class ChoiceListController : MonoBehaviour {
         foreach (Dialogue dialogue in choices) {
             ChoiceController newChoiceController = Instantiate(choicePrefab);
             newChoiceController.transform.SetParent(transform);
+            newChoiceController.transform.localScale = Vector3.one;
             choiceList.Add(newChoiceController);
             newChoiceController.SetChoice(dialogue, onChoiceSelectedCallback);
         }

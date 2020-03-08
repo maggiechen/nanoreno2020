@@ -6,7 +6,7 @@ public class Dialogue {
     public int id;
     public string actorName;
     public string dialogueText;
-    public int? previousDialogueLineId;
+    public string nextLineIdsString;
     public List<int> nextLineIds = new List<int>();
 
     public override string ToString() {

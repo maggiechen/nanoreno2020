@@ -23,25 +23,20 @@ public class Chapter {
             dialogueLinesDict[line.id] = line;
         }
 
-        bool firstLine = true;
         foreach (Dialogue line in dialogueLines) {
-            if (firstLine) {
-                firstLine = false;
-                continue;
-            }
-            Dialogue previousLine;
-            if (line.previousDialogueLineId.HasValue) {
-                previousLine = dialogueLinesDict[line.previousDialogueLineId.Value];
-            } else {
-                if (!dialogueLinesDict.ContainsKey(line.id - 1)) {
-                    Debug.LogError(line + " references " + (line.id - 1) + " but this line does not exist");
+            if (line.nextLineIdsString != null) {
+                string[] ids = line.nextLineIdsString.Split(',');
+                foreach (string idString in ids) {
+                    line.nextLineIds.Add(int.Parse(idString.Trim()));
                 }
-                previousLine = dialogueLinesDict[line.id - 1];
-            }
-            previousLine.nextLineIds.Add(line.id);
-        }
-        currentLine = dialogueLines[0];
 
+            }
+        }
+        Reset();
+    }
+
+    public void Reset() {
+        currentLine = dialogueLines[0];
     }
 
     void UpdateState() {

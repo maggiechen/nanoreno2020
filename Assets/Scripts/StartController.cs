@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class StartController : MonoBehaviour {
     public void OnStartClicked() {
-        SceneManager.LoadSceneAsync("Main");
+        SceneTransitionController.Instance.StartSceneTransition(() => {
+            SceneManager.LoadScene("Main");
+        });
     }
 }
