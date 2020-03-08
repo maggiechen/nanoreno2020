@@ -118,6 +118,7 @@ public class StoryController : MonoBehaviour {
             DisableAll();
             EnableText();
             SetEnd();
+            nextTextButtonArea.enabled = false;
         } else {
             throw new Exception($"Unknown dialogue state {currentChapter.state}");
         }

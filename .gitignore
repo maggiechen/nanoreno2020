@@ -16,4 +16,4 @@ Logs/
 
 # Text Editors
 .vscode/*
-
+.vs/*

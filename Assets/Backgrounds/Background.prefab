@@ -156,6 +156,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1079615890912662330}
   - component: {fileID: 1079615890912662331}
+  - component: {fileID: 2234823856253081878}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -172,7 +173,7 @@ RectTransform:
   m_GameObject: {fileID: 1079615890912662469}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1079615889798826053}
   - {fileID: 1079615889845368108}
@@ -196,3 +197,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a454d5047f97497ea4013406fb321e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!223 &2234823856253081878
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079615890912662469}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
