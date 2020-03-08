@@ -12,3 +12,6 @@ https://orbcreation.com/cgi-bin/orbcreation/page.pl?1099
 User "guavaman" (https://answers.unity.com/users/29054/guavaman.html)
 Code for iterating over a SerializedProperty that is a list of integers, used to display the next dialogue ids in Unity editor.
 http://answers.unity.com/answers/683381/view.html
+
+DOTween (http://dotween.demigiant.com/download.php)
+Animation library
