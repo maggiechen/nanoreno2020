@@ -82,10 +82,15 @@ public class StoryController : MonoBehaviour {
 
     void DisableChoice() {
         choiceListController.canvasGroup.alpha = 0;
+        choiceListController.canvasGroup.interactable = false;
+        choiceListController.canvasGroup.blocksRaycasts = false;
+        
     }
 
     void EnableChoice() {
         choiceListController.canvasGroup.alpha = 1;
+        choiceListController.canvasGroup.interactable = true;
+        choiceListController.canvasGroup.blocksRaycasts = true;
     }
 
     public void OnDialogueClicked(int dialogueId=-1) {
@@ -95,7 +100,6 @@ public class StoryController : MonoBehaviour {
             currentChapter.MoveNext();
         }
 
-        Debug.LogError(storyControllerState);
         if (storyControllerState == StoryControllerState.CHOOSING) {
             DisableAll();
             EnableChoice();

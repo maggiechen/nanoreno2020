@@ -63,9 +63,7 @@ public class Chapter {
 
     public void MoveNext() {
         choices.Clear();
-        
         if (currentLine.nextLineIds.Count > 1) {
-            Debug.LogError("Choice");
             foreach (int lineId in currentLine.nextLineIds) {
                 choices.Add(dialogueLinesDict[lineId]);
             }
