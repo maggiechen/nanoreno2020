@@ -5,5 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/VisualNovelToolkit/Examples/Example Dialog/Example Dialog.unity
+    path: Assets/Scenes/Load.unity
+    guid: a14cc78de247e0448adc2e513cb1109d
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: 0245c5516b4864ce28552a644972aad8
+  m_configObjects: {}

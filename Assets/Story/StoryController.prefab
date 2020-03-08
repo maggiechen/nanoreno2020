@@ -113,7 +113,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 257
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -142,7 +142,7 @@ MonoBehaviour:
     spaceCount: 64
     wordCount: 65
     linkCount: 0
-    lineCount: 4
+    lineCount: 7
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -593,7 +593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -682,17 +682,17 @@ PrefabInstance:
     - target: {fileID: 2298443938669611998, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3329748291177230351, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 559
+      value: 340
       objectReference: {fileID: 0}
     - target: {fileID: 3329748291177230351, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1118
+      value: 680
       objectReference: {fileID: 0}
     - target: {fileID: 3329748291177230351, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
@@ -772,7 +772,7 @@ PrefabInstance:
     - target: {fileID: 5392136639153338156, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7418189484482709470, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
@@ -907,12 +907,12 @@ PrefabInstance:
     - target: {fileID: 8864391713188351229, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 559
+      value: 340
       objectReference: {fileID: 0}
     - target: {fileID: 8864391713188351229, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1118
+      value: 680
       objectReference: {fileID: 0}
     - target: {fileID: 8864391713188351229, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
