@@ -6,6 +6,7 @@ using UnityEngine;
 public class Chapter {
 
     public Dialogue currentLine;
+    public List<Dialogue> choices = new List<Dialogue>();
     public DialogueState state;
     public List<Dialogue> dialogueLines = new List<Dialogue>();
 
@@ -44,8 +45,9 @@ public class Chapter {
     }
 
     void UpdateState() {
+        Debug.LogError($"Currently on dialogue {currentLine.id}");
         if (currentLine.nextLineIds.Count > 1) {
-            state = DialogueState.CHOICE;
+            state = DialogueState.PRESENTING_CHOICE;
         } else if (currentLine.nextLineIds.Count == 1) {
             state = DialogueState.TEXT;            
         } else {
@@ -53,10 +55,20 @@ public class Chapter {
         }
     }
 
+    public void JumpTo(int dialogueId) {
+        choices.Clear();
+        currentLine = dialogueLinesDict[dialogueId];
+        UpdateState();
+    }
 
     public void MoveNext() {
+        choices.Clear();
+        
         if (currentLine.nextLineIds.Count > 1) {
             Debug.LogError("Choice");
+            foreach (int lineId in currentLine.nextLineIds) {
+                choices.Add(dialogueLinesDict[lineId]);
+            }
         } else if (currentLine.nextLineIds.Count == 1) {
             currentLine = dialogueLinesDict[currentLine.nextLineIds[0]];
         } else {

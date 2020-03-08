@@ -1,5 +1,5 @@
 public enum DialogueState {
 	TEXT,
-	CHOICE,
+	PRESENTING_CHOICE,
 	ENDING
 }
