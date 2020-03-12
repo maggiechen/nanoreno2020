@@ -6,8 +6,8 @@ using UnityEngine.UI;
 using TMPro;
 
 public class ChoiceController : MonoBehaviour{
-    [SerializeField]
-    private Image optionIcon = null;
+//    [SerializeField]
+//    private Image optionIcon = null;
     [SerializeField]
     private TextMeshProUGUI choiceTextMesh = null;
     [SerializeField]

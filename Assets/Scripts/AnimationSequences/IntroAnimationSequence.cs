@@ -1,12 +1,13 @@
 using System;
 using UnityEngine;
-public class IntroAnimationSequence: MonoBehaviour, IAnimationSequence {
+using DG.Tweening;
+public class IntroAnimationSequence: AnimationSequenceController {
     [SerializeField]
-    private Sprite trainSprite;
-    public void Prep() {
+    private Sprite trainSprite = null;
+    public override void Prep() {
 
     }
-    public void StartAnimation(Action callback) {
-
+    public override void StartAnimation(Action callback) {
+        Debug.LogError(trainSprite);
     }
 }

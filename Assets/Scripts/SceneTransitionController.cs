@@ -29,7 +29,6 @@ public class SceneTransitionController : MonoBehaviour {
     }
 
     public void StartSceneTransition(Action sceneLoadCallback) {
-        Debug.LogError(tweenSpeed);
         imageRectTransform.DOLocalMoveX(0, tweenSpeed).SetEase(Ease.OutSine).OnComplete(() => {
             sceneLoadCallback();
             StartCoroutine(Uncover());
@@ -48,7 +47,6 @@ public class SceneTransitionController : MonoBehaviour {
 
     IEnumerator Uncover() {
         yield return new WaitForSeconds(tweenSpeed);
-        Debug.LogError(tweenSpeed + " off");
         imageRectTransform.DOLocalMoveX(width, tweenSpeed).SetEase(Ease.InSine).OnComplete(() => {
             SetToHidePosition();
         });

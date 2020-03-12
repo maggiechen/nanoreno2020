@@ -2,9 +2,9 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-public interface IAnimationSequence {
-    void Prep();
-    void StartAnimation(Action onAnimationComplete);
+public abstract class AnimationSequenceController: MonoBehaviour {
+    public abstract void Prep();
+    public abstract  void StartAnimation(Action onAnimationComplete);
     //public void SkipToEnd();
      
 }
@@ -12,8 +12,9 @@ public interface IAnimationSequence {
 
 public class AnimationController: MonoBehaviour {
     [SerializeField]
-    IntroAnimationSequence introAnimationSequence;
-    Dictionary<string, IAnimationSequence> animationMap = new Dictionary<string, IAnimationSequence>();
+    AnimationSequenceController introAnimationSequence = null;
+
+    Dictionary<string, AnimationSequenceController> animationMap = new Dictionary<string, AnimationSequenceController>();
 
     public static AnimationController Instance;
     void Awake() {
@@ -27,7 +28,7 @@ public class AnimationController: MonoBehaviour {
     }
 
     public void BeginAnimationSequence(string sequenceId, Action onAnimationComplete) {
-        IAnimationSequence sequence = animationMap[sequenceId];
+        AnimationSequenceController sequence = animationMap[sequenceId];
         sequence.Prep();
         sequence.StartAnimation(onAnimationComplete);
     }

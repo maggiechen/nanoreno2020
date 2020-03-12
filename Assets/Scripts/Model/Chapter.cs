@@ -40,7 +40,7 @@ public class Chapter {
     }
 
     void UpdateState() {
-        Debug.LogError($"Currently on dialogue {currentLine.id}");
+        Debug.Log($"Currently on dialogue {currentLine.id}");
         if (currentLine.nextLineIds.Count > 1) {
             state = DialogueState.PRESENTING_CHOICE;
         } else if (currentLine.nextLineIds.Count == 1) {
