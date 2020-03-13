@@ -46,6 +46,10 @@ public class StoryController : MonoBehaviour {
 
         ResetProgress();
     }
+    
+    void Start() {
+        AnimationController.Instance.BeginAnimationSequence("intro", () => { Debug.LogError("anim complete"); });
+    }
 
     void ResetProgress() {
         // Assume we always start with a text dialogue
