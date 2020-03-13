@@ -48,7 +48,10 @@ public class StoryController : MonoBehaviour {
     }
     
     void Start() {
-        AnimationController.Instance.BeginAnimationSequence("intro", () => { Debug.LogError("anim complete"); });
+        gameObject.SetActive(false);
+        AnimationController.Instance.BeginAnimationSequence("intro", () => {
+            gameObject.SetActive(true);
+        });
     }
 
     void ResetProgress() {
