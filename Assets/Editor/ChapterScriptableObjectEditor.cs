@@ -10,7 +10,7 @@ public class ChapterScriptableObjectEditor : Editor {
             string json = reader.ReadToEnd();
             json = $"{{\"dialogueLines\":{json}}}";
             Chapter currentChapter = JsonConvert.DeserializeObject<Chapter>(json);
-
+            currentChapter.SetUpNextIds();
 
             target.chapter = currentChapter;
             Debug.Log(currentChapter);

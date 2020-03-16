@@ -23,6 +23,10 @@ public class Chapter {
             dialogueLinesDict[line.id] = line;
         }
 
+        Reset();
+    }
+
+    public void SetUpNextIds() {
         foreach (Dialogue line in dialogueLines) {
             if (line.nextLineIdsString != null) {
                 string[] ids = line.nextLineIdsString.Split(',');
@@ -38,7 +42,6 @@ public class Chapter {
                 }
             }
         }
-        Reset();
     }
 
     public void Reset() {
