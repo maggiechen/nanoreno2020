@@ -15,3 +15,9 @@ http://answers.unity.com/answers/683381/view.html
 
 DOTween (http://dotween.demigiant.com/download.php)
 Animation library
+
+Calligraphr (https://www.calligraphr.com/)
+Custom font creator used to create the Clear.ttf font.
+
+FontForge https://fontforge.org/en-US/
+Font editor
