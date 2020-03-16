@@ -21,4 +21,119 @@ MonoBehaviour:
       nextLineIds: 
     choices: []
     state: 0
-    dialogueLines: []
+    dialogueLines:
+    - id: 1
+      actorName: Pudding
+      dialogueText: no no no NOOOO!!!
+      nextLineIdsString: 2
+      nextLineIds: 02000000
+    - id: 2
+      actorName: Pudding
+      dialogueText: ...
+      nextLineIdsString: 3
+      nextLineIds: 03000000
+    - id: 3
+      actorName: Pudding
+      dialogueText: Dammit.
+      nextLineIdsString: 4
+      nextLineIds: 04000000
+    - id: 4
+      actorName: Pudding
+      dialogueText: That was the last train too, or at least that's what Google maps
+        says
+      nextLineIdsString: 5
+      nextLineIds: 05000000
+    - id: 5
+      actorName: Pudding
+      dialogueText: I knew I should've left 5 songs earlier.
+      nextLineIdsString: 6
+      nextLineIds: 06000000
+    - id: 6
+      actorName: Pudding
+      dialogueText: Curse you Bohemian Rhapsody for being so long!!
+      nextLineIdsString: 7
+      nextLineIds: 07000000
+    - id: 7
+      actorName: Pudding
+      dialogueText: I could take a a cab I guess...
+      nextLineIdsString: 8
+      nextLineIds: 08000000
+    - id: 8
+      actorName: Pudding
+      dialogueText: Urghhhhh but I live all the way at the end of the Millenium line...
+      nextLineIdsString: 9
+      nextLineIds: 09000000
+    - id: 9
+      actorName: Pudding
+      dialogueText: That's gonna cost me like, at least $100. Damn, inflation's crazy
+      nextLineIdsString: 10
+      nextLineIds: 0a000000
+    - id: 10
+      actorName: Pudding
+      dialogueText: That's like twenty 2020 bubble teas. Or 9 trips to 2020 Frying
+        Pan!
+      nextLineIdsString: 11
+      nextLineIds: 0b000000
+    - id: 11
+      actorName: Pudding
+      dialogueText: Now I've just made myself hungry...Why did dinner have to be
+        so long ago...
+      nextLineIdsString: 12
+      nextLineIds: 0c000000
+    - id: 12
+      actorName: Pudding
+      dialogueText: I guess I could just stay at a hostel somewhere in Gastown, or
+        call up one of the gu-
+      nextLineIdsString: 13
+      nextLineIds: 0d000000
+    - id: 13
+      actorName: Pudding
+      dialogueText: Aw yiiiissssssss
+      nextLineIdsString: 14
+      nextLineIds: 0e000000
+    - id: 14
+      actorName: Pudding
+      dialogueText: It's my night hehe
+      nextLineIdsString: 15
+      nextLineIds: 0f000000
+    - id: 15
+      actorName: Pudding
+      dialogueText: I'm sleeping in my own bed tonight. Blessed
+      nextLineIdsString: 16
+      nextLineIds: 10000000
+    - id: 16
+      actorName: Pudding
+      dialogueText: And there was even one seat left open
+      nextLineIdsString: 17
+      nextLineIds: 11000000
+    - id: 17
+      actorName: Pudding
+      dialogueText: This goat next to me...A business suit and a balloon. Maybe it's
+        their birthday?
+      nextLineIdsString: 18, 21
+      nextLineIds: 1200000015000000
+    - id: 18
+      actorName: Pudding
+      dialogueText: Cool balloon, dude.
+      nextLineIdsString: 19
+      nextLineIds: 13000000
+    - id: 19
+      actorName: B
+      dialogueText: I hate balloons.
+      nextLineIdsString: 20
+      nextLineIds: 14000000
+    - id: 20
+      actorName: Pudding
+      dialogueText: Oh.
+      nextLineIdsString: 
+      nextLineIds: 
+    - id: 21
+      actorName: Pudding
+      dialogueText: Hey! Happy birthday!
+      nextLineIdsString: 22
+      nextLineIds: 16000000
+    - id: 22
+      actorName: B
+      dialogueText: It's not my birthday
+      nextLineIdsString: 20
+      nextLineIds: 14000000

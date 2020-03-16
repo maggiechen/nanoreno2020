@@ -22,9 +22,10 @@ public class ChapterScriptableObjectEditor : Editor {
             string path = EditorUtility.OpenFilePanel("Overwrite with json", "", "json");
             if (path.Length != 0) {
                 ReadFromJson(target as ChapterContainer, path);
+                EditorUtility.SetDirty(target);
+                AssetDatabase.SaveAssets();
             }
         }
-
         base.OnInspectorGUI();
     }
 
