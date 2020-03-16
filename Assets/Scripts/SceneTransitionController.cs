@@ -36,7 +36,6 @@ public class SceneTransitionController : MonoBehaviour {
     }
 
     public void StartTransition(Action callback) {
-        Debug.LogError(tweenSpeed);
         imageRectTransform.DOLocalMoveX(0, tweenSpeed).SetEase(Ease.OutSine).OnComplete(() => {
             callback();
             imageRectTransform.DOLocalMoveX(width, tweenSpeed).SetEase(Ease.InSine).OnComplete(() => {

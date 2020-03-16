@@ -27,9 +27,15 @@ public class Chapter {
             if (line.nextLineIdsString != null) {
                 string[] ids = line.nextLineIdsString.Split(',');
                 foreach (string idString in ids) {
-                    line.nextLineIds.Add(int.Parse(idString.Trim()));
+                    if (idString.Length == 0) {
+                        continue;
+                    }
+                    int nextId = int.Parse(idString.Trim());
+                    if (!line.nextLineIdSet.Contains(nextId)) { 
+                        line.nextLineIds.Add(nextId);
+                        line.nextLineIdSet.Add(nextId);
+                    }
                 }
-
             }
         }
         Reset();

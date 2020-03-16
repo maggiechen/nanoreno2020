@@ -14,7 +14,9 @@ public class StoryController : MonoBehaviour {
     }
 
     [SerializeField]
+    private ChapterContainer chapterContainer = null;
     private Chapter currentChapter;
+
     [SerializeField]
     private Image nextDialogueIcon = null;
     [SerializeField]
@@ -36,13 +38,10 @@ public class StoryController : MonoBehaviour {
     [SerializeField]
     private StoryControllerState storyControllerState;
     void Awake() {
-        using (var reader = new StreamReader("Assets/Data/Chapter.json")) {
-            string json = reader.ReadToEnd();
-            json = $"{{\"dialogueLines\":{json}}}";
-            currentChapter = JsonConvert.DeserializeObject<Chapter>(json);
-            currentChapter.PrepareStories();
-            Debug.Log(currentChapter);
-        }
+        currentChapter = chapterContainer.chapter;
+        currentChapter.PrepareStories();
+        Debug.Log(currentChapter);
+
 
         ResetProgress();
     }
@@ -71,7 +70,6 @@ public class StoryController : MonoBehaviour {
 
     void SetChoiceWithCurrentDialogue() {
         choiceListController.SetChoices(currentChapter.choices, (int chosenId) => {
-            Debug.LogError($"{chosenId} was chosen");
             storyControllerState = StoryControllerState.DEFAULT;
             nextTextButtonArea.enabled = true;
             OnDialogueClicked(chosenId);

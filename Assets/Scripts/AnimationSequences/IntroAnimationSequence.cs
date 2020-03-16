@@ -19,6 +19,5 @@ public class IntroAnimationSequence: AnimationSequenceController {
     public override void StartAnimation(Action callback) {
         Vector3 centerPoint = Camera.main.NormalizedScreenToWorldPoint(new Vector3(0.5f, 0.5f, cameraTo2DSceneDistance));
         trainSprite.transform.DOMove(centerPoint, duration).OnComplete(() => {callback();});
-        Debug.LogError(trainSprite);
     }
 }

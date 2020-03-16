@@ -8,6 +8,7 @@ public class Dialogue {
     public string dialogueText;
     public string nextLineIdsString;
     public List<int> nextLineIds = new List<int>();
+    public HashSet<int> nextLineIdSet= new HashSet<int>();
 
     public override string ToString() {
         return $"{actorName}: '{dialogueText}'";
