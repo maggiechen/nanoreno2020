@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.IO;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -15,6 +15,7 @@ public class StoryController : MonoBehaviour {
 
     [SerializeField]
     private ChapterContainer chapterContainer = null;
+    [SerializeField]
     private Chapter currentChapter;
 
     [SerializeField]
@@ -41,15 +42,18 @@ public class StoryController : MonoBehaviour {
         currentChapter = chapterContainer.chapter;
         currentChapter.PrepareStories();
         Debug.Log(currentChapter);
-
-
-        ResetProgress();
     }
     
     void Start() {
+        BeginStory();
+    }
+
+    void BeginStory() {
+        ResetProgress();
         gameObject.SetActive(false);
         AnimationController.Instance.BeginAnimationSequence("intro", () => {
             gameObject.SetActive(true);
+            SetTextWithCurrentDialogue();
         });
     }
 
@@ -59,13 +63,27 @@ public class StoryController : MonoBehaviour {
         storyControllerState = StoryControllerState.DEFAULT;
         DisableAll();
         EnableText();
-        SetTextWithCurrentDialogue();
         nextTextButtonArea.enabled = true;
     }
 
+    bool playingText = false;
+    float TIME_BETWEEN_LETTER_REVEALS = 0.05f;
+    Coroutine playTextCoroutine = null;
     void SetTextWithCurrentDialogue() {
+        Debug.LogError("set text");
+        playingText = true;
         dialogueTextMesh.text = currentChapter.currentDialogueText;
+        playTextCoroutine = StartCoroutine(PlayText(dialogueTextMesh.text.Length));
         nameTextMesh.text = currentChapter.currentName;
+    }
+
+    IEnumerator PlayText(int characterCount) {
+        dialogueTextMesh.maxVisibleCharacters = 0;
+        while (dialogueTextMesh.maxVisibleCharacters < characterCount) {
+            dialogueTextMesh.maxVisibleCharacters++;
+            yield return new WaitForSeconds(TIME_BETWEEN_LETTER_REVEALS);
+        }
+        playingText = false;
     }
 
     void SetChoiceWithCurrentDialogue() {
@@ -123,6 +141,15 @@ public class StoryController : MonoBehaviour {
     }
 
     public void OnDialogueClicked(int dialogueId=-1) {
+        if (playingText) {
+            StopCoroutine(playTextCoroutine);
+            playingText = false;
+            dialogueTextMesh.maxVisibleCharacters = currentChapter.currentDialogueText.Length;
+            dialogueTextMesh.text = currentChapter.currentDialogueText;
+            return;
+        }
+
+
         if (dialogueId != -1) {
             currentChapter.JumpTo(dialogueId);
         } else {
@@ -154,7 +181,7 @@ public class StoryController : MonoBehaviour {
     }
 
     public void Replay() {
-        SceneTransitionController.Instance.StartTransition(ResetProgress);
+        SceneTransitionController.Instance.StartTransition(BeginStory);
     }
 
     public void LoadMainMenu() {
