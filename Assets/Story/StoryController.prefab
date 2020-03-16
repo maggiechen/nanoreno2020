@@ -70,8 +70,9 @@ MonoBehaviour:
     eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
     in culpa qui officia deserunt mollit
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 59df5fec90fc7d546a22a0f7fdd81ff8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dd800800e392d814e86a52f1021191cb, type: 2}
+  m_sharedMaterial: {fileID: 4779566669217658948, guid: dd800800e392d814e86a52f1021191cb,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -96,8 +97,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 12
-  m_fontSizeBase: 12
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -113,7 +114,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 221
+  m_firstOverflowCharacterIndex: 237
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -225,8 +226,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Nom de plume
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: d1533817918f09d4f801dad9b252038f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dd800800e392d814e86a52f1021191cb, type: 2}
+  m_sharedMaterial: {fileID: 4779566669217658948, guid: dd800800e392d814e86a52f1021191cb,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -251,13 +253,13 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 16
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -763,16 +765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ff935ad74cb1428caa6696f3af76799, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentChapter:
-    currentLine:
-      id: 0
-      actorName: 
-      dialogueText: 
-      nextLineIdsString: 
-      nextLineIds: 
-    choices: []
-    state: 0
-    dialogueLines: []
+  chapterContainer: {fileID: 0}
   nextDialogueIcon: {fileID: 493780445482959917}
   dialogueTextMesh: {fileID: 2088495197125541524}
   nameTextMesh: {fileID: 8338551554593916880}
@@ -1257,7 +1250,23 @@ PrefabInstance:
     - target: {fileID: 2298443938669611998, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2298443938669611998, guid: 52505045bdcb2134d89e54f6b9624c88,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 2298443938669611998, guid: 52505045bdcb2134d89e54f6b9624c88,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 2298443938669611998, guid: 52505045bdcb2134d89e54f6b9624c88,
+        type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: 78
       objectReference: {fileID: 0}
     - target: {fileID: 3329748291177230351, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
@@ -1272,12 +1281,12 @@ PrefabInstance:
     - target: {fileID: 3329748291177230351, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3329748291177230351, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3329748291177230351, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
@@ -1347,7 +1356,23 @@ PrefabInstance:
     - target: {fileID: 5392136639153338156, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392136639153338156, guid: 52505045bdcb2134d89e54f6b9624c88,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 5392136639153338156, guid: 52505045bdcb2134d89e54f6b9624c88,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 5392136639153338156, guid: 52505045bdcb2134d89e54f6b9624c88,
+        type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: 78
       objectReference: {fileID: 0}
     - target: {fileID: 7418189484482709470, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
@@ -1492,12 +1517,12 @@ PrefabInstance:
     - target: {fileID: 8864391713188351229, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8864391713188351229, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8864391713188351229, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
