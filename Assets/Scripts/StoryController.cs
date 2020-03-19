@@ -70,7 +70,7 @@ public class StoryController : MonoBehaviour {
         DisableAll();
         EnableText();
         nextTextButtonArea.enabled = true;
-        UpdateState();
+        ApplyChangesOfCurrentDialogue();
     }
 
     bool playingText = false;
