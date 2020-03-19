@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using TMPro;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -41,6 +42,9 @@ public class StoryController : MonoBehaviour {
     private List<ActorController> actors = null;
     
     private Dictionary<string, ActorController> actorMap = new Dictionary<string, ActorController>();
+
+    // animation stuff
+    Vector3 originalNextDialoguePosition;
     void Awake() {
         currentChapter = chapterContainer.chapter;
         currentChapter.PrepareStories();
@@ -51,7 +55,21 @@ public class StoryController : MonoBehaviour {
     }
     
     void Start() {
+        originalNextDialoguePosition = nextDialogueIcon.transform.position;
+        SetupNextDialogueIcon();
         BeginStory();
+    }
+
+    void OnDestroy() {
+        translationX.Kill();
+        scaleX.Kill();
+    }
+    
+    Tween translationX;
+    Tween scaleX;
+    void SetupNextDialogueIcon() {
+        translationX = nextDialogueIcon.transform.DOLocalMoveX(7, 0.5f).SetLoops(-1, LoopType.Yoyo);
+        scaleX = nextDialogueIcon.transform.DOScaleX(0.8f, 0.5f).SetLoops(-1, LoopType.Yoyo);
     }
 
     void BeginStory() {
@@ -73,11 +91,30 @@ public class StoryController : MonoBehaviour {
         ApplyChangesOfCurrentDialogue();
     }
 
-    bool playingText = false;
+    bool _playingText = false;
+    bool PlayingText {
+        get {
+            return _playingText;
+        }
+        set {
+            _playingText = value;
+            if (_playingText) {
+                translationX.Pause();
+                scaleX.Pause();
+                nextDialogueIcon.transform.position = originalNextDialoguePosition;
+                nextDialogueIcon.transform.localScale = Vector3.one;
+                nextDialogueIcon.SetAlpha(0.2f);
+            } else {
+                translationX.Play();
+                scaleX.Play();
+                nextDialogueIcon.SetAlpha(1);
+            }
+        }
+    }
     float TIME_BETWEEN_LETTER_REVEALS = 0.05f;
     Coroutine playTextCoroutine = null;
     void SetTextWithCurrentDialogue() {
-        playingText = true;
+        PlayingText = true;
         dialogueTextMesh.text = currentChapter.currentDialogueText;
         playTextCoroutine = StartCoroutine(PlayText(dialogueTextMesh.text.Length));
         nameTextMesh.text = currentChapter.currentName;
@@ -89,7 +126,7 @@ public class StoryController : MonoBehaviour {
             dialogueTextMesh.maxVisibleCharacters++;
             yield return new WaitForSeconds(TIME_BETWEEN_LETTER_REVEALS);
         }
-        playingText = false;
+        PlayingText = false;
     }
 
     void SetChoiceWithCurrentDialogue() {
@@ -147,9 +184,9 @@ public class StoryController : MonoBehaviour {
     }
 
     public void OnDialogueClicked(int dialogueId=-1) {
-        if (playingText) {
+        if (PlayingText) {
             StopCoroutine(playTextCoroutine);
-            playingText = false;
+            PlayingText = false;
             dialogueTextMesh.maxVisibleCharacters = currentChapter.currentDialogueText.Length;
             dialogueTextMesh.text = currentChapter.currentDialogueText;
             return;
