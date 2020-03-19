@@ -70,7 +70,6 @@ public class StoryController : MonoBehaviour {
     float TIME_BETWEEN_LETTER_REVEALS = 0.05f;
     Coroutine playTextCoroutine = null;
     void SetTextWithCurrentDialogue() {
-        Debug.LogError("set text");
         playingText = true;
         dialogueTextMesh.text = currentChapter.currentDialogueText;
         playTextCoroutine = StartCoroutine(PlayText(dialogueTextMesh.text.Length));

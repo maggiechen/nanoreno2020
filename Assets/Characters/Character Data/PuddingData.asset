@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06c591247b0e74749922e17d2ffb37ac, type: 3}
+  m_Name: PuddingData
+  m_EditorClassIdentifier: 
+  forms:
+  - formKey: normal
+    expressions:
+    - expressionKey: blush
+      expressionSprite: {fileID: 21300000, guid: 8f627e28adb4a3f4bacf404be09502d6,
+        type: 3}
+    - expressionKey: lidded
+      expressionSprite: {fileID: 21300000, guid: 57ae71a270870ad49b5b8058e3c7e298,
+        type: 3}
+    - expressionKey: lidded_left
+      expressionSprite: {fileID: 21300000, guid: 60f2243630c74f443aa82d0e09d57c96,
+        type: 3}
+    - expressionKey: lidded_smile
+      expressionSprite: {fileID: 21300000, guid: 01412ec07be69e440870266cf62299c1,
+        type: 3}
+    - expressionKey: pensive
+      expressionSprite: {fileID: 21300000, guid: 4888fbbc40d6e914c97de129c1a1ce77,
+        type: 3}
+    - expressionKey: smile
+      expressionSprite: {fileID: 21300000, guid: 9f9cbe0ae2d7eb147ba23c32118e4cad,
+        type: 3}
+    - expressionKey: surprised
+      expressionSprite: {fileID: 21300000, guid: 21a0a861ab07b1644aefbeed48424f62,
+        type: 3}
+    - expressionKey: surprised_forward
+      expressionSprite: {fileID: 21300000, guid: f8e5e8cd083c9fd4d99e5fe3456d24be,
+        type: 3}
+    - expressionKey: surprised_left
+      expressionSprite: {fileID: 21300000, guid: c3ef9b2f464cf3944abfeebd1070ac64,
+        type: 3}
+    bodySprite: {fileID: 21300000, guid: 7569f7235d519c849a68f87862531127, type: 3}

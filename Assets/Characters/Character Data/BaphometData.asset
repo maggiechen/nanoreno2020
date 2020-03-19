@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06c591247b0e74749922e17d2ffb37ac, type: 3}
+  m_Name: BaphometData
+  m_EditorClassIdentifier: 
+  forms:
+  - formKey: normal
+    expressions:
+    - expressionKey: blush
+      expressionSprite: {fileID: 21300000, guid: 0fd52fad6702c0c4fa1f2a85081f4fa5,
+        type: 3}
+    - expressionKey: closed_eyes
+      expressionSprite: {fileID: 21300000, guid: 11b3c9a589beb1a4da4d88b0fbc41830,
+        type: 3}
+    - expressionKey: lidded
+      expressionSprite: {fileID: 21300000, guid: 9020cb3a5bca8464c9abebdfafde9fb3,
+        type: 3}
+    - expressionKey: neutral
+      expressionSprite: {fileID: 21300000, guid: 5d94ddb50fb725f4cab795141c11ccf9,
+        type: 3}
+    - expressionKey: sad
+      expressionSprite: {fileID: 21300000, guid: b4efa406a03332542bd17dbb65349c13,
+        type: 3}
+    - expressionKey: squint
+      expressionSprite: {fileID: 21300000, guid: 3319bfd2569e7fb40922ff98592d191f,
+        type: 3}
+    bodySprite: {fileID: 21300000, guid: e56e928902685e143bf69aed8705694f, type: 3}
+  - formKey: cryptid
+    expressions:
+    - expressionKey: blush
+      expressionSprite: {fileID: 21300000, guid: 6547c021b8b619d42a39f41c7149f3ae,
+        type: 3}
+    - expressionKey: closed_eyes
+      expressionSprite: {fileID: 21300000, guid: 32fe2c1c97327c24cb026e88d570337c,
+        type: 3}
+    - expressionKey: lidded
+      expressionSprite: {fileID: 21300000, guid: a028e8412901ef648b1f8181ebe8538f,
+        type: 3}
+    - expressionKey: neutral
+      expressionSprite: {fileID: 21300000, guid: 2fd1f304586ce664ca8523606d5d2336,
+        type: 3}
+    - expressionKey: sad
+      expressionSprite: {fileID: 21300000, guid: c5751c6e0f9dda94e8380b622728e710,
+        type: 3}
+    - expressionKey: squint
+      expressionSprite: {fileID: 21300000, guid: 22d151488e5eb7d45bebea0618b044a9,
+        type: 3}
+    bodySprite: {fileID: 21300000, guid: fe3534729723be14283cb80087993474, type: 3}
