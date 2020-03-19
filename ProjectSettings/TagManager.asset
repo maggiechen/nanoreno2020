@@ -45,3 +45,9 @@ TagManager:
   - name: Character
     uniqueID: 3506159543
     locked: 0
+  - name: CharacterHead
+    uniqueID: 1228589975
+    locked: 0
+  - name: ForwardProp
+    uniqueID: 805792457
+    locked: 0
