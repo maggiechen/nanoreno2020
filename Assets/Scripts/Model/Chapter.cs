@@ -10,6 +10,8 @@ public class Chapter {
     public DialogueState state;
     public List<Dialogue> dialogueLines = new List<Dialogue>();
 
+    public List<Change> changeList = new List<Change>(); // only used when parsing from json
+
     public string currentName => currentLine.actorName;
     public string currentDialogueText => currentLine.dialogueText;
     public Dictionary<int, Dialogue> dialogueLinesDict = new Dictionary<int, Dialogue>();
@@ -26,7 +28,7 @@ public class Chapter {
         Reset();
     }
 
-    public void SetUpNextIds() {
+    public void PostJSONDeserialize() {
         foreach (Dialogue line in dialogueLines) {
             if (line.nextLineIdsString != null) {
                 string[] ids = line.nextLineIdsString.Split(',');
@@ -42,6 +44,14 @@ public class Chapter {
                 }
             }
         }
+        foreach (Dialogue line in dialogueLines) {
+            dialogueLinesDict[line.id] = line;
+        }
+
+        foreach (Change change in changeList) {
+            dialogueLinesDict[change.dialogueId].changeList.Add(change);
+        }
+        changeList.Clear(); // don't need this list anymore
     }
 
     public void Reset() {

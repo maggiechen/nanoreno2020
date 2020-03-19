@@ -1,133 +1,151 @@
-[
-    {
-        "id": 1,
-        "actorname": "Pudding",
-        "dialoguetext": "no no no NOOOO!!!",
-        "nextlineidsstring": 2
-    },
-    {
-        "id": 2,
-        "actorname": "Pudding",
-        "dialoguetext": "...",
-        "nextlineidsstring": 3
-    },
-    {
-        "id": 3,
-        "actorname": "Pudding",
-        "dialoguetext": "Dammit.",
-        "nextlineidsstring": 4
-    },
-    {
-        "id": 4,
-        "actorname": "Pudding",
-        "dialoguetext": "That was the last train too, or at least that's what Google maps says",
-        "nextlineidsstring": 5
-    },
-    {
-        "id": 5,
-        "actorname": "Pudding",
-        "dialoguetext": "I knew I should've left 5 songs earlier.",
-        "nextlineidsstring": 6
-    },
-    {
-        "id": 6,
-        "actorname": "Pudding",
-        "dialoguetext": "Curse you Bohemian Rhapsody for being so long!!",
-        "nextlineidsstring": 7
-    },
-    {
-        "id": 7,
-        "actorname": "Pudding",
-        "dialoguetext": "I could take a a cab I guess...",
-        "nextlineidsstring": 8
-    },
-    {
-        "id": 8,
-        "actorname": "Pudding",
-        "dialoguetext": "Urghhhhh but I live all the way at the end of the Millenium line...",
-        "nextlineidsstring": 9
-    },
-    {
-        "id": 9,
-        "actorname": "Pudding",
-        "dialoguetext": "That's gonna cost me like, at least $100. Damn, inflation's crazy",
-        "nextlineidsstring": 10
-    },
-    {
-        "id": 10,
-        "actorname": "Pudding",
-        "dialoguetext": "That's like twenty 2020 bubble teas. Or 9 trips to 2020 Frying Pan!",
-        "nextlineidsstring": 11
-    },
-    {
-        "id": 11,
-        "actorname": "Pudding",
-        "dialoguetext": "Now I've just made myself hungry...Why did dinner have to be so long ago...",
-        "nextlineidsstring": 12
-    },
-    {
-        "id": 12,
-        "actorname": "Pudding",
-        "dialoguetext": "I guess I could just stay at a hostel somewhere in Gastown, or call up one of the gu-",
-        "nextlineidsstring": 13
-    },
-    {
-        "id": 13,
-        "actorname": "Pudding",
-        "dialoguetext": "Aw yiiiissssssss",
-        "nextlineidsstring": 14
-    },
-    {
-        "id": 14,
-        "actorname": "Pudding",
-        "dialoguetext": "It's my night hehe",
-        "nextlineidsstring": 15
-    },
-    {
-        "id": 15,
-        "actorname": "Pudding",
-        "dialoguetext": "I'm sleeping in my own bed tonight. Blessed",
-        "nextlineidsstring": 16
-    },
-    {
-        "id": 16,
-        "actorname": "Pudding",
-        "dialoguetext": "And there was even one seat left open",
-        "nextlineidsstring": 17
-    },
-    {
-        "id": 17,
-        "actorname": "Pudding",
-        "dialoguetext": "This goat next to me...A business suit and a balloon. Maybe it's their birthday?",
-        "nextlineidsstring": "18, 21"
-    },
-    {
-        "id": 18,
-        "actorname": "Pudding",
-        "dialoguetext": "Cool balloon, dude.",
-        "nextlineidsstring": 19
-    },
-    {
-        "id": 19,
-        "actorname": "B",
-        "dialoguetext": "I hate balloons.",
-        "nextlineidsstring": 20
-    },
-    {
-        "id": 20,
-        "actorname": "Pudding",
-        "dialoguetext": "Oh."
-    },
-    {
-        "id": 21,
-        "actorname": "Pudding",
-        "dialoguetext": "Hey! Happy birthday!",
-        "nextlineidsstring": 22
-    },
-    {
-        "id": 22,
-        "actorname": "B",
-        "dialoguetext": "It's not my birthday",
-        "nextlineidsstring": 20
-    }
-]
+{
+    "dialogueLines": [
+        {
+            "id": 1,
+            "actorname": "Pudding",
+            "dialoguetext": "no no no NOOOO!!!",
+            "nextlineidsstring": 2
+        },
+        {
+            "id": 2,
+            "actorname": "Pudding",
+            "dialoguetext": "...",
+            "nextlineidsstring": 3
+        },
+        {
+            "id": 3,
+            "actorname": "Pudding",
+            "dialoguetext": "Dammit.",
+            "nextlineidsstring": 4
+        },
+        {
+            "id": 4,
+            "actorname": "Pudding",
+            "dialoguetext": "That was the last train too, or at least that's what Google maps says",
+            "nextlineidsstring": 5
+        },
+        {
+            "id": 5,
+            "actorname": "Pudding",
+            "dialoguetext": "I knew I should've left 5 songs earlier.",
+            "nextlineidsstring": 6
+        },
+        {
+            "id": 6,
+            "actorname": "Pudding",
+            "dialoguetext": "Curse you Bohemian Rhapsody for being so long!!",
+            "nextlineidsstring": 7
+        },
+        {
+            "id": 7,
+            "actorname": "Pudding",
+            "dialoguetext": "I could take a a cab I guess...",
+            "nextlineidsstring": 8
+        },
+        {
+            "id": 8,
+            "actorname": "Pudding",
+            "dialoguetext": "Urghhhhh but I live all the way at the end of the Millenium line...",
+            "nextlineidsstring": 9
+        },
+        {
+            "id": 9,
+            "actorname": "Pudding",
+            "dialoguetext": "That's gonna cost me like, at least $100. Damn, inflation's crazy",
+            "nextlineidsstring": 10
+        },
+        {
+            "id": 10,
+            "actorname": "Pudding",
+            "dialoguetext": "That's like twenty 2020 bubble teas. Or 9 trips to 2020 Frying Pan!",
+            "nextlineidsstring": 11
+        },
+        {
+            "id": 11,
+            "actorname": "Pudding",
+            "dialoguetext": "Now I've just made myself hungry...Why did dinner have to be so long ago...",
+            "nextlineidsstring": 12
+        },
+        {
+            "id": 12,
+            "actorname": "Pudding",
+            "dialoguetext": "I guess I could just stay at a hostel somewhere in Gastown, or call up one of the gu-",
+            "nextlineidsstring": 13
+        },
+        {
+            "id": 13,
+            "actorname": "Pudding",
+            "dialoguetext": "Aw yiiiissssssss",
+            "nextlineidsstring": 14
+        },
+        {
+            "id": 14,
+            "actorname": "Pudding",
+            "dialoguetext": "It's my night hehe",
+            "nextlineidsstring": 15
+        },
+        {
+            "id": 15,
+            "actorname": "Pudding",
+            "dialoguetext": "I'm sleeping in my own bed tonight. Blessed",
+            "nextlineidsstring": 16
+        },
+        {
+            "id": 16,
+            "actorname": "Pudding",
+            "dialoguetext": "And there was even one seat left open",
+            "nextlineidsstring": 17
+        },
+        {
+            "id": 17,
+            "actorname": "Pudding",
+            "dialoguetext": "This goat next to me...A business suit and a balloon. Maybe it's their birthday?",
+            "nextlineidsstring": "18, 21"
+        },
+        {
+            "id": 18,
+            "actorname": "Pudding",
+            "dialoguetext": "Cool balloon, dude.",
+            "nextlineidsstring": 19
+        },
+        {
+            "id": 19,
+            "actorname": "Baphomet",
+            "dialoguetext": "I hate balloons.",
+            "nextlineidsstring": 20
+        },
+        {
+            "id": 20,
+            "actorname": "Pudding",
+            "dialoguetext": "Oh."
+        },
+        {
+            "id": 21,
+            "actorname": "Pudding",
+            "dialoguetext": "Hey! Happy birthday!",
+            "nextlineidsstring": 22
+        },
+        {
+            "id": 22,
+            "actorname": "Baphomet",
+            "dialoguetext": "It's not my birthday",
+            "nextlineidsstring": 20
+        }
+    ],
+    "changeList": [
+        {
+            "dialogueid": 1,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "surprised_left"
+        },
+        {
+            "dialogueid": 4,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "blush"
+        }
+    ]
+}

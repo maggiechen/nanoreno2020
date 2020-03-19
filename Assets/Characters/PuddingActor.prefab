@@ -54,6 +54,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb90234126874eabbf84f4873a46ab7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  actorName: Pudding
   bodySpriteRenderer: {fileID: 7573892629360526082}
   headSpriteRenderer: {fileID: 1678881703565671743}
   characterData: {fileID: 11400000, guid: 04cb158327fb33b41936f55d75e5fdd0, type: 2}

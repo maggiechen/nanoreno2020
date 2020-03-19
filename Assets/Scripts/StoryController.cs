@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Collections.Generic;
 using System;
 using System.Collections;
 using TMPro;
@@ -10,7 +10,6 @@ public class StoryController : MonoBehaviour {
     enum StoryControllerState {
         DEFAULT, // default is displaying text
         CHOOSING,
-
     }
 
     [SerializeField]
@@ -35,13 +34,20 @@ public class StoryController : MonoBehaviour {
     [SerializeField]
     private ChoiceListController choiceListController = null;
 
-
     [SerializeField]
     private StoryControllerState storyControllerState;
+
+    [SerializeField]
+    private List<ActorController> actors = null;
+    
+    private Dictionary<string, ActorController> actorMap = new Dictionary<string, ActorController>();
     void Awake() {
         currentChapter = chapterContainer.chapter;
         currentChapter.PrepareStories();
         Debug.Log(currentChapter);
+        foreach (ActorController actor in actors) {
+            actorMap[actor.actorName] = actor;
+        }
     }
     
     void Start() {
@@ -64,6 +70,7 @@ public class StoryController : MonoBehaviour {
         DisableAll();
         EnableText();
         nextTextButtonArea.enabled = true;
+        UpdateState();
     }
 
     bool playingText = false;
@@ -154,7 +161,10 @@ public class StoryController : MonoBehaviour {
         } else {
             currentChapter.MoveNext();
         }
+        UpdateState();
+    }
 
+    void UpdateState() {
         if (storyControllerState == StoryControllerState.CHOOSING) {
             DisableAll();
             EnableChoice();
@@ -176,6 +186,17 @@ public class StoryController : MonoBehaviour {
             nextTextButtonArea.enabled = false;
         } else {
             throw new Exception($"Unknown dialogue state {currentChapter.state}");
+        }
+
+        ApplyChangesOfCurrentDialogue();
+    }
+
+    void ApplyChangesOfCurrentDialogue() {
+        foreach (Change change in currentChapter.currentLine.changeList) {
+            if (change.changeType == ChangeType.EXPRESSION) {
+                actorMap[change.actorName].SetForm(change.formKey);
+                actorMap[change.actorName].SetExpression(change.expressionKey);
+            }
         }
     }
 

@@ -12,6 +12,7 @@ public class CharacterData: ScriptableObject {
     public void OnValidate() {
         formMap.Clear();
         for (int i = 0; i < forms.Count; i++) {
+            forms[i].OnValidate();
             formMap[forms[i].formKey] = forms[i];
         }
     }

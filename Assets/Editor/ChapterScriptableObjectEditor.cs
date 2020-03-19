@@ -8,9 +8,8 @@ public class ChapterScriptableObjectEditor : Editor {
     public void ReadFromJson(ChapterContainer target, string path = "Assets/Data/Chapter.json") {
         using (var reader = new StreamReader(path)) {
             string json = reader.ReadToEnd();
-            json = $"{{\"dialogueLines\":{json}}}";
             Chapter currentChapter = JsonConvert.DeserializeObject<Chapter>(json);
-            currentChapter.SetUpNextIds();
+            currentChapter.PostJSONDeserialize();
 
             target.chapter = currentChapter;
             Debug.Log(currentChapter);
