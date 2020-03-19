@@ -839,7 +839,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ff935ad74cb1428caa6696f3af76799, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chapterContainer: {fileID: 0}
+  chapterContainer: {fileID: 11400000, guid: c2df86a119b16b540b0fd947215d5ebc, type: 2}
   currentChapter:
     currentLine:
       id: 0
@@ -860,7 +860,9 @@ MonoBehaviour:
   mainMenuButton: {fileID: 5581555389261990217}
   choiceListController: {fileID: 4528355155182543082}
   storyControllerState: 0
-  actors: []
+  actors:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &8219500921910036187
 GameObject:
   m_ObjectHideFlags: 0
@@ -1358,12 +1360,12 @@ PrefabInstance:
     - target: {fileID: 3329748291177230351, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 309.91296
       objectReference: {fileID: 0}
     - target: {fileID: 3329748291177230351, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 619.8259
       objectReference: {fileID: 0}
     - target: {fileID: 3329748291177230351, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
@@ -1594,12 +1596,12 @@ PrefabInstance:
     - target: {fileID: 8864391713188351229, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 309.91296
       objectReference: {fileID: 0}
     - target: {fileID: 8864391713188351229, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 619.8259
       objectReference: {fileID: 0}
     - target: {fileID: 8864391713188351229, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
