@@ -8,7 +8,7 @@ public class CharacterData: ScriptableObject {
     private List<CharacterForm> forms = null;
     
     private Dictionary<string, CharacterForm> formMap = new Dictionary<string, CharacterForm>();
-    void Awake() {
+    void OnEnable() {
         PopulateMap();
     }
     public void PopulateMap() {
