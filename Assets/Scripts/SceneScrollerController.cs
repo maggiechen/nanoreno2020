@@ -4,16 +4,16 @@ using UnityEngine;
 using DG.Tweening;
 public class SceneScrollerController : MonoBehaviour {
     [SerializeField]
-    private SceneScrollerGroupController groupController;
+    private SceneScrollerGroupController groupController = null;
     [SerializeField]
-    private SpriteRenderer spriteRenderer1;
+    private SpriteRenderer spriteRenderer1 = null;
     [SerializeField]
-    private SpriteRenderer spriteRenderer2;
+    private SpriteRenderer spriteRenderer2 = null;
     [SerializeField]
-    private Sprite sprite;
+    private Sprite sprite = null;
 
     [SerializeField]
-    private float scrollSpeed;
+    private float scrollSpeed = -0.2f;
     private float horizontalSize;
     private float originalSpritePositionX;
     void Start() {

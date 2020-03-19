@@ -583,7 +583,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6348347631572388984}
-        m_MethodName: Replay
+        m_MethodName: LoadMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1362,12 +1362,12 @@ PrefabInstance:
     - target: {fileID: 3329748291177230351, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 309.91296
+      value: 309.83908
       objectReference: {fileID: 0}
     - target: {fileID: 3329748291177230351, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 619.8259
+      value: 619.67816
       objectReference: {fileID: 0}
     - target: {fileID: 3329748291177230351, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
@@ -1598,12 +1598,12 @@ PrefabInstance:
     - target: {fileID: 8864391713188351229, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 309.91296
+      value: 309.83908
       objectReference: {fileID: 0}
     - target: {fileID: 8864391713188351229, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 619.8259
+      value: 619.67816
       objectReference: {fileID: 0}
     - target: {fileID: 8864391713188351229, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
