@@ -27,7 +27,7 @@ public class CharacterForm {
     [SerializeField]
     public string formKey;
     [SerializeField]
-    private List<CharacterExpression> expressions;
+    private List<CharacterExpression> expressions = null;
     public Sprite bodySprite;
 
     private Dictionary<string, CharacterExpression> expressionMap = new Dictionary<string, CharacterExpression>();

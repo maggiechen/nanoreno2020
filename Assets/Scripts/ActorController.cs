@@ -9,7 +9,7 @@ public class ActorController : MonoBehaviour {
     [SerializeField]
     private SpriteRenderer headSpriteRenderer = null;
     [SerializeField]
-    private CharacterData characterData;
+    private CharacterData characterData = null;
 
     private string formKey = "normal";
     private string expressionKey = "neutral";
