@@ -14,8 +14,9 @@ public class AnimationController: MonoBehaviour {
     [SerializeField]
     AnimationSequenceController introAnimationSequence = null;
     [SerializeField]
-    AnimationSequenceController hellTransitionSequence = null;
-    
+    AnimationSequenceController hellTransitionSequence = null;    
+    [SerializeField]
+    AnimationSequenceController hellRevealSequence = null;
 
     Dictionary<string, AnimationSequenceController> animationMap = new Dictionary<string, AnimationSequenceController>();
 
@@ -28,7 +29,7 @@ public class AnimationController: MonoBehaviour {
         Instance = this;
         animationMap["intro"] = introAnimationSequence;
         animationMap["trigger_hell_transition"] = hellTransitionSequence;
-        // TODO: populate here
+        animationMap["trigger_hell_reveal"] = hellRevealSequence;
     }
 
     public void BeginAnimationSequence(string sequenceId, Action onAnimationComplete) {

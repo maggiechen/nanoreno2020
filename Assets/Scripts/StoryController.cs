@@ -229,7 +229,7 @@ public class StoryController : MonoBehaviour {
             return;
         }
 
-        if (!currentChapter.currentName.Equals(oldActor)) {
+        if (oldActor.Length != 0 && !currentChapter.currentName.Equals(oldActor)) {
             nextTextButtonArea.enabled = false;
             canvasGroup.DOFade(0, fadeDuration).OnComplete(() => {
                 UpdateStoryController();
@@ -301,7 +301,10 @@ public class StoryController : MonoBehaviour {
     }
 
     public void Replay() {
-        SceneTransitionController.Instance.StartTransition(BeginStory);
+
+        SceneTransitionController.Instance.StartSceneTransition(() => {
+            SceneManager.LoadScene("Main");
+        });
     }
 
     public void LoadMainMenu() {

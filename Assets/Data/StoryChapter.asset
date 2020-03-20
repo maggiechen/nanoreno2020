@@ -203,6 +203,25 @@ MonoBehaviour:
     - id: 24
       actorName: Pudding
       dialogueText: Where are we?!
+      nextLineIdsString: 25
+      dialogueType: 0
+      nextLineIds: 19000000
+      changeList:
+      - dialogueId: 24
+        changeType: 0
+        actorName: Baphomet
+        formKey: cryptid
+        expressionKey: neutral
+    - id: 25
+      actorName: 
+      dialogueText: trigger_hell_reveal
+      nextLineIdsString: 26
+      dialogueType: 1
+      nextLineIds: 1a000000
+      changeList: []
+    - id: 26
+      actorName: Baphomet
+      dialogueText: My hometown station. How nostalgic.
       nextLineIdsString: 
       dialogueType: 0
       nextLineIds: 

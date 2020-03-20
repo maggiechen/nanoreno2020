@@ -164,6 +164,19 @@
             "id": 24,
             "actorname": "Pudding",
             "dialoguetext": "Where are we?!",
+            "nextlineidsstring": 25,
+            "dialoguetype": 0
+        },
+        {
+            "id": 25,
+            "dialoguetext": "trigger_hell_reveal",
+            "nextlineidsstring": 26,
+            "dialoguetype": 1
+        },
+        {
+            "id": 26,
+            "actorname": "Baphomet",
+            "dialoguetext": "My hometown station. How nostalgic.",
             "dialoguetype": 0
         }
     ],
@@ -181,6 +194,13 @@
             "actorname": "Pudding",
             "formkey": "normal",
             "expressionkey": "blush"
+        },
+        {
+            "dialogueid": 24,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "cryptid",
+            "expressionkey": "neutral"
         }
     ]
 }
