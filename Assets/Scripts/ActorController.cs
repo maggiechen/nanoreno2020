@@ -27,6 +27,10 @@ public class ActorController : MonoBehaviour {
         }
     }
 
+    public Sprite GetTextContainerSprite() {
+        return characterData.textContainerSprite;
+    }
+
     public void UpdateCharacter() {
         CharacterForm form = characterData.GetForm(formKey);
         bodySpriteRenderer.sprite = form.bodySprite;

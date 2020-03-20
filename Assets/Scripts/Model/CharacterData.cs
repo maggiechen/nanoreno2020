@@ -6,7 +6,7 @@ using UnityEngine;
 public class CharacterData: ScriptableObject {
     [SerializeField]
     private List<CharacterForm> forms = null;
-    
+    public Sprite textContainerSprite;
     private Dictionary<string, CharacterForm> formMap = new Dictionary<string, CharacterForm>();
     void OnEnable() {
         PopulateMap();

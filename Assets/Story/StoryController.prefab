@@ -776,6 +776,7 @@ GameObject:
   - component: {fileID: 6446174199617251073}
   - component: {fileID: 6446174199617251086}
   - component: {fileID: 6348347631572388984}
+  - component: {fileID: 7419948026249563033}
   m_Layer: 5
   m_Name: StoryController
   m_TagString: Untagged
@@ -888,17 +889,33 @@ MonoBehaviour:
     state: 0
     dialogueLines: []
     changeList: []
+  storyControllerState: 0
   nextDialogueIcon: {fileID: 493780445482959917}
   dialogueTextMesh: {fileID: 2088495197125541524}
+  dialogueTextImage: {fileID: 5705154019717427345}
   nameTextMesh: {fileID: 8338551554593916880}
   nextTextButtonArea: {fileID: 3451913121278956837}
   replayButton: {fileID: 1208313256611383382}
   mainMenuButton: {fileID: 5581555389261990217}
+  canvasGroup: {fileID: 7419948026249563033}
+  nextButtonAnimationDuration: 0.5
+  fadeDuration: 0.3
   choiceListController: {fileID: 4528355155182543082}
-  storyControllerState: 0
   actors:
   - {fileID: 0}
   - {fileID: 0}
+--- !u!225 &7419948026249563033
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6446174199617251087}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &8219500921910036187
 GameObject:
   m_ObjectHideFlags: 0
@@ -1398,12 +1415,12 @@ PrefabInstance:
     - target: {fileID: 3329748291177230351, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 310
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3329748291177230351, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 620
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3329748291177230351, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
@@ -1634,12 +1651,12 @@ PrefabInstance:
     - target: {fileID: 8864391713188351229, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 310
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8864391713188351229, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 620
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8864391713188351229, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}

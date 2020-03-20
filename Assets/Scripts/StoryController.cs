@@ -13,31 +13,41 @@ public class StoryController : MonoBehaviour {
         CHOOSING,
     }
 
+    [Header("Data")]
     [SerializeField]
     private ChapterContainer chapterContainer = null;
     [SerializeField]
     private Chapter currentChapter;
+    [SerializeField]
+    private StoryControllerState storyControllerState;
 
+    [Header("UI References")]
     [SerializeField]
     private Image nextDialogueIcon = null;
     [SerializeField]
     private TextMeshProUGUI dialogueTextMesh = null;
     [SerializeField]
+    private Image dialogueTextImage = null;
+    [SerializeField]
     private TextMeshProUGUI nameTextMesh = null;
     [SerializeField]
     private Button nextTextButtonArea = null;
-
     [SerializeField]
     private Button replayButton = null;
     [SerializeField]
     private Button mainMenuButton = null;
+    [SerializeField]
+    private CanvasGroup canvasGroup = null;
 
+    [Header("UI Tweaks")]
+    [SerializeField]
+    private float nextButtonAnimationDuration = 0.5f;
+    [SerializeField]
+    private float fadeDuration = 0.3f;
+
+    [Header("Controllers")]
     [SerializeField]
     private ChoiceListController choiceListController = null;
-
-    [SerializeField]
-    private StoryControllerState storyControllerState;
-
     [SerializeField]
     private List<ActorController> actors = null;
     
@@ -45,6 +55,7 @@ public class StoryController : MonoBehaviour {
 
     // animation stuff
     Vector3 originalNextDialoguePosition;
+
     void Awake() {
         currentChapter = chapterContainer.chapter;
         currentChapter.PrepareStories();
@@ -68,8 +79,8 @@ public class StoryController : MonoBehaviour {
     Tween translationX;
     Tween scaleX;
     void SetupNextDialogueIcon() {
-        translationX = nextDialogueIcon.transform.DOLocalMoveX(7, 0.5f).SetLoops(-1, LoopType.Yoyo);
-        scaleX = nextDialogueIcon.transform.DOScaleX(0.8f, 0.5f).SetLoops(-1, LoopType.Yoyo);
+        translationX = nextDialogueIcon.transform.DOLocalMoveX(7, nextButtonAnimationDuration).SetLoops(-1, LoopType.Yoyo);
+        scaleX = nextDialogueIcon.transform.DOScaleX(0.8f, nextButtonAnimationDuration).SetLoops(-1, LoopType.Yoyo);
     }
 
     void BeginStory() {
@@ -77,6 +88,8 @@ public class StoryController : MonoBehaviour {
         gameObject.SetActive(false);
         AnimationController.Instance.BeginAnimationSequence("intro", () => {
             gameObject.SetActive(true);
+            canvasGroup.alpha = 0;
+            canvasGroup.DOFade(1, fadeDuration);
             SetTextWithCurrentDialogue();
         });
     }
@@ -85,6 +98,7 @@ public class StoryController : MonoBehaviour {
         // Assume we always start with a text dialogue
         currentChapter.Reset();
         storyControllerState = StoryControllerState.DEFAULT;
+        dialogueTextImage.SetAlpha(1);
         DisableAll();
         EnableText();
         nextTextButtonArea.enabled = true;
@@ -118,6 +132,7 @@ public class StoryController : MonoBehaviour {
         dialogueTextMesh.text = currentChapter.currentDialogueText;
         playTextCoroutine = StartCoroutine(PlayText(dialogueTextMesh.text.Length));
         nameTextMesh.text = currentChapter.currentName;
+        dialogueTextImage.sprite = actorMap[currentChapter.currentName].GetTextContainerSprite();
     }
 
     IEnumerator PlayText(int characterCount) {
@@ -138,6 +153,9 @@ public class StoryController : MonoBehaviour {
     }
 
     void SetEnd() {
+        nameTextMesh.text = "";
+        dialogueTextImage.SetAlpha(0);
+        nextDialogueIcon.SetAlpha(0);
         dialogueTextMesh.text = "[END]";
         EnableEnd();
     }
@@ -192,13 +210,22 @@ public class StoryController : MonoBehaviour {
             return;
         }
 
-
+        string oldActor = currentChapter.currentName;
         if (dialogueId != -1) {
             currentChapter.JumpTo(dialogueId);
         } else {
             currentChapter.MoveNext();
         }
-        UpdateState();
+        if (!currentChapter.currentName.Equals(oldActor)) {
+            nextTextButtonArea.enabled = false;
+            canvasGroup.DOFade(0, fadeDuration).OnComplete(() => {
+                UpdateState();
+                canvasGroup.DOFade(1, fadeDuration);
+                nextTextButtonArea.enabled = true;
+            });
+        } else {
+            UpdateState();
+        }
     }
 
     void UpdateState() {
