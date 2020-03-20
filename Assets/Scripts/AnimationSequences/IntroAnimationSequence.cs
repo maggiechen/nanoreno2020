@@ -16,6 +16,6 @@ public class IntroAnimationSequence: AnimationSequenceController {
         DOTween.To(
             () => scrollerGroup.scrollSpeedMultiplier, 
             x => scrollerGroup.scrollSpeedMultiplier = x, 
-            0.5f, duration).SetEase(Ease.InOutSine).OnComplete(() => {callback();});
+            0.5f, duration).SetEase(Ease.InOutBack).OnComplete(() => {callback();});
     }
 }
