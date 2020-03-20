@@ -4,132 +4,167 @@
             "id": 1,
             "actorname": "Pudding",
             "dialoguetext": "no no no NOOOO!!!",
-            "nextlineidsstring": 2
+            "nextlineidsstring": 2,
+            "dialoguetype": 0
         },
         {
             "id": 2,
             "actorname": "Pudding",
             "dialoguetext": "...",
-            "nextlineidsstring": 3
+            "nextlineidsstring": 3,
+            "dialoguetype": 0
         },
         {
             "id": 3,
             "actorname": "Pudding",
             "dialoguetext": "Dammit.",
-            "nextlineidsstring": 4
+            "nextlineidsstring": 4,
+            "dialoguetype": 0
         },
         {
             "id": 4,
             "actorname": "Pudding",
             "dialoguetext": "That was the last train too, or at least that's what Google maps says",
-            "nextlineidsstring": 5
+            "nextlineidsstring": 5,
+            "dialoguetype": 0
         },
         {
             "id": 5,
             "actorname": "Pudding",
             "dialoguetext": "I knew I should've left 5 songs earlier.",
-            "nextlineidsstring": 6
+            "nextlineidsstring": 6,
+            "dialoguetype": 0
         },
         {
             "id": 6,
             "actorname": "Pudding",
             "dialoguetext": "Curse you Bohemian Rhapsody for being so long!!",
-            "nextlineidsstring": 7
+            "nextlineidsstring": 7,
+            "dialoguetype": 0
         },
         {
             "id": 7,
             "actorname": "Pudding",
             "dialoguetext": "I could take a a cab I guess...",
-            "nextlineidsstring": 8
+            "nextlineidsstring": 8,
+            "dialoguetype": 0
         },
         {
             "id": 8,
             "actorname": "Pudding",
             "dialoguetext": "Urghhhhh but I live all the way at the end of the Millenium line...",
-            "nextlineidsstring": 9
+            "nextlineidsstring": 9,
+            "dialoguetype": 0
         },
         {
             "id": 9,
             "actorname": "Pudding",
             "dialoguetext": "That's gonna cost me like, at least $100. Damn, inflation's crazy",
-            "nextlineidsstring": 10
+            "nextlineidsstring": 10,
+            "dialoguetype": 0
         },
         {
             "id": 10,
             "actorname": "Pudding",
             "dialoguetext": "That's like twenty 2020 bubble teas. Or 9 trips to 2020 Frying Pan!",
-            "nextlineidsstring": 11
+            "nextlineidsstring": 11,
+            "dialoguetype": 0
         },
         {
             "id": 11,
             "actorname": "Pudding",
             "dialoguetext": "Now I've just made myself hungry...Why did dinner have to be so long ago...",
-            "nextlineidsstring": 12
+            "nextlineidsstring": 12,
+            "dialoguetype": 0
         },
         {
             "id": 12,
             "actorname": "Pudding",
             "dialoguetext": "I guess I could just stay at a hostel somewhere in Gastown, or call up one of the gu-",
-            "nextlineidsstring": 13
+            "nextlineidsstring": 13,
+            "dialoguetype": 0
         },
         {
             "id": 13,
             "actorname": "Pudding",
             "dialoguetext": "Aw yiiiissssssss",
-            "nextlineidsstring": 14
+            "nextlineidsstring": 14,
+            "dialoguetype": 0
         },
         {
             "id": 14,
             "actorname": "Pudding",
             "dialoguetext": "It's my night hehe",
-            "nextlineidsstring": 15
+            "nextlineidsstring": 15,
+            "dialoguetype": 0
         },
         {
             "id": 15,
             "actorname": "Pudding",
             "dialoguetext": "I'm sleeping in my own bed tonight. Blessed",
-            "nextlineidsstring": 16
+            "nextlineidsstring": 16,
+            "dialoguetype": 0
         },
         {
             "id": 16,
             "actorname": "Pudding",
             "dialoguetext": "And there was even one seat left open",
-            "nextlineidsstring": 17
+            "nextlineidsstring": 17,
+            "dialoguetype": 0
         },
         {
             "id": 17,
             "actorname": "Pudding",
             "dialoguetext": "This goat next to me...A business suit and a balloon. Maybe it's their birthday?",
-            "nextlineidsstring": "18, 21"
+            "nextlineidsstring": "18, 21",
+            "dialoguetype": 0
         },
         {
             "id": 18,
             "actorname": "Pudding",
             "dialoguetext": "Cool balloon, dude.",
-            "nextlineidsstring": 19
+            "nextlineidsstring": 19,
+            "dialoguetype": 0
         },
         {
             "id": 19,
             "actorname": "Baphomet",
             "dialoguetext": "I hate balloons.",
-            "nextlineidsstring": 20
+            "nextlineidsstring": 20,
+            "dialoguetype": 0
         },
         {
             "id": 20,
             "actorname": "Pudding",
-            "dialoguetext": "Oh."
+            "dialoguetext": "Oh.",
+            "nextlineidsstring": 23,
+            "dialoguetype": 0
         },
         {
             "id": 21,
             "actorname": "Pudding",
             "dialoguetext": "Hey! Happy birthday!",
-            "nextlineidsstring": 22
+            "nextlineidsstring": 22,
+            "dialoguetype": 0
         },
         {
             "id": 22,
             "actorname": "Baphomet",
             "dialoguetext": "It's not my birthday",
-            "nextlineidsstring": 20
+            "nextlineidsstring": 20,
+            "dialoguetype": 0
+        },
+        {
+            "id": 23,
+            "dialoguetext": "trigger_hell_transition",
+            "nextlineidsstring": 24,
+            "dialoguetype": 1
+        },
+        {
+            "id": 24,
+            "actorname": "Pudding",
+            "dialoguetext": "Where are we?!",
+            "dialoguetype": 0
         }
     ],
     "changeList": [

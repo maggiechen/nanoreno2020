@@ -55,3 +55,5 @@ MonoBehaviour:
       expressionSprite: {fileID: 21300000, guid: 22d151488e5eb7d45bebea0618b044a9,
         type: 3}
     bodySprite: {fileID: 21300000, guid: fe3534729723be14283cb80087993474, type: 3}
+  textContainerSprite: {fileID: 21300000, guid: b7ec31ec446f8b04d970b47ee9895aea,
+    type: 3}

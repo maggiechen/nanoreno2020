@@ -60,12 +60,17 @@ public class Chapter {
 
     void UpdateState() {
         Debug.Log($"Currently on dialogue {currentLine.id}");
-        if (currentLine.nextLineIds.Count > 1) {
-            state = DialogueState.PRESENTING_CHOICE;
-        } else if (currentLine.nextLineIds.Count == 1) {
-            state = DialogueState.TEXT;            
-        } else {
-            state = DialogueState.ENDING;
+        
+        if (currentLine.dialogueType == DialogueType.CONVERSATION) {
+            if (currentLine.nextLineIds.Count > 1) {
+                state = DialogueState.PRESENTING_CHOICE;
+            } else if (currentLine.nextLineIds.Count == 1) {
+                state = DialogueState.TEXT;            
+            } else {
+                state = DialogueState.ENDING;
+            }
+        } else if (currentLine.dialogueType == DialogueType.ANIMATION_TRIGGER) {
+            state = DialogueState.ANIMATION;
         }
     }
 
@@ -86,6 +91,7 @@ public class Chapter {
         } else {
             Debug.LogError("End of story");
         }
+        Debug.LogError(currentLine);
 
         UpdateState();
     }

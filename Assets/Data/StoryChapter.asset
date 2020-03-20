@@ -18,6 +18,7 @@ MonoBehaviour:
       actorName: 
       dialogueText: 
       nextLineIdsString: 
+      dialogueType: 0
       nextLineIds: 
       changeList: []
     choices: []
@@ -27,6 +28,7 @@ MonoBehaviour:
       actorName: Pudding
       dialogueText: no no no NOOOO!!!
       nextLineIdsString: 2
+      dialogueType: 0
       nextLineIds: 02000000
       changeList:
       - dialogueId: 1
@@ -38,12 +40,14 @@ MonoBehaviour:
       actorName: Pudding
       dialogueText: ...
       nextLineIdsString: 3
+      dialogueType: 0
       nextLineIds: 03000000
       changeList: []
     - id: 3
       actorName: Pudding
       dialogueText: Dammit.
       nextLineIdsString: 4
+      dialogueType: 0
       nextLineIds: 04000000
       changeList: []
     - id: 4
@@ -51,6 +55,7 @@ MonoBehaviour:
       dialogueText: That was the last train too, or at least that's what Google maps
         says
       nextLineIdsString: 5
+      dialogueType: 0
       nextLineIds: 05000000
       changeList:
       - dialogueId: 4
@@ -62,30 +67,35 @@ MonoBehaviour:
       actorName: Pudding
       dialogueText: I knew I should've left 5 songs earlier.
       nextLineIdsString: 6
+      dialogueType: 0
       nextLineIds: 06000000
       changeList: []
     - id: 6
       actorName: Pudding
       dialogueText: Curse you Bohemian Rhapsody for being so long!!
       nextLineIdsString: 7
+      dialogueType: 0
       nextLineIds: 07000000
       changeList: []
     - id: 7
       actorName: Pudding
       dialogueText: I could take a a cab I guess...
       nextLineIdsString: 8
+      dialogueType: 0
       nextLineIds: 08000000
       changeList: []
     - id: 8
       actorName: Pudding
       dialogueText: Urghhhhh but I live all the way at the end of the Millenium line...
       nextLineIdsString: 9
+      dialogueType: 0
       nextLineIds: 09000000
       changeList: []
     - id: 9
       actorName: Pudding
       dialogueText: That's gonna cost me like, at least $100. Damn, inflation's crazy
       nextLineIdsString: 10
+      dialogueType: 0
       nextLineIds: 0a000000
       changeList: []
     - id: 10
@@ -93,6 +103,7 @@ MonoBehaviour:
       dialogueText: That's like twenty 2020 bubble teas. Or 9 trips to 2020 Frying
         Pan!
       nextLineIdsString: 11
+      dialogueType: 0
       nextLineIds: 0b000000
       changeList: []
     - id: 11
@@ -100,6 +111,7 @@ MonoBehaviour:
       dialogueText: Now I've just made myself hungry...Why did dinner have to be
         so long ago...
       nextLineIdsString: 12
+      dialogueType: 0
       nextLineIds: 0c000000
       changeList: []
     - id: 12
@@ -107,30 +119,35 @@ MonoBehaviour:
       dialogueText: I guess I could just stay at a hostel somewhere in Gastown, or
         call up one of the gu-
       nextLineIdsString: 13
+      dialogueType: 0
       nextLineIds: 0d000000
       changeList: []
     - id: 13
       actorName: Pudding
       dialogueText: Aw yiiiissssssss
       nextLineIdsString: 14
+      dialogueType: 0
       nextLineIds: 0e000000
       changeList: []
     - id: 14
       actorName: Pudding
       dialogueText: It's my night hehe
       nextLineIdsString: 15
+      dialogueType: 0
       nextLineIds: 0f000000
       changeList: []
     - id: 15
       actorName: Pudding
       dialogueText: I'm sleeping in my own bed tonight. Blessed
       nextLineIdsString: 16
+      dialogueType: 0
       nextLineIds: 10000000
       changeList: []
     - id: 16
       actorName: Pudding
       dialogueText: And there was even one seat left open
       nextLineIdsString: 17
+      dialogueType: 0
       nextLineIds: 11000000
       changeList: []
     - id: 17
@@ -138,36 +155,56 @@ MonoBehaviour:
       dialogueText: This goat next to me...A business suit and a balloon. Maybe it's
         their birthday?
       nextLineIdsString: 18, 21
+      dialogueType: 0
       nextLineIds: 1200000015000000
       changeList: []
     - id: 18
       actorName: Pudding
       dialogueText: Cool balloon, dude.
       nextLineIdsString: 19
+      dialogueType: 0
       nextLineIds: 13000000
       changeList: []
     - id: 19
       actorName: Baphomet
       dialogueText: I hate balloons.
       nextLineIdsString: 20
+      dialogueType: 0
       nextLineIds: 14000000
       changeList: []
     - id: 20
       actorName: Pudding
       dialogueText: Oh.
-      nextLineIdsString: 
-      nextLineIds: 
+      nextLineIdsString: 23
+      dialogueType: 0
+      nextLineIds: 17000000
       changeList: []
     - id: 21
       actorName: Pudding
       dialogueText: Hey! Happy birthday!
       nextLineIdsString: 22
+      dialogueType: 0
       nextLineIds: 16000000
       changeList: []
     - id: 22
       actorName: Baphomet
       dialogueText: It's not my birthday
       nextLineIdsString: 20
+      dialogueType: 0
       nextLineIds: 14000000
+      changeList: []
+    - id: 23
+      actorName: 
+      dialogueText: trigger_hell_transition
+      nextLineIdsString: 24
+      dialogueType: 1
+      nextLineIds: 18000000
+      changeList: []
+    - id: 24
+      actorName: Pudding
+      dialogueText: Where are we?!
+      nextLineIdsString: 
+      dialogueType: 0
+      nextLineIds: 
       changeList: []
     changeList: []

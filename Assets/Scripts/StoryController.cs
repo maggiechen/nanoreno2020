@@ -102,6 +102,7 @@ public class StoryController : MonoBehaviour {
         DisableAll();
         EnableText();
         nextTextButtonArea.enabled = true;
+        endOnNextClick = false;
         ApplyChangesOfCurrentDialogue();
     }
 
@@ -202,11 +203,17 @@ public class StoryController : MonoBehaviour {
     }
 
     public void OnDialogueClicked(int dialogueId=-1) {
+
         if (PlayingText) {
             StopCoroutine(playTextCoroutine);
             PlayingText = false;
             dialogueTextMesh.maxVisibleCharacters = currentChapter.currentDialogueText.Length;
             dialogueTextMesh.text = currentChapter.currentDialogueText;
+            return;
+        }
+
+        if (endOnNextClick) {
+            End();
             return;
         }
 
@@ -216,19 +223,48 @@ public class StoryController : MonoBehaviour {
         } else {
             currentChapter.MoveNext();
         }
+
+        if (currentChapter.state == DialogueState.ANIMATION) {
+            HandControlToAnimationController();
+            return;
+        }
+
         if (!currentChapter.currentName.Equals(oldActor)) {
             nextTextButtonArea.enabled = false;
             canvasGroup.DOFade(0, fadeDuration).OnComplete(() => {
-                UpdateState();
+                UpdateStoryController();
                 canvasGroup.DOFade(1, fadeDuration);
                 nextTextButtonArea.enabled = true;
             });
         } else {
-            UpdateState();
+            UpdateStoryController();
         }
     }
 
-    void UpdateState() {
+    void HandControlToAnimationController() {
+        nextTextButtonArea.enabled = false;
+        canvasGroup.DOFade(0, fadeDuration).OnComplete(() => {
+            nextTextButtonArea.enabled = true;
+            gameObject.SetActive(false);
+            AnimationController.Instance.BeginAnimationSequence(currentChapter.currentLine.dialogueText, () => {
+                gameObject.SetActive(true);
+                canvasGroup.alpha = 0;
+                OnDialogueClicked();
+                canvasGroup.DOFade(1, fadeDuration);
+            });
+
+        });
+    }
+
+    void End() {
+        DisableAll();
+        EnableText();
+        SetEnd();
+        nextTextButtonArea.enabled = false;
+    }
+
+    bool endOnNextClick = false;
+    void UpdateStoryController() {
         if (storyControllerState == StoryControllerState.CHOOSING) {
             DisableAll();
             EnableChoice();
@@ -246,8 +282,8 @@ public class StoryController : MonoBehaviour {
         } else if (currentChapter.state == DialogueState.ENDING) {
             DisableAll();
             EnableText();
-            SetEnd();
-            nextTextButtonArea.enabled = false;
+            SetTextWithCurrentDialogue();
+            endOnNextClick = true;
         } else {
             throw new Exception($"Unknown dialogue state {currentChapter.state}");
         }
