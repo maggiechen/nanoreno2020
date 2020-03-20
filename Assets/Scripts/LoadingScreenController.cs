@@ -9,10 +9,22 @@ public class LoadingScreenController : MonoBehaviour {
     [SerializeField]
     RectTransform creditRectTransform = null;
 
+    [SerializeField]
+    TrainController trainController = null;
+
+    [SerializeField]
+    SpeechBubbleController speechBubbleController = null;
+
     public void OnStartClicked() {
-        SceneTransitionController.Instance.StartSceneTransition(() => {
-            SceneManager.LoadScene("Main");
+        speechBubbleController.StopSayingThings().OnComplete(() => {
+            speechBubbleController.SayMessage("Oh hey train's here!");
         });
+        trainController.PullIntoStation(() => {
+            SceneTransitionController.Instance.StartSceneTransition(() => {
+                SceneManager.LoadScene("Main");
+            });
+        });
+
     }
 
     public void OnCreditsClicked() {
