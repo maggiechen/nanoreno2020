@@ -32,7 +32,8 @@ public class LoadingScreenController : MonoBehaviour {
         tapOutCanvasGroup.blocksRaycasts = true;
         tapOutCanvasGroup.DOFade(1, 0.3f);
         float height = creditRectTransform.GetHeight();
-        creditRectTransform.DOMoveY(height/2, 0.2f);
+        
+        creditRectTransform.DOAnchorPosY(height/2, 0.2f);
     }
 
     public void OnTapOutClicked() {
@@ -40,6 +41,6 @@ public class LoadingScreenController : MonoBehaviour {
         tapOutCanvasGroup.blocksRaycasts = false;
         tapOutCanvasGroup.DOFade(0, 0.2f);
         float height = creditRectTransform.GetHeight();
-        creditRectTransform.DOMoveY(-height/2, 0.2f);
+        creditRectTransform.DOAnchorPosY(-height/2, 0.2f);
     }
 }

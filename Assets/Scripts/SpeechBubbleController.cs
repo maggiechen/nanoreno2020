@@ -49,7 +49,7 @@ public class SpeechBubbleController : MonoBehaviour {
         });
     }
 
-    IEnumerator RevealText(int characterCount, bool invokeNext) {    
+    IEnumerator RevealText(int characterCount, bool invokeNext = true) {    
         while (textMesh.maxVisibleCharacters < characterCount) {
             textMesh.maxVisibleCharacters++;
             yield return new WaitForSeconds(StoryController.TIME_BETWEEN_LETTER_REVEALS);
@@ -59,8 +59,13 @@ public class SpeechBubbleController : MonoBehaviour {
         transform.DOScale(Vector3.zero, animDuration).SetEase(Ease.InExpo).OnComplete(() => {
             textMesh.text = "";
             if (invokeNext) {
-                Invoke("SayThings", 5);
+                StartCoroutine(WaitAndCall(5));
             }
         });
+    }
+
+    IEnumerator WaitAndCall(float seconds) {
+        yield return new WaitForSeconds(seconds);
+        SayThings();
     }
 }
