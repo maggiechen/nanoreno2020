@@ -235,3 +235,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a454d5047f97497ea4013406fb321e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trainInside: {fileID: 1767200028}
+  trainOutside: {fileID: 1756179751}

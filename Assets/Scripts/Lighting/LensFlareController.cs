@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering.Universal;
-
+using DG.Tweening;
 public class LensFlareController : MonoBehaviour {
     [SerializeField]
     private Transform sunTransform = null;
@@ -10,6 +10,7 @@ public class LensFlareController : MonoBehaviour {
     private Transform cameraTransform = null;
     [SerializeField]
     private List<Light2D> lights = null;
+    List<float> lightIntensities = new List<float>();
 
     private List<Vector3> originalLightDisplacements = new List<Vector3>();
     private float originalSunCameraDistance;
@@ -17,6 +18,7 @@ public class LensFlareController : MonoBehaviour {
     void Awake() {
         foreach (Light2D light in lights) {
             originalLightDisplacements.Add(light.transform.localPosition);
+            lightIntensities.Add(light.intensity);
         }
         Vector3 cameraToSun = sunTransform.position - cameraTransform.position;
         cameraToSun.z = 0;
@@ -41,6 +43,12 @@ public class LensFlareController : MonoBehaviour {
         transform.rotation = Quaternion.AngleAxis(rotation * rotationSign, Vector3.forward);
         for (int i = 0; i < lights.Count; i++) {
             lights[i].transform.localPosition = originalLightDisplacements[i] * displacementMultiplier;
+        }
+    }
+
+    public void FadeLensFlare(float duration) {
+        foreach (Light2D light in lights) {
+            light.DOFade(0, duration).SetEase(Ease.InOutElastic);
         }
     }
 }

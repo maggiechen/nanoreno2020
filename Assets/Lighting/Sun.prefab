@@ -154,6 +154,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7499700901660226032}
   - component: {fileID: 357063851443390045}
+  - component: {fileID: 5195799393732995198}
   m_Layer: 0
   m_Name: Sun
   m_TagString: Untagged
@@ -195,6 +196,23 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &5195799393732995198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7792750072335720241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04063093249e2e049b717bd39db7ab9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lensFlare: {fileID: 2890288554021682387}
+  lights:
+  - {fileID: 5081076359279571425}
+  - {fileID: 5081076360107623643}
+  - {fileID: 2014530468250315111}
 --- !u!1 &8159124532318283535
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,3 +451,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5995469946286448922}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2890288554021682387 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8874464041963740617, guid: 74cb50f61a4877946ab93c9a501ac254,
+    type: 3}
+  m_PrefabInstance: {fileID: 5995469946286448922}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 812032086c152c443858079170a0d804, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
