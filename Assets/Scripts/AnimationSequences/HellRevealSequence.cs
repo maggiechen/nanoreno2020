@@ -5,18 +5,17 @@ using UnityEngine.Experimental.Rendering.Universal;
 using DG.Tweening;
 public class HellRevealSequence : AnimationSequenceController {
     [SerializeField]
-    float outsideLightIntensity;
+    float outsideLightIntensity = 1;
     [SerializeField]
-    Color outsideColor;
+    Color outsideColor = Color.white;
     [SerializeField]
-    Light2D outsideLight;
+    Light2D outsideLight = null;
     [SerializeField]
-    float insideLightIntensity;
+    float insideLightIntensity = 1;
     [SerializeField]
-    Color insideColor;
+    Color insideColor = Color.white;
     [SerializeField]
-    Light2D insideLight;
-
+    Light2D insideLight = null;
 
 
     public override void Prep() {

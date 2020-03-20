@@ -614,7 +614,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 3607567941914459001}
+  m_TargetGraphic: {fileID: 3977389164117436473}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -883,6 +883,7 @@ MonoBehaviour:
       actorName: 
       dialogueText: 
       nextLineIdsString: 
+      dialogueType: 0
       nextLineIds: 
       changeList: []
     choices: []
@@ -1415,12 +1416,12 @@ PrefabInstance:
     - target: {fileID: 3329748291177230351, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 309.87485
       objectReference: {fileID: 0}
     - target: {fileID: 3329748291177230351, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 619.7497
       objectReference: {fileID: 0}
     - target: {fileID: 3329748291177230351, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
@@ -1651,12 +1652,12 @@ PrefabInstance:
     - target: {fileID: 8864391713188351229, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 309.87485
       objectReference: {fileID: 0}
     - target: {fileID: 8864391713188351229, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 619.7497
       objectReference: {fileID: 0}
     - target: {fileID: 8864391713188351229, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}

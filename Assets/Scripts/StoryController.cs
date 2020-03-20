@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class StoryController : MonoBehaviour {
+    public static float TIME_BETWEEN_LETTER_REVEALS = 0.05f;
     enum StoryControllerState {
         DEFAULT, // default is displaying text
         CHOOSING,
@@ -126,7 +127,7 @@ public class StoryController : MonoBehaviour {
             }
         }
     }
-    float TIME_BETWEEN_LETTER_REVEALS = 0.05f;
+
     Coroutine playTextCoroutine = null;
     void SetTextWithCurrentDialogue() {
         PlayingText = true;
