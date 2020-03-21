@@ -19,5 +19,20 @@ Animation library
 Calligraphr (https://www.calligraphr.com/)
 Custom font creator used to create the Clear.ttf font.
 
-FontForge https://fontforge.org/en-US/
+FontForge (https://fontforge.org/en-US/)
 Font editor
+
+ZapSplat (https://www.zapsplat.com/)
+Train sound effects
+
+"Graveyard Shift" Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 4.0 License
+http://creativecommons.org/licenses/by/4.0/
+
+"Samba Isobel" Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 4.0 License
+http://creativecommons.org/licenses/by/4.0/
+
+"Bossa Antigua" Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 4.0 License
+http://creativecommons.org/licenses/by/4.0/

@@ -23,6 +23,9 @@ public class HellTransitionSequence: AnimationSequenceController {
     private Light2D outsideLight = null;
     [SerializeField]
     private Light2D insideLight = null;
+
+    [SerializeField]
+    private AudioSource audioSource = null;
     
     public override void Prep() {
     }
@@ -31,6 +34,7 @@ public class HellTransitionSequence: AnimationSequenceController {
         float trainDuration = 1.3f;
         float sunDuration = 2f;
         sunController.FadeSun(sunDuration);
+        audioSource.DOFade(0, 3f);
         scrollerGroup.TweenToSpeed(0f, Ease.OutBack, trainDuration, () => {OnTrainStopped(callback);});
         
         // DOTween.To(

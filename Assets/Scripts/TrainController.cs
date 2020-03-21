@@ -7,8 +7,14 @@ public class TrainController : MonoBehaviour {
     Transform leftDoor = null;
     [SerializeField]
     Transform rightDoor = null;
+    [SerializeField]
+    AudioSource audioSource = null;
+    
     Sequence OpenDoors() {
+        audioSource.Play();
+
         Sequence sequence = DOTween.Sequence();
+        sequence.AppendInterval(0.7f);
         sequence.Append(leftDoor.DOMoveX(0, 1f).SetEase(Ease.OutSine));
         sequence.Join(rightDoor.DOMoveX(0, 1f).SetEase(Ease.OutSine));
         return sequence;
