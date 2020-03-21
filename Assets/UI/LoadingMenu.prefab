@@ -196,6 +196,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tapOutCanvasGroup: {fileID: 5878724526992289474}
   creditRectTransform: {fileID: 5878724525042407324}
+  trainController: {fileID: 0}
+  speechBubbleController: {fileID: 4231917621708444901}
 --- !u!1 &5878724525795192412
 GameObject:
   m_ObjectHideFlags: 0
@@ -945,8 +947,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -248.9, y: 63.8}
-  m_SizeDelta: {x: 448, y: 100}
+  m_AnchoredPosition: {x: -248.8999, y: 63.80005}
+  m_SizeDelta: {x: 347.7, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5878724527019561066
 CanvasRenderer:
@@ -1018,7 +1020,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 233.02518, y: 40.519028}
+  m_AnchoredPosition: {x: 183.5, y: 68.2}
   m_SizeDelta: {x: 400, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5878724527036282381
@@ -1047,7 +1049,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Waterfront Station
+  m_text: 'Midnight Train:
+
+    Going Anywhere'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dd800800e392d814e86a52f1021191cb, type: 2}
   m_sharedMaterial: {fileID: 4779566669217658948, guid: dd800800e392d814e86a52f1021191cb,
@@ -1076,14 +1080,14 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 56
-  m_fontSizeBase: 56
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 33
-  m_textAlignment: 257
+  m_textAlignment: 258
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -1093,7 +1097,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 16
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -1117,12 +1121,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 5878724527036282380}
-    characterCount: 18
+    characterCount: 30
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 2
+    spaceCount: 3
+    wordCount: 4
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -1147,12 +1151,74 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5878724525635780111}
     m_Modifications:
+    - target: {fileID: 35237782, guid: 7c7a8a99c03ef794d808cfc1e9030ad4, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 35237782, guid: 7c7a8a99c03ef794d808cfc1e9030ad4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1011247748, guid: 7c7a8a99c03ef794d808cfc1e9030ad4, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1011247748, guid: 7c7a8a99c03ef794d808cfc1e9030ad4, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1011247748, guid: 7c7a8a99c03ef794d808cfc1e9030ad4, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1011247748, guid: 7c7a8a99c03ef794d808cfc1e9030ad4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026538775, guid: 7c7a8a99c03ef794d808cfc1e9030ad4, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026538775, guid: 7c7a8a99c03ef794d808cfc1e9030ad4, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026538775, guid: 7c7a8a99c03ef794d808cfc1e9030ad4, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1839059178, guid: 7c7a8a99c03ef794d808cfc1e9030ad4, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1839059178, guid: 7c7a8a99c03ef794d808cfc1e9030ad4, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1871827514, guid: 7c7a8a99c03ef794d808cfc1e9030ad4, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1871827514, guid: 7c7a8a99c03ef794d808cfc1e9030ad4, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1430916712812456568, guid: 7c7a8a99c03ef794d808cfc1e9030ad4,
         type: 3}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1430916712812456568, guid: 7c7a8a99c03ef794d808cfc1e9030ad4,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4577942325018854281, guid: 7c7a8a99c03ef794d808cfc1e9030ad4,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4577942325018854281, guid: 7c7a8a99c03ef794d808cfc1e9030ad4,
         type: 3}
       propertyPath: m_sharedMaterial
       value: 
@@ -1400,3 +1466,15 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 8435644214316174281}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4231917621708444901 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5740865905043234604, guid: 1735854a0f0a82242a29537d6684474e,
+    type: 3}
+  m_PrefabInstance: {fileID: 8435644214316174281}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2f224feef62d2428f0cee4863f0ae4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
