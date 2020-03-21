@@ -139,10 +139,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-    in culpa qui officia deserunt mollit
+    quis nostrud exercitation ullamco laboris
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dd800800e392d814e86a52f1021191cb, type: 2}
   m_sharedMaterial: {fileID: 4779566669217658948, guid: dd800800e392d814e86a52f1021191cb,
@@ -171,8 +168,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -188,7 +185,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 132
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -212,12 +209,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 2088495197125541524}
-    characterCount: 424
+    characterCount: 190
     spriteCount: 0
-    spaceCount: 64
-    wordCount: 65
+    spaceCount: 28
+    wordCount: 29
     linkCount: 0
-    lineCount: 4
+    lineCount: 3
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -671,7 +668,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 30}
-  m_SizeDelta: {x: -120, y: 120}
+  m_SizeDelta: {x: -200, y: 120}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &475233061307822195
 CanvasRenderer:
@@ -1411,27 +1408,27 @@ PrefabInstance:
     - target: {fileID: 2298443938669611998, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_firstOverflowCharacterIndex
-      value: 78
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3329748291177230351, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 309.87485
+      value: 270
       objectReference: {fileID: 0}
     - target: {fileID: 3329748291177230351, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 619.7497
+      value: 540
       objectReference: {fileID: 0}
     - target: {fileID: 3329748291177230351, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3329748291177230351, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3329748291177230351, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
@@ -1517,7 +1514,7 @@ PrefabInstance:
     - target: {fileID: 5392136639153338156, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_firstOverflowCharacterIndex
-      value: 78
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7418189484482709470, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
@@ -1652,12 +1649,12 @@ PrefabInstance:
     - target: {fileID: 8864391713188351229, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 309.87485
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8864391713188351229, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 619.7497
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8864391713188351229, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}

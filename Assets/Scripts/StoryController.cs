@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class StoryController : MonoBehaviour {
-    public static float TIME_BETWEEN_LETTER_REVEALS = 0.05f;
+    public static float TIME_BETWEEN_LETTER_REVEALS = 0.03f;
     enum StoryControllerState {
         DEFAULT, // default is displaying text
         CHOOSING,
@@ -152,6 +152,7 @@ public class StoryController : MonoBehaviour {
             nextTextButtonArea.enabled = true;
             OnDialogueClicked(chosenId);
         });
+        dialogueTextImage.sprite = actorMap[currentChapter.choices[0].actorName].GetTextContainerSprite();
     }
 
     void SetEnd() {

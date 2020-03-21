@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
 public class LoadingScreenController : MonoBehaviour {
@@ -15,7 +16,11 @@ public class LoadingScreenController : MonoBehaviour {
     [SerializeField]
     SpeechBubbleController speechBubbleController = null;
 
+    [SerializeField]
+    Button startButton = null;
+
     public void OnStartClicked() {
+        startButton.enabled = false;
         speechBubbleController.StopSayingThings().OnComplete(() => {
             speechBubbleController.SayMessage("Oh hey train's here!");
         });

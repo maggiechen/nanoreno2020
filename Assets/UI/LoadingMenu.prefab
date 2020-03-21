@@ -198,6 +198,7 @@ MonoBehaviour:
   creditRectTransform: {fileID: 5878724525042407324}
   trainController: {fileID: 0}
   speechBubbleController: {fileID: 4231917621708444901}
+  startButton: {fileID: 5878724525795192409}
 --- !u!1 &5878724525795192412
 GameObject:
   m_ObjectHideFlags: 0
@@ -1222,6 +1223,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_sharedMaterial
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6175948654538686016, guid: 7c7a8a99c03ef794d808cfc1e9030ad4,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 6503161238024947125, guid: 7c7a8a99c03ef794d808cfc1e9030ad4,
         type: 3}

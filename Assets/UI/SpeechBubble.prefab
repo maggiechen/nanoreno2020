@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13.3, y: -22}
+  m_AnchoredPosition: {x: 13.3, y: -11.29}
   m_SizeDelta: {x: 200, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5964942750259375148
@@ -63,7 +63,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This next train better come <i>soon</i>...
+  m_text: I guess I could just stay at a hostel somewhere in Gastown, or call up
+    one of the guys.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dd800800e392d814e86a52f1021191cb, type: 2}
   m_sharedMaterial: {fileID: 4779566669217658948, guid: dd800800e392d814e86a52f1021191cb,
@@ -92,8 +93,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -109,7 +110,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 28
+  m_firstOverflowCharacterIndex: 82
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -133,12 +134,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 16.03149, w: -69.003174}
   m_textInfo:
     textComponent: {fileID: 5621944689926249436}
-    characterCount: 35
+    characterCount: 87
     spriteCount: 0
-    spaceCount: 5
-    wordCount: 6
+    spaceCount: 18
+    wordCount: 19
     linkCount: 0
-    lineCount: 3
+    lineCount: 5
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -246,7 +247,12 @@ MonoBehaviour:
   textMesh: {fileID: 5621944689926249436}
   speechBubble: {fileID: 3394490424534841831}
   flavourTexts:
-  - This next train better come <i>soon</i>...
-  - My head hurts
-  - Did I leave the oven on?
-  - Gah, it's getting late...
+  - Can't believe I missed that train. Damn.
+  - 'I knew I should''ve left 5 songs earlier. '
+  - 'Curse you Bohemian Rhapsody for being so long!! '
+  - 'Urghhhhh but I live all the way at the end of the Millenium line... '
+  - 'That''s gonna cost me like, at least $100. Damn, inflation''s crazy '
+  - 'That''s like twenty 2020 bubble teas. Or 9 trips to 2020 Frying Pan! '
+  - 'Now I''ve just made myself hungry...Why did dinner have to be so long ago... '
+  - I guess I could just stay at a hostel somewhere in Gastown, or call up one of
+    the guys.

@@ -42,7 +42,7 @@ public class SpeechBubbleController : MonoBehaviour {
 
     public Tween StopSayingThings() {
         if (revealTextCoroutine != null) {
-            StopCoroutine(revealTextCoroutine);
+            StopAllCoroutines();
         }
         return transform.DOScale(Vector3.zero, animDuration).SetEase(Ease.InExpo).OnComplete(() => {
             textMesh.text = "";
@@ -59,7 +59,7 @@ public class SpeechBubbleController : MonoBehaviour {
         transform.DOScale(Vector3.zero, animDuration).SetEase(Ease.InExpo).OnComplete(() => {
             textMesh.text = "";
             if (invokeNext) {
-                StartCoroutine(WaitAndCall(5));
+                StartCoroutine(WaitAndCall(2));
             }
         });
     }

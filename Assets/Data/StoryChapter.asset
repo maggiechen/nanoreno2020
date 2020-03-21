@@ -26,7 +26,7 @@ MonoBehaviour:
     dialogueLines:
     - id: 1
       actorName: Pudding
-      dialogueText: no no no NOOOO!!!
+      dialogueText: ...
       nextLineIdsString: 2
       dialogueType: 0
       nextLineIds: 02000000
@@ -39,21 +39,20 @@ MonoBehaviour:
     - id: 2
       actorName: Pudding
       dialogueText: ...
-      nextLineIdsString: 3
+      nextLineIdsString: 13
       dialogueType: 0
-      nextLineIds: 03000000
+      nextLineIds: 0d000000
       changeList: []
     - id: 3
       actorName: Pudding
-      dialogueText: Dammit.
+      dialogueText: 
       nextLineIdsString: 4
       dialogueType: 0
       nextLineIds: 04000000
       changeList: []
     - id: 4
       actorName: Pudding
-      dialogueText: That was the last train too, or at least that's what Google maps
-        says
+      dialogueText: 
       nextLineIdsString: 5
       dialogueType: 0
       nextLineIds: 05000000
@@ -65,87 +64,84 @@ MonoBehaviour:
         expressionKey: blush
     - id: 5
       actorName: Pudding
-      dialogueText: I knew I should've left 5 songs earlier.
+      dialogueText: 
       nextLineIdsString: 6
       dialogueType: 0
       nextLineIds: 06000000
       changeList: []
     - id: 6
       actorName: Pudding
-      dialogueText: Curse you Bohemian Rhapsody for being so long!!
+      dialogueText: 
       nextLineIdsString: 7
       dialogueType: 0
       nextLineIds: 07000000
       changeList: []
     - id: 7
       actorName: Pudding
-      dialogueText: I could take a a cab I guess...
+      dialogueText: 
       nextLineIdsString: 8
       dialogueType: 0
       nextLineIds: 08000000
       changeList: []
     - id: 8
       actorName: Pudding
-      dialogueText: Urghhhhh but I live all the way at the end of the Millenium line...
+      dialogueText: 
       nextLineIdsString: 9
       dialogueType: 0
       nextLineIds: 09000000
       changeList: []
     - id: 9
       actorName: Pudding
-      dialogueText: That's gonna cost me like, at least $100. Damn, inflation's crazy
+      dialogueText: 
       nextLineIdsString: 10
       dialogueType: 0
       nextLineIds: 0a000000
       changeList: []
     - id: 10
       actorName: Pudding
-      dialogueText: That's like twenty 2020 bubble teas. Or 9 trips to 2020 Frying
-        Pan!
+      dialogueText: 
       nextLineIdsString: 11
       dialogueType: 0
       nextLineIds: 0b000000
       changeList: []
     - id: 11
       actorName: Pudding
-      dialogueText: Now I've just made myself hungry...Why did dinner have to be
-        so long ago...
+      dialogueText: 
       nextLineIdsString: 12
       dialogueType: 0
       nextLineIds: 0c000000
       changeList: []
     - id: 12
       actorName: Pudding
-      dialogueText: I guess I could just stay at a hostel somewhere in Gastown, or
-        call up one of the gu-
+      dialogueText: 
       nextLineIdsString: 13
       dialogueType: 0
       nextLineIds: 0d000000
       changeList: []
     - id: 13
       actorName: Pudding
-      dialogueText: Aw yiiiissssssss
+      dialogueText: I'm sure lucky I caught this one.
       nextLineIdsString: 14
       dialogueType: 0
       nextLineIds: 0e000000
       changeList: []
     - id: 14
       actorName: Pudding
-      dialogueText: It's my night hehe
+      dialogueText: Thought I'd have to go find a hotel or something.
       nextLineIdsString: 15
       dialogueType: 0
       nextLineIds: 0f000000
       changeList: []
     - id: 15
       actorName: Pudding
-      dialogueText: I'm sleeping in my own bed tonight. Blessed
+      dialogueText: I'm sleeping in my own bed tonight. #blessed
       nextLineIdsString: 16
       dialogueType: 0
       nextLineIds: 10000000
       changeList: []
     - id: 16
       actorName: Pudding
-      dialogueText: And there was even one seat left open
+      dialogueText: Hm...
       nextLineIdsString: 17
       dialogueType: 0
       nextLineIds: 11000000
@@ -154,9 +150,9 @@ MonoBehaviour:
       actorName: Pudding
       dialogueText: This goat next to me...A business suit and a balloon. Maybe it's
         their birthday?
-      nextLineIdsString: 18, 21
+      nextLineIdsString: 18, 27
       dialogueType: 0
-      nextLineIds: 1200000015000000
+      nextLineIds: 120000001b000000
       changeList: []
     - id: 18
       actorName: Pudding
@@ -167,61 +163,436 @@ MonoBehaviour:
       changeList: []
     - id: 19
       actorName: Baphomet
-      dialogueText: I hate balloons.
+      dialogueText: "Thanks bahaha. A lot of people have been assuming it\u2019s
+        my birthday."
       nextLineIdsString: 20
       dialogueType: 0
       nextLineIds: 14000000
       changeList: []
     - id: 20
       actorName: Pudding
-      dialogueText: Oh.
-      nextLineIdsString: 23
+      dialogueText: "<i>*It did cross my mind\u2026*</i>"
+      nextLineIdsString: 21
       dialogueType: 0
-      nextLineIds: 17000000
+      nextLineIds: 15000000
       changeList: []
     - id: 21
       actorName: Pudding
-      dialogueText: Hey! Happy birthday!
+      dialogueText: "Oh really? You don\u2019t say?"
       nextLineIdsString: 22
       dialogueType: 0
       nextLineIds: 16000000
       changeList: []
     - id: 22
       actorName: Baphomet
-      dialogueText: It's not my birthday
-      nextLineIdsString: 20
+      dialogueText: "The truth is\u2026 Well, I actually have a date tonight."
+      nextLineIdsString: 23
       dialogueType: 0
-      nextLineIds: 14000000
+      nextLineIds: 17000000
       changeList: []
     - id: 23
-      actorName: 
-      dialogueText: trigger_hell_transition
+      actorName: Pudding
+      dialogueText: "Ooh is it your date\u2019s birtday?"
       nextLineIdsString: 24
-      dialogueType: 1
+      dialogueType: 0
       nextLineIds: 18000000
       changeList: []
     - id: 24
-      actorName: Pudding
-      dialogueText: Where are we?!
-      nextLineIdsString: 25
+      actorName: Baphomet
+      dialogueText: "No, no, nothing like that, but he said he\u2019s allergic to
+        chocolate, and flowers. And grapes, so naturally, champagne is out of the
+        question."
+      nextLineIdsString: 25, 32
       dialogueType: 0
-      nextLineIds: 19000000
-      changeList:
-      - dialogueId: 24
-        changeType: 0
-        actorName: Baphomet
-        formKey: cryptid
-        expressionKey: neutral
+      nextLineIds: 1900000020000000
+      changeList: []
     - id: 25
-      actorName: 
-      dialogueText: trigger_hell_reveal
+      actorName: Pudding
+      dialogueText: Oh, so balloons!
       nextLineIdsString: 26
-      dialogueType: 1
+      dialogueType: 0
       nextLineIds: 1a000000
       changeList: []
     - id: 26
       actorName: Baphomet
-      dialogueText: My hometown station. How nostalgic.
+      dialogueText: Yeah balloons, bahaha. Though, I do wonder if the heart shape
+        is excessive...
+      nextLineIdsString: 36, 78
+      dialogueType: 0
+      nextLineIds: 240000004e000000
+      changeList: []
+    - id: 27
+      actorName: Pudding
+      dialogueText: Hey! Happy birthday!
+      nextLineIdsString: 28
+      dialogueType: 0
+      nextLineIds: 1c000000
+      changeList: []
+    - id: 28
+      actorName: Baphomet
+      dialogueText: "Oh! Um \u2026 thanks."
+      nextLineIdsString: 29
+      dialogueType: 0
+      nextLineIds: 1d000000
+      changeList: []
+    - id: 29
+      actorName: Baphomet
+      dialogueText: "But it\u2019s not my birthday"
+      nextLineIdsString: 30
+      dialogueType: 0
+      nextLineIds: 1e000000
+      changeList: []
+    - id: 30
+      actorName: Pudding
+      dialogueText: "It\u2019s not? Oh sorry I just thought\u2026"
+      nextLineIdsString: 31
+      dialogueType: 0
+      nextLineIds: 1f000000
+      changeList: []
+    - id: 31
+      actorName: Baphomet
+      dialogueText: "Oh no don\u2019t be! You\u2019re the third person to assume
+        bahaha."
+      nextLineIdsString: 22
+      dialogueType: 0
+      nextLineIds: 16000000
+      changeList: []
+    - id: 32
+      actorName: Pudding
+      dialogueText: So you went with a balloon instead?!
+      nextLineIdsString: 33
+      dialogueType: 0
+      nextLineIds: 21000000
+      changeList: []
+    - id: 33
+      actorName: Pudding
+      dialogueText: "Isn\u2019t that the kind of thing you\u2019d bring to a birthday
+        though?"
+      nextLineIdsString: 34
+      dialogueType: 0
+      nextLineIds: 22000000
+      changeList: []
+    - id: 34
+      actorName: Pudding
+      dialogueText: Or a sick relative, or a little kid?
+      nextLineIdsString: 35
+      dialogueType: 0
+      nextLineIds: 23000000
+      changeList: []
+    - id: 35
+      actorName: Baphomet
+      dialogueText: Well yeah, I guess if you wanna look at it that way...
+      nextLineIdsString: 
+      dialogueType: 0
+      nextLineIds: 
+      changeList: []
+    - id: 36
+      actorName: Pudding
+      dialogueText: "No! It\u2019s original!"
+      nextLineIdsString: 37
+      dialogueType: 0
+      nextLineIds: 25000000
+      changeList: []
+    - id: 37
+      actorName: Pudding
+      dialogueText: "It\u2019ll show him you\u2019re fun! That you\u2019ve got a
+        sense of whimsy going on."
+      nextLineIdsString: 38
+      dialogueType: 0
+      nextLineIds: 26000000
+      changeList: []
+    - id: 38
+      actorName: Pudding
+      dialogueText: And who doesnt like a little whimsy?
+      nextLineIdsString: 41
+      dialogueType: 0
+      nextLineIds: 29000000
+      changeList: []
+    - id: 78
+      actorName: Pudding
+      dialogueText: Awww but that's so sweet though.
+      nextLineIdsString: 39
+      dialogueType: 0
+      nextLineIds: 27000000
+      changeList: []
+    - id: 39
+      actorName: Baphomet
+      dialogueText: You really think so?
+      nextLineIdsString: 40
+      dialogueType: 0
+      nextLineIds: 28000000
+      changeList: []
+    - id: 40
+      actorName: Pudding
+      dialogueText: "Of course! Heck if my first date showed up with a heart shaped
+        balloon I\u2019d be into it"
+      nextLineIdsString: 41
+      dialogueType: 0
+      nextLineIds: 29000000
+      changeList: []
+    - id: 41
+      actorName: Baphomet
+      dialogueText: Thanks, I needed a little reassurance bahaha.
+      nextLineIdsString: 42
+      dialogueType: 0
+      nextLineIds: 2a000000
+      changeList: []
+    - id: 42
+      actorName: Pudding
+      dialogueText: "Hey dude no worries. I\u2019m a professional at reassurance."
+      nextLineIdsString: 43
+      dialogueType: 0
+      nextLineIds: 2b000000
+      changeList: []
+    - id: 43
+      actorName: Baphomet
+      dialogueText: "Oh so you\u2019re like a motivational speaker?"
+      nextLineIdsString: 44, 52
+      dialogueType: 0
+      nextLineIds: 2c00000034000000
+      changeList: []
+    - id: 44
+      actorName: Pudding
+      dialogueText: "Yes. And my motivation doesn\u2019t come cheep."
+      nextLineIdsString: 45
+      dialogueType: 0
+      nextLineIds: 2d000000
+      changeList: []
+    - id: 45
+      actorName: Pudding
+      dialogueText: "That pick me up is gonna cost ya. I\u2019m in very high demand"
+      nextLineIdsString: 46
+      dialogueType: 0
+      nextLineIds: 2e000000
+      changeList: []
+    - id: 46
+      actorName: Baphomet
+      dialogueText: Bahaha how much?
+      nextLineIdsString: 47
+      dialogueType: 0
+      nextLineIds: 2f000000
+      changeList: []
+    - id: 47
+      actorName: Pudding
+      dialogueText: "We can work out a payment plan later. I\u2019ll have my agent
+        call and let you know"
+      nextLineIdsString: 48
+      dialogueType: 0
+      nextLineIds: 30000000
+      changeList: []
+    - id: 48
+      actorName: Baphomet
+      dialogueText: Baaaahahahaha
+      nextLineIdsString: 49
+      dialogueType: 0
+      nextLineIds: 31000000
+      changeList: []
+    - id: 49
+      actorName: Baphomet
+      dialogueText: "You\u2019re really funny too. Is that a part of the job? Comes
+        with the motivational speaking territory?"
+      nextLineIdsString: 50
+      dialogueType: 0
+      nextLineIds: 32000000
+      changeList: []
+    - id: 50
+      actorName: Pudding
+      dialogueText: "It\u2019s what keeps my clients coming back for more"
+      nextLineIdsString: 51
+      dialogueType: 0
+      nextLineIds: 33000000
+      changeList: []
+    - id: 51
+      actorName: Baphomet
+      dialogueText: Bahaha, really though, what do you do for a living?
+      nextLineIdsString: 59
+      dialogueType: 0
+      nextLineIds: 3b000000
+      changeList: []
+    - id: 52
+      actorName: Pudding
+      dialogueText: Only sometimes
+      nextLineIdsString: 53
+      dialogueType: 0
+      nextLineIds: 35000000
+      changeList: []
+    - id: 53
+      actorName: Pudding
+      dialogueText: Only to stangers I randomly meet on the last train of the day.
+      nextLineIdsString: 54
+      dialogueType: 0
+      nextLineIds: 36000000
+      changeList: []
+    - id: 54
+      actorName: Pudding
+      dialogueText: "You\u2019re really in luck"
+      nextLineIdsString: 55
+      dialogueType: 0
+      nextLineIds: 37000000
+      changeList: []
+    - id: 55
+      actorName: Baphomet
+      dialogueText: "I\u2019ll chalk it up to that lucky rabbit's foot I keep."
+      nextLineIdsString: 56
+      dialogueType: 0
+      nextLineIds: 38000000
+      changeList: []
+    - id: 56
+      actorName: Pudding
+      dialogueText: "<i>*scared*</i>\u2026"
+      nextLineIdsString: 57
+      dialogueType: 0
+      nextLineIds: 39000000
+      changeList: []
+    - id: 57
+      actorName: Baphomet
+      dialogueText: Kidding! Bahahahahah
+      nextLineIdsString: 58
+      dialogueType: 0
+      nextLineIds: 3a000000
+      changeList: []
+    - id: 58
+      actorName: Pudding
+      dialogueText: <i>ARE</i> you? O_O
+      nextLineIdsString: 51
+      dialogueType: 0
+      nextLineIds: 33000000
+      changeList: []
+    - id: 59
+      actorName: Pudding
+      dialogueText: "I actually work in games. I\u2019m..."
+      nextLineIdsString: 60, 67
+      dialogueType: 0
+      nextLineIds: 3c00000043000000
+      changeList: []
+    - id: 60
+      actorName: Pudding
+      dialogueText: A programmer.
+      nextLineIdsString: 61
+      dialogueType: 0
+      nextLineIds: 3d000000
+      changeList: []
+    - id: 61
+      actorName: Baphomet
+      dialogueText: "Oh goodness. I\u2019ve never met an actual hacker before!"
+      nextLineIdsString: 62
+      dialogueType: 0
+      nextLineIds: 3e000000
+      changeList: []
+    - id: 62
+      actorName: Pudding
+      dialogueText: That is not even remotely what I do
+      nextLineIdsString: 63
+      dialogueType: 0
+      nextLineIds: 3f000000
+      changeList: []
+    - id: 63
+      actorName: Baphomet
+      dialogueText: Ah sorry of course my mistake
+      nextLineIdsString: 64
+      dialogueType: 0
+      nextLineIds: 40000000
+      changeList: []
+    - id: 64
+      actorName: Baphomet
+      dialogueText: "But you could fix my computer? It\u2019s so old and it runs
+        so slow and-"
+      nextLineIdsString: 65
+      dialogueType: 0
+      nextLineIds: 41000000
+      changeList: []
+    - id: 65
+      actorName: Pudding
+      dialogueText: ... no.
+      nextLineIdsString: 66
+      dialogueType: 0
+      nextLineIds: 42000000
+      changeList: []
+    - id: 66
+      actorName: Baphomet
+      dialogueText: Bahahaha
+      nextLineIdsString: 70
+      dialogueType: 0
+      nextLineIds: 46000000
+      changeList: []
+    - id: 67
+      actorName: Pudding
+      dialogueText: An artist.
+      nextLineIdsString: 68
+      dialogueType: 0
+      nextLineIds: 44000000
+      changeList: []
+    - id: 68
+      actorName: Baphomet
+      dialogueText: Oh! So you must be a good drawer then!
+      nextLineIdsString: 69
+      dialogueType: 0
+      nextLineIds: 45000000
+      changeList: []
+    - id: 69
+      actorName: Pudding
+      dialogueText: Thanks haha. I do like to think I draw good.
+      nextLineIdsString: 70
+      dialogueType: 0
+      nextLineIds: 46000000
+      changeList: []
+    - id: 70
+      actorName: Pudding
+      dialogueText: What about you? What do you do to afford balloons?
+      nextLineIdsString: 71
+      dialogueType: 0
+      nextLineIds: 47000000
+      changeList: []
+    - id: 71
+      actorName: Baphomet
+      dialogueText: "I guess you could say I\u2019m in collections? Management?"
+      nextLineIdsString: 72
+      dialogueType: 0
+      nextLineIds: 48000000
+      changeList: []
+    - id: 72
+      actorName: Baphomet
+      dialogueText: "It\u2019s rather complicated"
+      nextLineIdsString: 73
+      dialogueType: 0
+      nextLineIds: 49000000
+      changeList: []
+    - id: 73
+      actorName: 
+      dialogueText: trigger_hell_transition
+      nextLineIdsString: 74
+      dialogueType: 1
+      nextLineIds: 4a000000
+      changeList: []
+    - id: 74
+      actorName: Pudding
+      dialogueText: "Wait\u2026. This line doesn't go underground"
+      nextLineIdsString: 75
+      dialogueType: 0
+      nextLineIds: 4b000000
+      changeList:
+      - dialogueId: 74
+        changeType: 0
+        actorName: Baphomet
+        formKey: cryptid
+        expressionKey: neutral
+    - id: 75
+      actorName: Pudding
+      dialogueText: "What...<b>WHAT\u2019S HAPPENING?????</b>"
+      nextLineIdsString: 76
+      dialogueType: 0
+      nextLineIds: 4c000000
+      changeList: []
+    - id: 76
+      actorName: Pudding
+      dialogueText: trigger_hell_reveal
+      nextLineIdsString: 77
+      dialogueType: 1
+      nextLineIds: 4d000000
+      changeList: []
+    - id: 77
+      actorName: Pudding
+      dialogueText: Where...
       nextLineIdsString: 
       dialogueType: 0
       nextLineIds: 
