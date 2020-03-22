@@ -22,6 +22,7 @@ public class SceneTransitionController : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
         width = imageRectTransform.GetWidth();
         SetToHidePosition();
+        imageRectTransform.gameObject.SetActive(false);
     }
 
     void SetToHidePosition() {
@@ -29,6 +30,7 @@ public class SceneTransitionController : MonoBehaviour {
     }
 
     public void StartSceneTransition(Action sceneLoadCallback) {
+        imageRectTransform.gameObject.SetActive(true);
         imageRectTransform.DOLocalMoveX(0, tweenSpeed).SetEase(Ease.OutSine).OnComplete(() => {
             sceneLoadCallback();
             StartCoroutine(Uncover());
@@ -36,10 +38,12 @@ public class SceneTransitionController : MonoBehaviour {
     }
 
     public void StartTransition(Action callback) {
+        imageRectTransform.gameObject.SetActive(true);
         imageRectTransform.DOLocalMoveX(0, tweenSpeed).SetEase(Ease.OutSine).OnComplete(() => {
             callback();
             imageRectTransform.DOLocalMoveX(width, tweenSpeed).SetEase(Ease.InSine).OnComplete(() => {
                 SetToHidePosition();
+                imageRectTransform.gameObject.SetActive(false);
             });
         });
     }
@@ -48,6 +52,7 @@ public class SceneTransitionController : MonoBehaviour {
         yield return new WaitForSeconds(tweenSpeed);
         imageRectTransform.DOLocalMoveX(width, tweenSpeed).SetEase(Ease.InSine).OnComplete(() => {
             SetToHidePosition();
+            imageRectTransform.gameObject.SetActive(false);
         });
     }
 }

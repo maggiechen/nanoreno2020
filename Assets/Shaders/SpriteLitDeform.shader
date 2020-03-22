@@ -1,4 +1,5 @@
-﻿Shader "Universal Render Pipeline/2D/Sprite-Lit-Deform"
+﻿// hacked version of Unity's Sprite-Lit shader that just adds some displacement along the uv coords to simulate moving foliage 
+Shader "Universal Render Pipeline/2D/Sprite-Lit-Deform"
 {
     Properties
     {
