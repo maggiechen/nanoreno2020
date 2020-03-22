@@ -1034,11 +1034,11 @@
             "expressionkey": "neutral"
         },
         {
-            "dialogueid": 124,
+            "dialogueid": 121,
             "changetype": 0,
             "actorname": "Baphomet",
             "formkey": "cryptid",
-            "expressionkey": "neutral"
+            "expressionkey": "lidded"
         },
         {
             "dialogueid": 15,
@@ -1137,6 +1137,538 @@
             "actorname": "Baphomet",
             "formkey": "normal",
             "expressionkey": "neutral"
+        },
+        {
+            "dialogueid": 30,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "surprised_left"
+        },
+        {
+            "dialogueid": 31,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "normal",
+            "expressionkey": "closed_eyes"
+        },
+        {
+            "dialogueid": 32,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "lidded"
+        },
+        {
+            "dialogueid": 33,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "lidded_left"
+        },
+        {
+            "dialogueid": 34,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "lidded_smile"
+        },
+        {
+            "dialogueid": 35,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "normal",
+            "expressionkey": "lidded"
+        },
+        {
+            "dialogueid": 121,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "surprised_forward"
+        },
+        {
+            "dialogueid": 125,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "surprised"
+        },
+        {
+            "dialogueid": 126,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "cryptid",
+            "expressionkey": "closed_eyes"
+        },
+        {
+            "dialogueid": 26,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "normal",
+            "expressionkey": "sad"
+        },
+        {
+            "dialogueid": 36,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "normal",
+            "expressionkey": "neutral"
+        },
+        {
+            "dialogueid": 112,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "normal",
+            "expressionkey": "neutral"
+        },
+        {
+            "dialogueid": 39,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "normal",
+            "expressionkey": "blush"
+        },
+        {
+            "dialogueid": 41,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "normal",
+            "expressionkey": "neutral"
+        },
+        {
+            "dialogueid": 42,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "lidded_smile"
+        },
+        {
+            "dialogueid": 46,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "normal",
+            "expressionkey": "squint"
+        },
+        {
+            "dialogueid": 47,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "normal",
+            "expressionkey": "neutral"
+        },
+        {
+            "dialogueid": 47,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "smile"
+        },
+        {
+            "dialogueid": 48,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "normal",
+            "expressionkey": "squint"
+        },
+        {
+            "dialogueid": 50,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "lidded_smile"
+        },
+        {
+            "dialogueid": 50,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "normal",
+            "expressionkey": "neutral"
+        },
+        {
+            "dialogueid": 52,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "smile"
+        },
+        {
+            "dialogueid": 53,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "lidded_smile"
+        },
+        {
+            "dialogueid": 54,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "smile"
+        },
+        {
+            "dialogueid": 55,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "normal",
+            "expressionkey": "squint"
+        },
+        {
+            "dialogueid": 56,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "surprised"
+        },
+        {
+            "dialogueid": 57,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "normal",
+            "expressionkey": "neutral"
+        },
+        {
+            "dialogueid": 51,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "normal",
+            "expressionkey": "neutral"
+        },
+        {
+            "dialogueid": 59,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "lidded_smile"
+        },
+        {
+            "dialogueid": 60,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "smile"
+        },
+        {
+            "dialogueid": 67,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "smile"
+        },
+        {
+            "dialogueid": 63,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "normal",
+            "expressionkey": "closed_eyes"
+        },
+        {
+            "dialogueid": 64,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "normal",
+            "expressionkey": "neutral"
+        },
+        {
+            "dialogueid": 65,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "pensive"
+        },
+        {
+            "dialogueid": 66,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "normal",
+            "expressionkey": "squint"
+        },
+        {
+            "dialogueid": 66,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "surprised"
+        },
+        {
+            "dialogueid": 68,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "normal",
+            "expressionkey": "squint"
+        },
+        {
+            "dialogueid": 69,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "normal",
+            "expressionkey": "neutral"
+        },
+        {
+            "dialogueid": 71,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "normal",
+            "expressionkey": "closed_eyes"
+        },
+        {
+            "dialogueid": 72,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "normal",
+            "expressionkey": "neutral"
+        },
+        {
+            "dialogueid": 75,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "surprised_forward"
+        },
+        {
+            "dialogueid": 79,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "surprised"
+        },
+        {
+            "dialogueid": 81,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "cryptid",
+            "expressionkey": "sad"
+        },
+        {
+            "dialogueid": 85,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "surprised"
+        },
+        {
+            "dialogueid": 86,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "cryptid",
+            "expressionkey": "neutral"
+        },
+        {
+            "dialogueid": 91,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "surprised_forward"
+        },
+        {
+            "dialogueid": 92,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "cryptid",
+            "expressionkey": "closed_eyes"
+        },
+        {
+            "dialogueid": 93,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "surprised_left"
+        },
+        {
+            "dialogueid": 96,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "cryptid",
+            "expressionkey": "lidded"
+        },
+        {
+            "dialogueid": 97,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "surprised"
+        },
+        {
+            "dialogueid": 98,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "cryptid",
+            "expressionkey": "neutral"
+        },
+        {
+            "dialogueid": 99,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "surprised_forward"
+        },
+        {
+            "dialogueid": 100,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "cryptid",
+            "expressionkey": "closed_eyes"
+        },
+        {
+            "dialogueid": 101,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "surprised"
+        },
+        {
+            "dialogueid": 102,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "cryptid",
+            "expressionkey": "neutral"
+        },
+        {
+            "dialogueid": 107,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "smile"
+        },
+        {
+            "dialogueid": 108,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "cryptid",
+            "expressionkey": "neutral"
+        },
+        {
+            "dialogueid": 111,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "cryptid",
+            "expressionkey": "lidded"
+        },
+        {
+            "dialogueid": 113,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "cryptid",
+            "expressionkey": "neutral"
+        },
+        {
+            "dialogueid": 115,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "surprised"
+        },
+        {
+            "dialogueid": 116,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "cryptid",
+            "expressionkey": "lidded"
+        },
+        {
+            "dialogueid": 118,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "cryptid",
+            "expressionkey": "neutral"
+        },
+        {
+            "dialogueid": 119,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "smile"
+        },
+        {
+            "dialogueid": 128,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "surprised"
+        },
+        {
+            "dialogueid": 129,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "cryptid",
+            "expressionkey": "lidded"
+        },
+        {
+            "dialogueid": 131,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "cryptid",
+            "expressionkey": "neutral"
+        },
+        {
+            "dialogueid": 132,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "smile"
+        },
+        {
+            "dialogueid": 135,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "lidded_smile"
+        },
+        {
+            "dialogueid": 137,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "cryptid",
+            "expressionkey": "blush"
+        },
+        {
+            "dialogueid": 140,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "surprised"
+        },
+        {
+            "dialogueid": 141,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "cryptid",
+            "expressionkey": "neutral"
+        },
+        {
+            "dialogueid": 143,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "surprised_left"
+        },
+        {
+            "dialogueid": 144,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "cryptid",
+            "expressionkey": "squint"
+        },
+        {
+            "dialogueid": 145,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "smile"
+        },
+        {
+            "dialogueid": 146,
+            "changetype": 0,
+            "actorname": "Baphomet",
+            "formkey": "cryptid",
+            "expressionkey": "blush"
+        },
+        {
+            "dialogueid": 147,
+            "changetype": 0,
+            "actorname": "Pudding",
+            "formkey": "normal",
+            "expressionkey": "lidded_smile"
         }
     ]
 }
