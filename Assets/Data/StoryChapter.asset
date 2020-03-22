@@ -138,7 +138,12 @@ MonoBehaviour:
       nextLineIdsString: 16
       dialogueType: 0
       nextLineIds: 10000000
-      changeList: []
+      changeList:
+      - dialogueId: 15
+        changeType: 0
+        actorName: Pudding
+        formKey: normal
+        expressionKey: lidded_smile
     - id: 16
       actorName: Pudding
       dialogueText: Hm...
@@ -153,14 +158,24 @@ MonoBehaviour:
       nextLineIdsString: 18, 27
       dialogueType: 0
       nextLineIds: 120000001b000000
-      changeList: []
+      changeList:
+      - dialogueId: 17
+        changeType: 0
+        actorName: Pudding
+        formKey: normal
+        expressionKey: surprised
     - id: 18
       actorName: Pudding
       dialogueText: Cool balloon, dude.
       nextLineIdsString: 19
       dialogueType: 0
       nextLineIds: 13000000
-      changeList: []
+      changeList:
+      - dialogueId: 18
+        changeType: 0
+        actorName: Pudding
+        formKey: normal
+        expressionKey: smile
     - id: 19
       actorName: Baphomet
       dialogueText: "Thanks bahaha. A lot of people have been assuming it\u2019s
@@ -168,35 +183,65 @@ MonoBehaviour:
       nextLineIdsString: 20
       dialogueType: 0
       nextLineIds: 14000000
-      changeList: []
+      changeList:
+      - dialogueId: 19
+        changeType: 0
+        actorName: Baphomet
+        formKey: normal
+        expressionKey: squint
     - id: 20
       actorName: Pudding
       dialogueText: <i>*It did cross my mind...*</i>
       nextLineIdsString: 21
       dialogueType: 0
       nextLineIds: 15000000
-      changeList: []
+      changeList:
+      - dialogueId: 20
+        changeType: 0
+        actorName: Pudding
+        formKey: normal
+        expressionKey: pensive
+      - dialogueId: 20
+        changeType: 0
+        actorName: Baphomet
+        formKey: normal
+        expressionKey: neutral
     - id: 21
       actorName: Pudding
       dialogueText: "Oh really? You don\u2019t say?"
       nextLineIdsString: 22
       dialogueType: 0
       nextLineIds: 16000000
-      changeList: []
+      changeList:
+      - dialogueId: 21
+        changeType: 0
+        actorName: Pudding
+        formKey: normal
+        expressionKey: smile
     - id: 22
       actorName: Baphomet
       dialogueText: The truth is... Well, I actually have a date tonight.
       nextLineIdsString: 23
       dialogueType: 0
       nextLineIds: 17000000
-      changeList: []
+      changeList:
+      - dialogueId: 22
+        changeType: 0
+        actorName: Baphomet
+        formKey: normal
+        expressionKey: blush
     - id: 23
       actorName: Pudding
       dialogueText: "Ooh is it your date\u2019s birthday?"
       nextLineIdsString: 24
       dialogueType: 0
       nextLineIds: 18000000
-      changeList: []
+      changeList:
+      - dialogueId: 23
+        changeType: 0
+        actorName: Pudding
+        formKey: normal
+        expressionKey: lidded_smile
     - id: 24
       actorName: Baphomet
       dialogueText: "No, no, nothing like that, but he said he\u2019s allergic to
@@ -205,14 +250,24 @@ MonoBehaviour:
       nextLineIdsString: 25, 32
       dialogueType: 0
       nextLineIds: 1900000020000000
-      changeList: []
+      changeList:
+      - dialogueId: 24
+        changeType: 0
+        actorName: Baphomet
+        formKey: normal
+        expressionKey: neutral
     - id: 25
       actorName: Pudding
       dialogueText: Oh, so balloons!
       nextLineIdsString: 26
       dialogueType: 0
       nextLineIds: 1a000000
-      changeList: []
+      changeList:
+      - dialogueId: 25
+        changeType: 0
+        actorName: Pudding
+        formKey: normal
+        expressionKey: smile
     - id: 26
       actorName: Baphomet
       dialogueText: Yeah balloons, bahaha. Though, I do wonder if the heart shape
@@ -227,21 +282,36 @@ MonoBehaviour:
       nextLineIdsString: 28
       dialogueType: 0
       nextLineIds: 1c000000
-      changeList: []
+      changeList:
+      - dialogueId: 27
+        changeType: 0
+        actorName: Pudding
+        formKey: normal
+        expressionKey: smile
     - id: 28
       actorName: Baphomet
       dialogueText: Oh! Um ... thanks.
       nextLineIdsString: 29
       dialogueType: 0
       nextLineIds: 1d000000
-      changeList: []
+      changeList:
+      - dialogueId: 28
+        changeType: 0
+        actorName: Baphomet
+        formKey: normal
+        expressionKey: squint
     - id: 29
       actorName: Baphomet
       dialogueText: "But it\u2019s not my birthday"
       nextLineIdsString: 30
       dialogueType: 0
       nextLineIds: 1e000000
-      changeList: []
+      changeList:
+      - dialogueId: 29
+        changeType: 0
+        actorName: Baphomet
+        formKey: normal
+        expressionKey: neutral
     - id: 30
       actorName: Pudding
       dialogueText: "It\u2019s not? Oh sorry I just thought..."
@@ -259,15 +329,14 @@ MonoBehaviour:
       changeList: []
     - id: 32
       actorName: Pudding
-      dialogueText: So you went with a balloon instead? That's kind of dumb.
+      dialogueText: So you went with a balloon instead? Hah, that's dumb.
       nextLineIdsString: 33
       dialogueType: 0
       nextLineIds: 21000000
       changeList: []
     - id: 33
       actorName: Pudding
-      dialogueText: "Isn\u2019t that the kind of thing you\u2019d bring to a birthday
-        though?"
+      dialogueText: "Isn\u2019t that the kind of thing you\u2019d bring to a birthday?"
       nextLineIdsString: 34
       dialogueType: 0
       nextLineIds: 22000000
@@ -281,7 +350,7 @@ MonoBehaviour:
       changeList: []
     - id: 35
       actorName: Baphomet
-      dialogueText: Well yeah, I guess if you wanna look at it that way...
+      dialogueText: ...
       nextLineIdsString: 120
       dialogueType: 0
       nextLineIds: 78000000
@@ -316,12 +385,16 @@ MonoBehaviour:
       changeList: []
     - id: 124
       actorName: Baphomet
-      dialogueText: '*Sigh* I suppose the rude ones do come with a silver lining.
-        Looks like I''m getting off work early today'
+      dialogueText: '*Sigh* My my, how rude mortals can be sometimes.'
       nextLineIdsString: 125
       dialogueType: 0
       nextLineIds: 7d000000
-      changeList: []
+      changeList:
+      - dialogueId: 124
+        changeType: 0
+        actorName: Baphomet
+        formKey: cryptid
+        expressionKey: neutral
     - id: 125
       actorName: Pudding
       dialogueText: Who are <b>YOU?!</b>
@@ -694,7 +767,7 @@ MonoBehaviour:
       changeList: []
     - id: 83
       actorName: Pudding
-      dialogueText: "sorry\u2026. Aaaaaaaaaaaa"
+      dialogueText: sorry... Aaaaaaaaaaaa
       nextLineIdsString: 87
       dialogueType: 0
       nextLineIds: 57000000
@@ -722,64 +795,64 @@ MonoBehaviour:
       changeList: []
     - id: 87
       actorName: Baphomet
-      dialogueText: Wait a moment...what train did you think you got on
+      dialogueText: Wait a moment... What train did you think you got on?
       nextLineIdsString: 88
       dialogueType: 0
       nextLineIds: 58000000
       changeList: []
     - id: 88
       actorName: Pudding
-      dialogueText: "The expo line\u2026. going to King George???"
+      dialogueText: The Expo line... going to King George???
       nextLineIdsString: 89
       dialogueType: 0
       nextLineIds: 59000000
       changeList: []
     - id: 89
       actorName: Baphomet
-      dialogueText: Ohhhhhhhhhhhhhhhhhhhh
+      dialogueText: Ohhhhhhhhhhhhhhhhhhhh...
       nextLineIdsString: 90
       dialogueType: 0
       nextLineIds: 5a000000
       changeList: []
     - id: 90
       actorName: Baphomet
-      dialogueText: Yes, this is not that train
+      dialogueText: Yes, this is not that train.
       nextLineIdsString: 91
       dialogueType: 0
       nextLineIds: 5b000000
       changeList: []
     - id: 91
       actorName: Pudding
-      dialogueText: "So \u2026. Where are we"
+      dialogueText: So... Where are we?
       nextLineIdsString: 92
       dialogueType: 0
       nextLineIds: 5c000000
       changeList: []
     - id: 92
       actorName: Baphomet
-      dialogueText: 'hmm... i guess you would call it The Other Side? '
+      dialogueText: 'Hmm... I guess you would call it The Other Side? '
       nextLineIdsString: 93, 107
       dialogueType: 0
       nextLineIds: 5d0000006b000000
       changeList: []
     - id: 93
       actorName: Pudding
-      dialogueText: "Fuck, I can\u2019t belive I\u2019m dead"
+      dialogueText: "Fuck, I can\u2019t believe I\u2019m dead!"
       nextLineIdsString: 94
       dialogueType: 0
       nextLineIds: 5e000000
       changeList: []
     - id: 94
       actorName: Pudding
-      dialogueText: I had so much to live for
+      dialogueText: I had so much to live for!
       nextLineIdsString: 95
       dialogueType: 0
       nextLineIds: 5f000000
       changeList: []
     - id: 95
       actorName: Pudding
-      dialogueText: "Now I\u2019ll never find love , Never get to go to Hawaii,I
-        never get to try that boba hot pot in Richmond"
+      dialogueText: "Now I\u2019ll never find love, never get to go to Hawaii, I
+        never get to try that boba hot pot in Richmond..."
       nextLineIdsString: 96
       dialogueType: 0
       nextLineIds: 60000000
@@ -801,37 +874,36 @@ MonoBehaviour:
       changeList: []
     - id: 98
       actorName: Baphomet
-      dialogueText: Alright, calm down, breathe, first of all Lificfer is my dad
+      dialogueText: Alright, calm down, breathe, first of all Lucifer is my father.
       nextLineIdsString: 99
       dialogueType: 0
       nextLineIds: 63000000
       changeList: []
     - id: 99
       actorName: Pudding
-      dialogueText: "\u2026\u2026 Ok not gonna lie, that's rad"
+      dialogueText: "\u2026\u2026 Ok not gonna lie, that's rad."
       nextLineIdsString: 100
       dialogueType: 0
       nextLineIds: 64000000
       changeList: []
     - id: 100
       actorName: Baphomet
-      dialogueText: "Second of all you\u2019re not dead. You just got on the wrong
-        train"
+      dialogueText: "Second, you\u2019re not dead. You just got on the wrong train."
       nextLineIdsString: 101
       dialogueType: 0
       nextLineIds: 65000000
       changeList: []
     - id: 101
       actorName: Pudding
-      dialogueText: A train to Hell
+      dialogueText: A train to Hell.
       nextLineIdsString: 102
       dialogueType: 0
       nextLineIds: 66000000
       changeList: []
     - id: 102
       actorName: Baphomet
-      dialogueText: "A train to the other side. People don\u2019t actually come here
-        when they die, not unless they made a deal with me or my company and you\u2026."
+      dialogueText: "A train to The Other Side. People don\u2019t go here when they
+        die, unless they made a deal with me or my kin. And you..."
       nextLineIdsString: 103
       dialogueType: 0
       nextLineIds: 67000000
@@ -845,15 +917,15 @@ MonoBehaviour:
       changeList: []
     - id: 104
       actorName: Baphomet
-      dialogueText: Punnding, you have not sold your soul. Trust me I would have
-        been made aware.
+      dialogueText: Pudding, you have not sold your soul. Trust me I would have been
+        made aware.
       nextLineIdsString: 105
       dialogueType: 0
       nextLineIds: 69000000
       changeList: []
     - id: 105
       actorName: Baphomet
-      dialogueText: ".So let\u2019s stay clam shall we?"
+      dialogueText: "So let\u2019s stay calm shall we?"
       nextLineIdsString: 106
       dialogueType: 0
       nextLineIds: 6a000000
@@ -867,14 +939,14 @@ MonoBehaviour:
       changeList: []
     - id: 107
       actorName: Pudding
-      dialogueText: 'wow... Radical '
+      dialogueText: 'Wow... Radical '
       nextLineIdsString: 108
       dialogueType: 0
       nextLineIds: 6c000000
       changeList: []
     - id: 108
       actorName: Baphomet
-      dialogueText: "I know I know, wait\u2026. Radical?"
+      dialogueText: I know I know, wait... Radical?
       nextLineIdsString: 109
       dialogueType: 0
       nextLineIds: 6d000000
@@ -888,8 +960,8 @@ MonoBehaviour:
       changeList: []
     - id: 110
       actorName: Pudding
-      dialogueText: "I mean how often do you get to take a mdnight train to the other
-        side with\u2026."
+      dialogueText: I mean how often do you get to take a midnight train to the other
+        side with...
       nextLineIdsString: 111
       dialogueType: 0
       nextLineIds: 6f000000
@@ -903,7 +975,7 @@ MonoBehaviour:
       changeList: []
     - id: 113
       actorName: Pudding
-      dialogueText: "\u2026.. Nice"
+      dialogueText: Baphomet!
       nextLineIdsString: 114
       dialogueType: 0
       nextLineIds: 72000000
@@ -911,14 +983,14 @@ MonoBehaviour:
     - id: 114
       actorName: Pudding
       dialogueText: "I\u2019m Pudding by the way. Cool place you've got here. Very
-        red"
+        red."
       nextLineIdsString: 115
       dialogueType: 0
       nextLineIds: 73000000
       changeList: []
     - id: 115
       actorName: Pudding
-      dialogueText: "Out of curiosity, you\u2019re not hear to collect my soul are
+      dialogueText: "Out of curiosity, you\u2019re not here to collect my soul are
         you?"
       nextLineIdsString: 116
       dialogueType: 0
@@ -926,14 +998,14 @@ MonoBehaviour:
       changeList: []
     - id: 116
       actorName: Baphomet
-      dialogueText: Have you made any deals with devil latey by chance?
+      dialogueText: Have you made any deals with the devil lately by chance?
       nextLineIdsString: 117
       dialogueType: 0
       nextLineIds: 75000000
       changeList: []
     - id: 117
       actorName: Pudding
-      dialogueText: "Can\u2019t say i have\u2026."
+      dialogueText: "Can\u2019t say I have..."
       nextLineIdsString: 118
       dialogueType: 0
       nextLineIds: 76000000
@@ -948,6 +1020,148 @@ MonoBehaviour:
     - id: 119
       actorName: Pudding
       dialogueText: Sweet
+      nextLineIdsString: 128
+      dialogueType: 0
+      nextLineIds: 80000000
+      changeList: []
+    - id: 128
+      actorName: Pudding
+      dialogueText: Sooo...... how do I get home?
+      nextLineIdsString: 129
+      dialogueType: 0
+      nextLineIds: 81000000
+      changeList: []
+    - id: 129
+      actorName: Baphomet
+      dialogueText: "Well this is still a train, it runs on a loop, so if you stay
+        on you\u2019ll make it home. Just might take a little longer"
+      nextLineIdsString: 130
+      dialogueType: 0
+      nextLineIds: 82000000
+      changeList: []
+    - id: 130
+      actorName: Pudding
+      dialogueText: How much longer are we talking... hours, days?
+      nextLineIdsString: 131
+      dialogueType: 0
+      nextLineIds: 83000000
+      changeList: []
+    - id: 131
+      actorName: Baphomet
+      dialogueText: '45 minutes? '
+      nextLineIdsString: 132
+      dialogueType: 0
+      nextLineIds: 84000000
+      changeList: []
+    - id: 132
+      actorName: Pudding
+      dialogueText: 'Oh... I can do 45 minutes '
+      nextLineIdsString: 134
+      dialogueType: 0
+      nextLineIds: 86000000
+      changeList: []
+    - id: 133
+      actorName: Pudding
+      dialogueText: Sooooooooo
+      nextLineIdsString: 135
+      dialogueType: 0
+      nextLineIds: 87000000
+      changeList: []
+    - id: 134
+      actorName: Pudding
+      dialogueText: 'Since I''m gonna be on this ride for a bit... '
+      nextLineIdsString: "135,\_147"
+      dialogueType: 0
+      nextLineIds: 8700000093000000
+      changeList: []
+    - id: 135
+      actorName: Pudding
+      dialogueText: Tell me more about your date.
+      nextLineIdsString: 136
+      dialogueType: 0
+      nextLineIds: 88000000
+      changeList: []
+    - id: 136
+      actorName: Pudding
+      dialogueText: Like how did you guys meet?
+      nextLineIdsString: 137
+      dialogueType: 0
+      nextLineIds: 89000000
+      changeList: []
+    - id: 137
+      actorName: Baphomet
+      dialogueText: On the apps
+      nextLineIdsString: 138
+      dialogueType: 0
+      nextLineIds: 8a000000
+      changeList: []
+    - id: 138
+      actorName: Pudding
+      dialogueText: "That\u2019s kinda surprising..."
+      nextLineIdsString: 139
+      dialogueType: 0
+      nextLineIds: 8b000000
+      changeList: []
+    - id: 139
+      actorName: Baphomet
+      dialogueText: 'How so? '
+      nextLineIdsString: 140
+      dialogueType: 0
+      nextLineIds: 8c000000
+      changeList: []
+    - id: 140
+      actorName: Pudding
+      dialogueText: "I didn\u2019t think demons had Tinder"
+      nextLineIdsString: 141
+      dialogueType: 0
+      nextLineIds: 8d000000
+      changeList: []
+    - id: 141
+      actorName: Baphomet
+      dialogueText: Pudding, I'm going let you in on a secret
+      nextLineIdsString: 142
+      dialogueType: 0
+      nextLineIds: 8e000000
+      changeList: []
+    - id: 142
+      actorName: Baphomet
+      dialogueText: We INVENTED Tinder
+      nextLineIdsString: 143
+      dialogueType: 0
+      nextLineIds: 8f000000
+      changeList: []
+    - id: 143
+      actorName: Pudding
+      dialogueText: "Huh... suddenly every dating app experiece I\u2019ve ever had
+        makes sense."
+      nextLineIdsString: 144
+      dialogueType: 0
+      nextLineIds: 90000000
+      changeList: []
+    - id: 144
+      actorName: Baphomet
+      dialogueText: Bahaha
+      nextLineIdsString: "145,\_147"
+      dialogueType: 0
+      nextLineIds: 9100000093000000
+      changeList: []
+    - id: 145
+      actorName: Pudding
+      dialogueText: You have a very charming laugh Mr. Baphomet
+      nextLineIdsString: 146
+      dialogueType: 0
+      nextLineIds: 92000000
+      changeList: []
+    - id: 146
+      actorName: Baphomet
+      dialogueText: '...W-why thank you '
+      nextLineIdsString: 
+      dialogueType: 0
+      nextLineIds: 
+      changeList: []
+    - id: 147
+      actorName: Pudding
+      dialogueText: "Now dish! Let\u2019s see your date\u2019s profile"
       nextLineIdsString: 
       dialogueType: 0
       nextLineIds: 

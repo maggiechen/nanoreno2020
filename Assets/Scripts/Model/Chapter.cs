@@ -91,7 +91,7 @@ public class Chapter {
         } else {
             Debug.LogError("End of story");
         }
-        Debug.LogError(currentLine);
+        Debug.LogWarning(currentLine);
 
         UpdateState();
     }
