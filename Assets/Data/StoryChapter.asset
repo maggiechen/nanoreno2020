@@ -171,7 +171,7 @@ MonoBehaviour:
       changeList: []
     - id: 20
       actorName: Pudding
-      dialogueText: "<i>*It did cross my mind\u2026*</i>"
+      dialogueText: <i>*It did cross my mind...*</i>
       nextLineIdsString: 21
       dialogueType: 0
       nextLineIds: 15000000
@@ -185,14 +185,14 @@ MonoBehaviour:
       changeList: []
     - id: 22
       actorName: Baphomet
-      dialogueText: "The truth is\u2026 Well, I actually have a date tonight."
+      dialogueText: The truth is... Well, I actually have a date tonight.
       nextLineIdsString: 23
       dialogueType: 0
       nextLineIds: 17000000
       changeList: []
     - id: 23
       actorName: Pudding
-      dialogueText: "Ooh is it your date\u2019s birtday?"
+      dialogueText: "Ooh is it your date\u2019s birthday?"
       nextLineIdsString: 24
       dialogueType: 0
       nextLineIds: 18000000
@@ -230,7 +230,7 @@ MonoBehaviour:
       changeList: []
     - id: 28
       actorName: Baphomet
-      dialogueText: "Oh! Um \u2026 thanks."
+      dialogueText: Oh! Um ... thanks.
       nextLineIdsString: 29
       dialogueType: 0
       nextLineIds: 1d000000
@@ -244,7 +244,7 @@ MonoBehaviour:
       changeList: []
     - id: 30
       actorName: Pudding
-      dialogueText: "It\u2019s not? Oh sorry I just thought\u2026"
+      dialogueText: "It\u2019s not? Oh sorry I just thought..."
       nextLineIdsString: 31
       dialogueType: 0
       nextLineIds: 1f000000
@@ -439,7 +439,7 @@ MonoBehaviour:
       changeList: []
     - id: 56
       actorName: Pudding
-      dialogueText: "<i>*scared*</i>\u2026"
+      dialogueText: <i>*scared*</i>...
       nextLineIdsString: 57
       dialogueType: 0
       nextLineIds: 39000000
@@ -481,14 +481,15 @@ MonoBehaviour:
       changeList: []
     - id: 62
       actorName: Pudding
-      dialogueText: That is not even remotely what I do
+      dialogueText: Haha... That's not really what I do. I was never really cut out
+        for cryptography.
       nextLineIdsString: 63
       dialogueType: 0
       nextLineIds: 3f000000
       changeList: []
     - id: 63
       actorName: Baphomet
-      dialogueText: Ah sorry of course my mistake
+      dialogueText: They're using crypts now? My how technology never ceases to amaze...
       nextLineIdsString: 64
       dialogueType: 0
       nextLineIds: 40000000
@@ -503,7 +504,8 @@ MonoBehaviour:
       changeList: []
     - id: 65
       actorName: Pudding
-      dialogueText: ... no.
+      dialogueText: Err, that's not really what I do either. You overestimate my
+        capabilities haha
       nextLineIdsString: 66
       dialogueType: 0
       nextLineIds: 42000000
@@ -531,7 +533,8 @@ MonoBehaviour:
       changeList: []
     - id: 69
       actorName: Pudding
-      dialogueText: Thanks haha. I do like to think I draw good.
+      dialogueText: I prefer to think of myself as a wardrobe. Haha just kidding.
+        But thank you, I do like to think I draw good.
       nextLineIdsString: 70
       dialogueType: 0
       nextLineIds: 46000000
@@ -566,7 +569,7 @@ MonoBehaviour:
       changeList: []
     - id: 74
       actorName: Pudding
-      dialogueText: "Wait\u2026. This line doesn't go underground"
+      dialogueText: Wait.... This line doesn't go underground
       nextLineIdsString: 75
       dialogueType: 0
       nextLineIds: 4b000000

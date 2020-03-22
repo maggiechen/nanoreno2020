@@ -51,7 +51,12 @@ public class StoryController : MonoBehaviour {
     private ChoiceListController choiceListController = null;
     [SerializeField]
     private List<ActorController> actors = null;
-    
+
+    [Header("Audio")]
+    [SerializeField]
+    AudioSource musicSource = null;
+
+
     private Dictionary<string, ActorController> actorMap = new Dictionary<string, ActorController>();
 
     // animation stuff
@@ -156,11 +161,15 @@ public class StoryController : MonoBehaviour {
     }
 
     void SetEnd() {
-        nameTextMesh.text = "";
-        dialogueTextImage.SetAlpha(0);
-        nextDialogueIcon.SetAlpha(0);
-        dialogueTextMesh.text = "[END]";
-        EnableEnd();
+        musicSource.DOFade(0, SceneTransitionController.tweenSpeed);
+        SceneTransitionController.Instance.StartSceneTransition(() => {
+            SceneManager.LoadScene("BadEnd");
+        });
+        // nameTextMesh.text = "";
+        // dialogueTextImage.SetAlpha(0);
+        // nextDialogueIcon.SetAlpha(0);
+        // dialogueTextMesh.text = "[END]";
+        // EnableEnd();
     }
 
     void DisableEnd() {
@@ -303,7 +312,6 @@ public class StoryController : MonoBehaviour {
     }
 
     public void Replay() {
-
         SceneTransitionController.Instance.StartSceneTransition(() => {
             SceneManager.LoadScene("Main");
         });

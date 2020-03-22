@@ -126,7 +126,7 @@
         {
             "id": 20,
             "actorname": "Pudding",
-            "dialoguetext": "<i>*It did cross my mind…*</i>",
+            "dialoguetext": "<i>*It did cross my mind...*</i>",
             "nextlineidsstring": 21,
             "dialoguetype": 0
         },
@@ -140,14 +140,14 @@
         {
             "id": 22,
             "actorname": "Baphomet",
-            "dialoguetext": "The truth is… Well, I actually have a date tonight.",
+            "dialoguetext": "The truth is... Well, I actually have a date tonight.",
             "nextlineidsstring": 23,
             "dialoguetype": 0
         },
         {
             "id": 23,
             "actorname": "Pudding",
-            "dialoguetext": "Ooh is it your date’s birtday?",
+            "dialoguetext": "Ooh is it your date’s birthday?",
             "nextlineidsstring": 24,
             "dialoguetype": 0
         },
@@ -182,7 +182,7 @@
         {
             "id": 28,
             "actorname": "Baphomet",
-            "dialoguetext": "Oh! Um … thanks.",
+            "dialoguetext": "Oh! Um ... thanks.",
             "nextlineidsstring": 29,
             "dialoguetype": 0
         },
@@ -196,7 +196,7 @@
         {
             "id": 30,
             "actorname": "Pudding",
-            "dialoguetext": "It’s not? Oh sorry I just thought…",
+            "dialoguetext": "It’s not? Oh sorry I just thought...",
             "nextlineidsstring": 31,
             "dialoguetype": 0
         },
@@ -383,7 +383,7 @@
         {
             "id": 56,
             "actorname": "Pudding",
-            "dialoguetext": "<i>*scared*</i>…",
+            "dialoguetext": "<i>*scared*</i>...",
             "nextlineidsstring": 57,
             "dialoguetype": 0
         },
@@ -425,14 +425,14 @@
         {
             "id": 62,
             "actorname": "Pudding",
-            "dialoguetext": "That is not even remotely what I do",
+            "dialoguetext": "Haha... That's not really what I do. I was never really cut out for cryptography.",
             "nextlineidsstring": 63,
             "dialoguetype": 0
         },
         {
             "id": 63,
             "actorname": "Baphomet",
-            "dialoguetext": "Ah sorry of course my mistake",
+            "dialoguetext": "They're using crypts now? My how technology never ceases to amaze...",
             "nextlineidsstring": 64,
             "dialoguetype": 0
         },
@@ -446,7 +446,7 @@
         {
             "id": 65,
             "actorname": "Pudding",
-            "dialoguetext": "... no.",
+            "dialoguetext": "Err, that's not really what I do either. You overestimate my capabilities haha",
             "nextlineidsstring": 66,
             "dialoguetype": 0
         },
@@ -474,7 +474,7 @@
         {
             "id": 69,
             "actorname": "Pudding",
-            "dialoguetext": "Thanks haha. I do like to think I draw good.",
+            "dialoguetext": "I prefer to think of myself as a wardrobe. Haha just kidding. But thank you, I do like to think I draw good.",
             "nextlineidsstring": 70,
             "dialoguetype": 0
         },
@@ -508,7 +508,7 @@
         {
             "id": 74,
             "actorname": "Pudding",
-            "dialoguetext": "Wait…. This line doesn't go underground",
+            "dialoguetext": "Wait.... This line doesn't go underground",
             "nextlineidsstring": 75,
             "dialoguetype": 0
         },

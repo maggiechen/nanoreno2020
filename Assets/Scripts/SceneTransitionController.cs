@@ -10,7 +10,7 @@ public class SceneTransitionController : MonoBehaviour {
     [SerializeField]
     private RectTransform imageRectTransform = null;
 
-    private float tweenSpeed = 0.5f;
+    public static readonly float tweenSpeed = 0.5f;
 
     float width;
     void Awake() {
