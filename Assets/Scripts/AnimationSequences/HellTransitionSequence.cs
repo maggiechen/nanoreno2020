@@ -25,8 +25,13 @@ public class HellTransitionSequence: AnimationSequenceController {
     private Light2D insideLight = null;
 
     [SerializeField]
+    private LightbulbsController lightbulbsController = null;
+    
+    
+    [SerializeField]
     private AudioSource audioSource = null;
     
+
     public override void Prep() {
     }
 
@@ -44,13 +49,13 @@ public class HellTransitionSequence: AnimationSequenceController {
     }
 
     void OnTrainStopped(Action callback) {
+        lightbulbsController.StartFlickering();
         float lightDuration = 0.7f;
         Sequence sequence = DOTween.Sequence();
         sequence.Append(outsideLight.DOFade(0, lightDuration));
         sequence.AppendInterval(0.3f);
         sequence.Append(insideLight.DOFade(0, lightDuration));
         sequence.Play().OnComplete(() => {
-
             // TODO: flicker here?
             backgroundController.SetSprites(hellTrainInner, hellTrainOuter);
             scrollerGroup.gameObject.SetActive(false);

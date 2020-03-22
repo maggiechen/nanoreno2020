@@ -16,6 +16,8 @@ public class HellRevealSequence : AnimationSequenceController {
     Color insideColor = Color.white;
     [SerializeField]
     Light2D insideLight = null;
+    [SerializeField]
+    private LightbulbsController lightbulbsController = null;
 
     [SerializeField]
     private AudioSource audioSource = null;
@@ -33,6 +35,7 @@ public class HellRevealSequence : AnimationSequenceController {
         outsideLight.color = outsideColor;
         outsideLight.DOFade(outsideLightIntensity, 3f);
         insideLight.color = insideColor;
+        lightbulbsController.StopFlickering();
         insideLight.DOFade(insideLightIntensity, 3f).OnComplete(() => {
             onAnimationComplete();
         });

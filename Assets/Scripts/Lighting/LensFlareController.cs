@@ -48,7 +48,7 @@ public class LensFlareController : MonoBehaviour {
 
     public void FadeLensFlare(float duration) {
         foreach (Light2D light in lights) {
-            light.DOFade(0, duration).SetEase(Ease.InOutElastic);
+            light.DOFade(0, duration).SetEase(Ease.InBounce);
         }
     }
 }
