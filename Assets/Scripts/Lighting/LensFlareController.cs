@@ -5,7 +5,7 @@ using UnityEngine.Experimental.Rendering.Universal;
 using DG.Tweening;
 public class LensFlareController : MonoBehaviour {
     [SerializeField]
-    private Transform sunTransform = null;
+    public Transform sunTransform = null;
     [SerializeField]
     private Transform cameraTransform = null;
     [SerializeField]
@@ -46,9 +46,22 @@ public class LensFlareController : MonoBehaviour {
         }
     }
 
+    public void SetColours(Color color) {
+        foreach (Light2D light in lights) {
+            light.color = color;
+        }
+    }
+
     public void FadeLensFlare(float duration) {
         foreach (Light2D light in lights) {
             light.DOFade(0, duration).SetEase(Ease.InBounce);
+        }
+    }
+
+    public void FadeLensFlareScaled(float intensity, float duration) {
+        for (int i = 0; i < lights.Count; i++) {
+            Light2D light = lights[i];
+            light.DOFade(intensity * lightIntensities[i], duration);
         }
     }
 }
