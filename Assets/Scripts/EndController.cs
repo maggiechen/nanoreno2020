@@ -21,11 +21,13 @@ public class EndController : MonoBehaviour {
         source.Play();
         endText.maxVisibleCharacters = 0;
         buttonCanvasGroup.alpha = 0;
+        buttonCanvasGroup.interactable = false;
         Invoke("PlayEnding", 2);
     }
     void PlayEnding() {
         endText.DORevealText(endText.text, 4).OnComplete(() => {
             buttonCanvasGroup.DOFade(1, 0.2f);
+            buttonCanvasGroup.interactable = true;
         });
     }
 
