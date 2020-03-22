@@ -108,7 +108,6 @@ public class StoryController : MonoBehaviour {
         DisableAll();
         EnableText();
         nextTextButtonArea.enabled = true;
-        endOnNextClick = false;
         ApplyChangesOfCurrentDialogue();
     }
 
@@ -158,18 +157,6 @@ public class StoryController : MonoBehaviour {
             OnDialogueClicked(chosenId);
         });
         dialogueTextImage.sprite = actorMap[currentChapter.choices[0].actorName].GetTextContainerSprite();
-    }
-
-    void SetEnd() {
-        musicSource.DOFade(0, SceneTransitionController.tweenSpeed);
-        SceneTransitionController.Instance.StartSceneTransition(() => {
-            SceneManager.LoadScene("BadEnd");
-        });
-        // nameTextMesh.text = "";
-        // dialogueTextImage.SetAlpha(0);
-        // nextDialogueIcon.SetAlpha(0);
-        // dialogueTextMesh.text = "[END]";
-        // EnableEnd();
     }
 
     void DisableEnd() {
@@ -223,11 +210,6 @@ public class StoryController : MonoBehaviour {
             return;
         }
 
-        if (endOnNextClick) {
-            End();
-            return;
-        }
-
         string oldActor = currentChapter.currentName;
         if (dialogueId != -1) {
             currentChapter.JumpTo(dialogueId);
@@ -240,7 +222,7 @@ public class StoryController : MonoBehaviour {
             return;
         }
 
-        if (oldActor.Length != 0 && !currentChapter.currentName.Equals(oldActor)) {
+        if (oldActor.Length != 0 && currentChapter.currentName.Length != 0 && !currentChapter.currentName.Equals(oldActor)) {
             nextTextButtonArea.enabled = false;
             canvasGroup.DOFade(0, fadeDuration).OnComplete(() => {
                 UpdateStoryController();
@@ -269,12 +251,14 @@ public class StoryController : MonoBehaviour {
 
     void End() {
         DisableAll();
-        EnableText();
-        SetEnd();
+        musicSource.DOFade(0, SceneTransitionController.tweenSpeed);
+        SceneTransitionController.Instance.StartSceneTransition(() => {
+            SceneManager.LoadScene(currentChapter.currentDialogueText);
+        });
+
         nextTextButtonArea.enabled = false;
     }
 
-    bool endOnNextClick = false;
     void UpdateStoryController() {
         if (storyControllerState == StoryControllerState.CHOOSING) {
             DisableAll();
@@ -292,9 +276,8 @@ public class StoryController : MonoBehaviour {
             SetTextWithCurrentDialogue();
         } else if (currentChapter.state == DialogueState.ENDING) {
             DisableAll();
-            EnableText();
-            SetTextWithCurrentDialogue();
-            endOnNextClick = true;
+            End();
+            return;
         } else {
             throw new Exception($"Unknown dialogue state {currentChapter.state}");
         }

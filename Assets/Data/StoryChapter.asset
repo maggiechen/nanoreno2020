@@ -217,9 +217,9 @@ MonoBehaviour:
       actorName: Baphomet
       dialogueText: Yeah balloons, bahaha. Though, I do wonder if the heart shape
         is excessive...
-      nextLineIdsString: 36, 78
+      nextLineIdsString: 36, 112
       dialogueType: 0
-      nextLineIds: 240000004e000000
+      nextLineIds: 2400000070000000
       changeList: []
     - id: 27
       actorName: Pudding
@@ -259,7 +259,7 @@ MonoBehaviour:
       changeList: []
     - id: 32
       actorName: Pudding
-      dialogueText: So you went with a balloon instead?!
+      dialogueText: So you went with a balloon instead? That's kind of dumb.
       nextLineIdsString: 33
       dialogueType: 0
       nextLineIds: 21000000
@@ -282,8 +282,65 @@ MonoBehaviour:
     - id: 35
       actorName: Baphomet
       dialogueText: Well yeah, I guess if you wanna look at it that way...
-      nextLineIdsString: 
+      nextLineIdsString: 120
       dialogueType: 0
+      nextLineIds: 78000000
+      changeList: []
+    - id: 120
+      actorName: 
+      dialogueText: trigger_hell_transition
+      nextLineIdsString: 121
+      dialogueType: 1
+      nextLineIds: 79000000
+      changeList: []
+    - id: 121
+      actorName: Pudding
+      dialogueText: 'What the heck? Where''d the lights go? Ugh...Shoddy public transportation. '
+      nextLineIdsString: 122
+      dialogueType: 0
+      nextLineIds: 7a000000
+      changeList: []
+    - id: 122
+      actorName: 
+      dialogueText: trigger_hell_reveal
+      nextLineIdsString: 123
+      dialogueType: 1
+      nextLineIds: 7b000000
+      changeList: []
+    - id: 123
+      actorName: Pudding
+      dialogueText: <b>HOLY FUCK?!!!?!?</b>
+      nextLineIdsString: 124
+      dialogueType: 0
+      nextLineIds: 7c000000
+      changeList: []
+    - id: 124
+      actorName: Baphomet
+      dialogueText: '*Sigh* I suppose the rude ones do come with a silver lining.
+        Looks like I''m getting off work early today'
+      nextLineIdsString: 125
+      dialogueType: 0
+      nextLineIds: 7d000000
+      changeList: []
+    - id: 125
+      actorName: Pudding
+      dialogueText: Who are <b>YOU?!</b>
+      nextLineIdsString: 126
+      dialogueType: 0
+      nextLineIds: 7e000000
+      changeList: []
+    - id: 126
+      actorName: Baphomet
+      dialogueText: Hush now, we're arriving.
+      nextLineIdsString: 127
+      dialogueType: 0
+      nextLineIds: 7f000000
+      changeList: []
+    - id: 127
+      actorName: 
+      dialogueText: BadEnd
+      nextLineIdsString: 
+      dialogueType: 2
       nextLineIds: 
       changeList: []
     - id: 36
@@ -308,7 +365,7 @@ MonoBehaviour:
       dialogueType: 0
       nextLineIds: 29000000
       changeList: []
-    - id: 78
+    - id: 112
       actorName: Pudding
       dialogueText: Awww but that's so sweet though.
       nextLineIdsString: 39
@@ -353,7 +410,7 @@ MonoBehaviour:
       changeList: []
     - id: 44
       actorName: Pudding
-      dialogueText: "Yes. And my motivation doesn\u2019t come cheep."
+      dialogueText: "Yes. And my motivation doesn\u2019t come cheap."
       nextLineIdsString: 45
       dialogueType: 0
       nextLineIds: 2d000000
@@ -596,6 +653,301 @@ MonoBehaviour:
     - id: 77
       actorName: Pudding
       dialogueText: Where...
+      nextLineIdsString: 78, 84
+      dialogueType: 0
+      nextLineIds: 4e00000054000000
+      changeList: []
+    - id: 78
+      actorName: Pudding
+      dialogueText: <b>ARE WE!!!!! </b>
+      nextLineIdsString: 79
+      dialogueType: 0
+      nextLineIds: 4f000000
+      changeList: []
+    - id: 79
+      actorName: Pudding
+      dialogueText: AND WHO ARE YOU
+      nextLineIdsString: 80
+      dialogueType: 0
+      nextLineIds: 50000000
+      changeList: []
+    - id: 80
+      actorName: Pudding
+      dialogueText: AND WHY IS EVERYTING RED AND BACKWARDS
+      nextLineIdsString: 81
+      dialogueType: 0
+      nextLineIds: 51000000
+      changeList: []
+    - id: 81
+      actorName: Baphomet
+      dialogueText: "You know you really don\u2019t need to yell...."
+      nextLineIdsString: '82, 83 '
+      dialogueType: 0
+      nextLineIds: 5200000053000000
+      changeList: []
+    - id: 82
+      actorName: Pudding
+      dialogueText: AAAAAAAAAAAAAAA
+      nextLineIdsString: 87
+      dialogueType: 0
+      nextLineIds: 57000000
+      changeList: []
+    - id: 83
+      actorName: Pudding
+      dialogueText: "sorry\u2026. Aaaaaaaaaaaa"
+      nextLineIdsString: 87
+      dialogueType: 0
+      nextLineIds: 57000000
+      changeList: []
+    - id: 84
+      actorName: Pudding
+      dialogueText: HOLY FUCK
+      nextLineIdsString: 85
+      dialogueType: 0
+      nextLineIds: 55000000
+      changeList: []
+    - id: 85
+      actorName: Pudding
+      dialogueText: "YOU\u2019RE A DEMON"
+      nextLineIdsString: 86
+      dialogueType: 0
+      nextLineIds: 56000000
+      changeList: []
+    - id: 86
+      actorName: Baphomet
+      dialogueText: This is a surprise???
+      nextLineIdsString: 87
+      dialogueType: 0
+      nextLineIds: 57000000
+      changeList: []
+    - id: 87
+      actorName: Baphomet
+      dialogueText: Wait a moment...what train did you think you got on
+      nextLineIdsString: 88
+      dialogueType: 0
+      nextLineIds: 58000000
+      changeList: []
+    - id: 88
+      actorName: Pudding
+      dialogueText: "The expo line\u2026. going to King George???"
+      nextLineIdsString: 89
+      dialogueType: 0
+      nextLineIds: 59000000
+      changeList: []
+    - id: 89
+      actorName: Baphomet
+      dialogueText: Ohhhhhhhhhhhhhhhhhhhh
+      nextLineIdsString: 90
+      dialogueType: 0
+      nextLineIds: 5a000000
+      changeList: []
+    - id: 90
+      actorName: Baphomet
+      dialogueText: Yes, this is not that train
+      nextLineIdsString: 91
+      dialogueType: 0
+      nextLineIds: 5b000000
+      changeList: []
+    - id: 91
+      actorName: Pudding
+      dialogueText: "So \u2026. Where are we"
+      nextLineIdsString: 92
+      dialogueType: 0
+      nextLineIds: 5c000000
+      changeList: []
+    - id: 92
+      actorName: Baphomet
+      dialogueText: 'hmm... i guess you would call it The Other Side? '
+      nextLineIdsString: 93, 107
+      dialogueType: 0
+      nextLineIds: 5d0000006b000000
+      changeList: []
+    - id: 93
+      actorName: Pudding
+      dialogueText: "Fuck, I can\u2019t belive I\u2019m dead"
+      nextLineIdsString: 94
+      dialogueType: 0
+      nextLineIds: 5e000000
+      changeList: []
+    - id: 94
+      actorName: Pudding
+      dialogueText: I had so much to live for
+      nextLineIdsString: 95
+      dialogueType: 0
+      nextLineIds: 5f000000
+      changeList: []
+    - id: 95
+      actorName: Pudding
+      dialogueText: "Now I\u2019ll never find love , Never get to go to Hawaii,I
+        never get to try that boba hot pot in Richmond"
+      nextLineIdsString: 96
+      dialogueType: 0
+      nextLineIds: 60000000
+      changeList: []
+    - id: 96
+      actorName: Baphomet
+      dialogueText: Please...
+      nextLineIdsString: 97
+      dialogueType: 0
+      nextLineIds: 61000000
+      changeList: []
+    - id: 97
+      actorName: Pudding
+      dialogueText: Tell me Lucifer, how did I die? Was I murdered? Did I have a
+        heart attack during Bohemian Rhapsody?
+      nextLineIdsString: 98
+      dialogueType: 0
+      nextLineIds: 62000000
+      changeList: []
+    - id: 98
+      actorName: Baphomet
+      dialogueText: Alright, calm down, breathe, first of all Lificfer is my dad
+      nextLineIdsString: 99
+      dialogueType: 0
+      nextLineIds: 63000000
+      changeList: []
+    - id: 99
+      actorName: Pudding
+      dialogueText: "\u2026\u2026 Ok not gonna lie, that's rad"
+      nextLineIdsString: 100
+      dialogueType: 0
+      nextLineIds: 64000000
+      changeList: []
+    - id: 100
+      actorName: Baphomet
+      dialogueText: "Second of all you\u2019re not dead. You just got on the wrong
+        train"
+      nextLineIdsString: 101
+      dialogueType: 0
+      nextLineIds: 65000000
+      changeList: []
+    - id: 101
+      actorName: Pudding
+      dialogueText: A train to Hell
+      nextLineIdsString: 102
+      dialogueType: 0
+      nextLineIds: 66000000
+      changeList: []
+    - id: 102
+      actorName: Baphomet
+      dialogueText: "A train to the other side. People don\u2019t actually come here
+        when they die, not unless they made a deal with me or my company and you\u2026."
+      nextLineIdsString: 103
+      dialogueType: 0
+      nextLineIds: 67000000
+      changeList: []
+    - id: 103
+      actorName: Pudding
+      dialogueText: Pudding
+      nextLineIdsString: 104
+      dialogueType: 0
+      nextLineIds: 68000000
+      changeList: []
+    - id: 104
+      actorName: Baphomet
+      dialogueText: Punnding, you have not sold your soul. Trust me I would have
+        been made aware.
+      nextLineIdsString: 105
+      dialogueType: 0
+      nextLineIds: 69000000
+      changeList: []
+    - id: 105
+      actorName: Baphomet
+      dialogueText: ".So let\u2019s stay clam shall we?"
+      nextLineIdsString: 106
+      dialogueType: 0
+      nextLineIds: 6a000000
+      changeList: []
+    - id: 106
+      actorName: Pudding
+      dialogueText: I will do my best to not lose my shit
+      nextLineIdsString: 
+      dialogueType: 0
+      nextLineIds: 
+      changeList: []
+    - id: 107
+      actorName: Pudding
+      dialogueText: 'wow... Radical '
+      nextLineIdsString: 108
+      dialogueType: 0
+      nextLineIds: 6c000000
+      changeList: []
+    - id: 108
+      actorName: Baphomet
+      dialogueText: "I know I know, wait\u2026. Radical?"
+      nextLineIdsString: 109
+      dialogueType: 0
+      nextLineIds: 6d000000
+      changeList: []
+    - id: 109
+      actorName: Pudding
+      dialogueText: This is the coolest. Night. EVER!
+      nextLineIdsString: 110
+      dialogueType: 0
+      nextLineIds: 6e000000
+      changeList: []
+    - id: 110
+      actorName: Pudding
+      dialogueText: "I mean how often do you get to take a mdnight train to the other
+        side with\u2026."
+      nextLineIdsString: 111
+      dialogueType: 0
+      nextLineIds: 6f000000
+      changeList: []
+    - id: 111
+      actorName: Baphomet
+      dialogueText: Baphomet
+      nextLineIdsString: 113
+      dialogueType: 0
+      nextLineIds: 71000000
+      changeList: []
+    - id: 113
+      actorName: Pudding
+      dialogueText: "\u2026.. Nice"
+      nextLineIdsString: 114
+      dialogueType: 0
+      nextLineIds: 72000000
+      changeList: []
+    - id: 114
+      actorName: Pudding
+      dialogueText: "I\u2019m Pudding by the way. Cool place you've got here. Very
+        red"
+      nextLineIdsString: 115
+      dialogueType: 0
+      nextLineIds: 73000000
+      changeList: []
+    - id: 115
+      actorName: Pudding
+      dialogueText: "Out of curiosity, you\u2019re not hear to collect my soul are
+        you?"
+      nextLineIdsString: 116
+      dialogueType: 0
+      nextLineIds: 74000000
+      changeList: []
+    - id: 116
+      actorName: Baphomet
+      dialogueText: Have you made any deals with devil latey by chance?
+      nextLineIdsString: 117
+      dialogueType: 0
+      nextLineIds: 75000000
+      changeList: []
+    - id: 117
+      actorName: Pudding
+      dialogueText: "Can\u2019t say i have\u2026."
+      nextLineIdsString: 118
+      dialogueType: 0
+      nextLineIds: 76000000
+      changeList: []
+    - id: 118
+      actorName: Baphomet
+      dialogueText: Then you have nothing to worry about~
+      nextLineIdsString: 119
+      dialogueType: 0
+      nextLineIds: 77000000
+      changeList: []
+    - id: 119
+      actorName: Pudding
+      dialogueText: Sweet
       nextLineIdsString: 
       dialogueType: 0
       nextLineIds: 

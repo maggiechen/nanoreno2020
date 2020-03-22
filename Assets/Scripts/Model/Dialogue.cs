@@ -5,6 +5,7 @@ using UnityEngine;
 public enum DialogueType{
     CONVERSATION = 0,
     ANIMATION_TRIGGER,
+    END,
 }
 
 [Serializable]

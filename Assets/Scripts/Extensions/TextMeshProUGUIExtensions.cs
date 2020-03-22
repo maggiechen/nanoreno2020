@@ -10,6 +10,6 @@ public static class TextMeshProUGUIExtensions {
             () => textMesh.maxVisibleCharacters,
             x => textMesh.maxVisibleCharacters = x,
             targetLen, duration
-        );
+        ).SetEase(Ease.Linear);
     }
 }

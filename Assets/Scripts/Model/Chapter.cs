@@ -66,11 +66,11 @@ public class Chapter {
                 state = DialogueState.PRESENTING_CHOICE;
             } else if (currentLine.nextLineIds.Count == 1) {
                 state = DialogueState.TEXT;            
-            } else {
-                state = DialogueState.ENDING;
             }
         } else if (currentLine.dialogueType == DialogueType.ANIMATION_TRIGGER) {
             state = DialogueState.ANIMATION;
+        } else if (currentLine.dialogueType == DialogueType.END) {
+            state = DialogueState.ENDING;
         }
     }
 

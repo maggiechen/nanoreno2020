@@ -169,7 +169,7 @@
             "id": 26,
             "actorname": "Baphomet",
             "dialoguetext": "Yeah balloons, bahaha. Though, I do wonder if the heart shape is excessive...",
-            "nextlineidsstring": "36, 78",
+            "nextlineidsstring": "36, 112",
             "dialoguetype": 0
         },
         {
@@ -210,7 +210,7 @@
         {
             "id": 32,
             "actorname": "Pudding",
-            "dialoguetext": "So you went with a balloon instead?!",
+            "dialoguetext": "So you went with a balloon instead? That's kind of dumb.",
             "nextlineidsstring": 33,
             "dialoguetype": 0
         },
@@ -232,7 +232,60 @@
             "id": 35,
             "actorname": "Baphomet",
             "dialoguetext": "Well yeah, I guess if you wanna look at it that way...",
+            "nextlineidsstring": 120,
             "dialoguetype": 0
+        },
+        {
+            "id": 120,
+            "dialoguetext": "trigger_hell_transition",
+            "nextlineidsstring": 121,
+            "dialoguetype": 1
+        },
+        {
+            "id": 121,
+            "actorname": "Pudding",
+            "dialoguetext": "What the heck? Where'd the lights go? Ugh...Shoddy public transportation. ",
+            "nextlineidsstring": 122,
+            "dialoguetype": 0
+        },
+        {
+            "id": 122,
+            "dialoguetext": "trigger_hell_reveal",
+            "nextlineidsstring": 123,
+            "dialoguetype": 1
+        },
+        {
+            "id": 123,
+            "actorname": "Pudding",
+            "dialoguetext": "<b>HOLY FUCK?!!!?!?</b>",
+            "nextlineidsstring": 124,
+            "dialoguetype": 0
+        },
+        {
+            "id": 124,
+            "actorname": "Baphomet",
+            "dialoguetext": "*Sigh* I suppose the rude ones do come with a silver lining. Looks like I'm getting off work early today",
+            "nextlineidsstring": 125,
+            "dialoguetype": 0
+        },
+        {
+            "id": 125,
+            "actorname": "Pudding",
+            "dialoguetext": "Who are <b>YOU?!</b>",
+            "nextlineidsstring": 126,
+            "dialoguetype": 0
+        },
+        {
+            "id": 126,
+            "actorname": "Baphomet",
+            "dialoguetext": "Hush now, we're arriving.",
+            "nextlineidsstring": 127,
+            "dialoguetype": 0
+        },
+        {
+            "id": 127,
+            "dialoguetext": "BadEnd",
+            "dialoguetype": 2
         },
         {
             "id": 36,
@@ -256,7 +309,7 @@
             "dialoguetype": 0
         },
         {
-            "id": 78,
+            "id": 112,
             "actorname": "Pudding",
             "dialoguetext": "Awww but that's so sweet though.",
             "nextlineidsstring": 39
@@ -299,7 +352,7 @@
         {
             "id": 44,
             "actorname": "Pudding",
-            "dialoguetext": "Yes. And my motivation doesn’t come cheep.",
+            "dialoguetext": "Yes. And my motivation doesn’t come cheap.",
             "nextlineidsstring": 45,
             "dialoguetype": 0
         },
@@ -530,7 +583,252 @@
             "id": 77,
             "actorname": "Pudding",
             "dialoguetext": "Where...",
+            "nextlineidsstring": "78, 84",
             "dialoguetype": 0
+        },
+        {
+            "id": 78,
+            "actorname": "Pudding",
+            "dialoguetext": "<b>ARE WE!!!!! </b>",
+            "nextlineidsstring": 79
+        },
+        {
+            "id": 79,
+            "actorname": "Pudding",
+            "dialoguetext": "AND WHO ARE YOU",
+            "nextlineidsstring": 80
+        },
+        {
+            "id": 80,
+            "actorname": "Pudding",
+            "dialoguetext": "AND WHY IS EVERYTING RED AND BACKWARDS",
+            "nextlineidsstring": 81
+        },
+        {
+            "id": 81,
+            "actorname": "Baphomet",
+            "dialoguetext": "You know you really don’t need to yell....",
+            "nextlineidsstring": "82, 83 "
+        },
+        {
+            "id": 82,
+            "actorname": "Pudding",
+            "dialoguetext": "AAAAAAAAAAAAAAA",
+            "nextlineidsstring": 87
+        },
+        {
+            "id": 83,
+            "actorname": "Pudding",
+            "dialoguetext": "sorry…. Aaaaaaaaaaaa",
+            "nextlineidsstring": 87
+        },
+        {
+            "id": 84,
+            "actorname": "Pudding",
+            "dialoguetext": "HOLY FUCK",
+            "nextlineidsstring": 85
+        },
+        {
+            "id": 85,
+            "actorname": "Pudding",
+            "dialoguetext": "YOU’RE A DEMON",
+            "nextlineidsstring": 86
+        },
+        {
+            "id": 86,
+            "actorname": "Baphomet",
+            "dialoguetext": "This is a surprise???",
+            "nextlineidsstring": 87
+        },
+        {
+            "id": 87,
+            "actorname": "Baphomet",
+            "dialoguetext": "Wait a moment...what train did you think you got on",
+            "nextlineidsstring": 88
+        },
+        {
+            "id": 88,
+            "actorname": "Pudding",
+            "dialoguetext": "The expo line…. going to King George???",
+            "nextlineidsstring": 89
+        },
+        {
+            "id": 89,
+            "actorname": "Baphomet",
+            "dialoguetext": "Ohhhhhhhhhhhhhhhhhhhh",
+            "nextlineidsstring": 90
+        },
+        {
+            "id": 90,
+            "actorname": "Baphomet",
+            "dialoguetext": "Yes, this is not that train",
+            "nextlineidsstring": 91
+        },
+        {
+            "id": 91,
+            "actorname": "Pudding",
+            "dialoguetext": "So …. Where are we",
+            "nextlineidsstring": 92
+        },
+        {
+            "id": 92,
+            "actorname": "Baphomet",
+            "dialoguetext": "hmm... i guess you would call it The Other Side? ",
+            "nextlineidsstring": "93, 107"
+        },
+        {
+            "id": 93,
+            "actorname": "Pudding",
+            "dialoguetext": "Fuck, I can’t belive I’m dead",
+            "nextlineidsstring": 94
+        },
+        {
+            "id": 94,
+            "actorname": "Pudding",
+            "dialoguetext": "I had so much to live for",
+            "nextlineidsstring": 95
+        },
+        {
+            "id": 95,
+            "actorname": "Pudding",
+            "dialoguetext": "Now I’ll never find love , Never get to go to Hawaii,I never get to try that boba hot pot in Richmond",
+            "nextlineidsstring": 96
+        },
+        {
+            "id": 96,
+            "actorname": "Baphomet",
+            "dialoguetext": "Please...",
+            "nextlineidsstring": 97
+        },
+        {
+            "id": 97,
+            "actorname": "Pudding",
+            "dialoguetext": "Tell me Lucifer, how did I die? Was I murdered? Did I have a heart attack during Bohemian Rhapsody?",
+            "nextlineidsstring": 98
+        },
+        {
+            "id": 98,
+            "actorname": "Baphomet",
+            "dialoguetext": "Alright, calm down, breathe, first of all Lificfer is my dad",
+            "nextlineidsstring": 99
+        },
+        {
+            "id": 99,
+            "actorname": "Pudding",
+            "dialoguetext": "…… Ok not gonna lie, that's rad",
+            "nextlineidsstring": 100
+        },
+        {
+            "id": 100,
+            "actorname": "Baphomet",
+            "dialoguetext": "Second of all you’re not dead. You just got on the wrong train",
+            "nextlineidsstring": 101
+        },
+        {
+            "id": 101,
+            "actorname": "Pudding",
+            "dialoguetext": "A train to Hell",
+            "nextlineidsstring": 102
+        },
+        {
+            "id": 102,
+            "actorname": "Baphomet",
+            "dialoguetext": "A train to the other side. People don’t actually come here when they die, not unless they made a deal with me or my company and you….",
+            "nextlineidsstring": 103
+        },
+        {
+            "id": 103,
+            "actorname": "Pudding",
+            "dialoguetext": "Pudding",
+            "nextlineidsstring": 104
+        },
+        {
+            "id": 104,
+            "actorname": "Baphomet",
+            "dialoguetext": "Punnding, you have not sold your soul. Trust me I would have been made aware.",
+            "nextlineidsstring": 105
+        },
+        {
+            "id": 105,
+            "actorname": "Baphomet",
+            "dialoguetext": ".So let’s stay clam shall we?",
+            "nextlineidsstring": 106
+        },
+        {
+            "id": 106,
+            "actorname": "Pudding",
+            "dialoguetext": "I will do my best to not lose my shit"
+        },
+        {
+            "id": 107,
+            "actorname": "Pudding",
+            "dialoguetext": "wow... Radical ",
+            "nextlineidsstring": 108
+        },
+        {
+            "id": 108,
+            "actorname": "Baphomet",
+            "dialoguetext": "I know I know, wait…. Radical?",
+            "nextlineidsstring": 109
+        },
+        {
+            "id": 109,
+            "actorname": "Pudding",
+            "dialoguetext": "This is the coolest. Night. EVER!",
+            "nextlineidsstring": 110
+        },
+        {
+            "id": 110,
+            "actorname": "Pudding",
+            "dialoguetext": "I mean how often do you get to take a mdnight train to the other side with….",
+            "nextlineidsstring": 111
+        },
+        {
+            "id": 111,
+            "actorname": "Baphomet",
+            "dialoguetext": "Baphomet",
+            "nextlineidsstring": 113
+        },
+        {
+            "id": 113,
+            "actorname": "Pudding",
+            "dialoguetext": "….. Nice",
+            "nextlineidsstring": 114
+        },
+        {
+            "id": 114,
+            "actorname": "Pudding",
+            "dialoguetext": "I’m Pudding by the way. Cool place you've got here. Very red",
+            "nextlineidsstring": 115
+        },
+        {
+            "id": 115,
+            "actorname": "Pudding",
+            "dialoguetext": "Out of curiosity, you’re not hear to collect my soul are you?",
+            "nextlineidsstring": 116
+        },
+        {
+            "id": 116,
+            "actorname": "Baphomet",
+            "dialoguetext": "Have you made any deals with devil latey by chance?",
+            "nextlineidsstring": 117
+        },
+        {
+            "id": 117,
+            "actorname": "Pudding",
+            "dialoguetext": "Can’t say i have….",
+            "nextlineidsstring": 118
+        },
+        {
+            "id": 118,
+            "actorname": "Baphomet",
+            "dialoguetext": "Then you have nothing to worry about~",
+            "nextlineidsstring": 119
+        },
+        {
+            "id": 119,
+            "actorname": "Pudding",
+            "dialoguetext": "Sweet"
         }
     ],
     "changeList": [
