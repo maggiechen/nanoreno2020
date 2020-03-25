@@ -20,6 +20,6 @@ public class Dialogue {
     public HashSet<int> nextLineIdSet= new HashSet<int>();
     public List<Change> changeList = new List<Change>();
     public override string ToString() {
-        return $"{actorName}: '{dialogueText}'";
+        return $"[{id}]{actorName}: '{dialogueText}'";
     }
 }

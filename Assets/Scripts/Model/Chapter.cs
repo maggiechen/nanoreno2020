@@ -15,9 +15,39 @@ public class Chapter {
     public string currentName => currentLine.actorName;
     public string currentDialogueText => currentLine.dialogueText;
     public Dictionary<int, Dialogue> dialogueLinesDict = new Dictionary<int, Dialogue>();
+    
     public override string ToString() {
         string output = string.Join("\n", dialogueLines);
         return $"Chapter ({dialogueLines.Count} lines)\n" + output;
+    }
+
+    public void PrintFromNode(Dialogue node, int indent = 0) {
+        Debug.LogError(GetPrintStringFromNode(node, new HashSet<int>(), new Dictionary<int, string>(), 0));
+    }
+
+    public string GetPrintStringFromNode(Dialogue node, HashSet<int> visitedIds, Dictionary<int, string> cachedStrings, int indent = 0) {
+        if (!cachedStrings.ContainsKey(indent)) {
+            cachedStrings[indent] = "";
+            for (int i = 0; i < indent; i++) {
+                cachedStrings[indent] += "    ";
+            }
+        }
+
+        if (visitedIds.Contains(node.id)) {
+            return cachedStrings[indent] + "Loop references to " + node + "\n";
+        }
+
+
+        string ret =  cachedStrings[indent] + node + "\n";
+        visitedIds.Add(node.id);
+        if (node.nextLineIds.Count == 1) {
+            ret += GetPrintStringFromNode(dialogueLinesDict[node.nextLineIds[0]], visitedIds, cachedStrings, indent);
+        } else {
+            foreach (int nextLineId in node.nextLineIds) {
+                ret += GetPrintStringFromNode(dialogueLinesDict[nextLineId], visitedIds, cachedStrings, indent + 1) + "\n";
+            }
+        }
+        return ret;
     }
 
     public void PrepareStories() {

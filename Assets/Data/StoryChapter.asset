@@ -1024,7 +1024,12 @@ MonoBehaviour:
       nextLineIdsString: 88
       dialogueType: 0
       nextLineIds: 58000000
-      changeList: []
+      changeList:
+      - dialogueId: 87
+        changeType: 0
+        actorName: Baphomet
+        formKey: cryptid
+        expressionKey: neutral
     - id: 88
       actorName: Pudding
       dialogueText: The Expo line... going to King George???
@@ -1208,9 +1213,9 @@ MonoBehaviour:
     - id: 106
       actorName: Pudding
       dialogueText: I will do my best to not lose my shit
-      nextLineIdsString: 
+      nextLineIdsString: 129
       dialogueType: 0
-      nextLineIds: 
+      nextLineIds: 81000000
       changeList: []
     - id: 107
       actorName: Pudding
@@ -1386,9 +1391,9 @@ MonoBehaviour:
     - id: 132
       actorName: Pudding
       dialogueText: 'Oh... I can do 45 minutes '
-      nextLineIdsString: 134
+      nextLineIdsString: 133
       dialogueType: 0
-      nextLineIds: 86000000
+      nextLineIds: 85000000
       changeList:
       - dialogueId: 132
         changeType: 0
@@ -1398,16 +1403,16 @@ MonoBehaviour:
     - id: 133
       actorName: Pudding
       dialogueText: Sooooooooo
-      nextLineIdsString: 135
+      nextLineIdsString: 134
       dialogueType: 0
-      nextLineIds: 87000000
+      nextLineIds: 86000000
       changeList: []
     - id: 134
       actorName: Pudding
       dialogueText: 'Since I''m gonna be on this ride for a bit... '
-      nextLineIdsString: "135,\_147"
+      nextLineIdsString: "135,\_187"
       dialogueType: 0
-      nextLineIds: 8700000093000000
+      nextLineIds: 87000000bb000000
       changeList: []
     - id: 135
       actorName: Pudding
@@ -1480,7 +1485,7 @@ MonoBehaviour:
         expressionKey: neutral
     - id: 142
       actorName: Baphomet
-      dialogueText: We INVENTED Tinder
+      dialogueText: We <i>INVENTED</i> Tinder
       nextLineIdsString: 143
       dialogueType: 0
       nextLineIds: 8f000000
@@ -1525,9 +1530,9 @@ MonoBehaviour:
     - id: 146
       actorName: Baphomet
       dialogueText: '...W-why thank you '
-      nextLineIdsString: 
+      nextLineIdsString: "147,\_187"
       dialogueType: 0
-      nextLineIds: 
+      nextLineIds: 93000000bb000000
       changeList:
       - dialogueId: 146
         changeType: 0
@@ -1537,13 +1542,839 @@ MonoBehaviour:
     - id: 147
       actorName: Pudding
       dialogueText: "Now dish! Let\u2019s see your date\u2019s profile"
-      nextLineIdsString: 
+      nextLineIdsString: 148
       dialogueType: 0
-      nextLineIds: 
+      nextLineIds: 94000000
       changeList:
       - dialogueId: 147
         changeType: 0
         actorName: Pudding
         formKey: normal
         expressionKey: lidded_smile
+    - id: 148
+      actorName: Pudding
+      dialogueText: 'I wanna see what we''re working with, I can offer some sage
+        dating app wisdom. '
+      nextLineIdsString: 149
+      dialogueType: 0
+      nextLineIds: 95000000
+      changeList: []
+    - id: 149
+      actorName: Baphomet
+      dialogueText: 'If.. you insist '
+      nextLineIdsString: 150
+      dialogueType: 0
+      nextLineIds: 96000000
+      changeList:
+      - dialogueId: 149
+        changeType: 0
+        actorName: Baphomet
+        formKey: cryptid
+        expressionKey: neutral
+    - id: 150
+      actorName: Pudding
+      dialogueText: Wow three guys?
+      nextLineIdsString: 151
+      dialogueType: 0
+      nextLineIds: 97000000
+      changeList:
+      - dialogueId: 150
+        changeType: 0
+        actorName: Pudding
+        formKey: normal
+        expressionKey: surprised_forward
+    - id: 151
+      actorName: Baphomet
+      dialogueText: Look a little closer.
+      nextLineIdsString: 152
+      dialogueType: 0
+      nextLineIds: 98000000
+      changeList: []
+    - id: 152
+      actorName: Pudding
+      dialogueText: Oh ONE GUY WITH THREE HEADS
+      nextLineIdsString: 153
+      dialogueType: 0
+      nextLineIds: 99000000
+      changeList: []
+    - id: 153
+      actorName: Baphomet
+      dialogueText: 'What do you think? '
+      nextLineIdsString: 154
+      dialogueType: 0
+      nextLineIds: 9a000000
+      changeList: []
+    - id: 154
+      actorName: Pudding
+      dialogueText: Hmmmm more to love right?
+      nextLineIdsString: 155, 172
+      dialogueType: 0
+      nextLineIds: 9b000000ac000000
+      changeList:
+      - dialogueId: 154
+        changeType: 0
+        actorName: Pudding
+        formKey: normal
+        expressionKey: smile
+    - id: 155
+      actorName: Pudding
+      dialogueText: Now let's see his bio
+      nextLineIdsString: 156
+      dialogueType: 0
+      nextLineIds: 9c000000
+      changeList: []
+    - id: 156
+      actorName: Baphomet
+      dialogueText: Okay, here you go.
+      nextLineIdsString: 157
+      dialogueType: 0
+      nextLineIds: 9d000000
+      changeList: []
+    - id: 157
+      actorName: Pudding
+      dialogueText: 'So on the weekend he likes to go on walks, very outdoory '
+      nextLineIdsString: 158
+      dialogueType: 0
+      nextLineIds: 9e000000
+      changeList: []
+    - id: 158
+      actorName: Pudding
+      dialogueText: 'His hobbies include frisbee, tug of war, and going for walks '
+      nextLineIdsString: 159
+      dialogueType: 0
+      nextLineIds: 9f000000
+      changeList: []
+    - id: 159
+      actorName: Pudding
+      dialogueText: His perfect date.... also a walk.
+      nextLineIdsString: 160
+      dialogueType: 0
+      nextLineIds: a0000000
+      changeList: []
+    - id: 160
+      actorName: Pudding
+      dialogueText: I'm seeing a pattern here. He's cute though! Very dashing
+      nextLineIdsString: 161
+      dialogueType: 0
+      nextLineIds: a1000000
+      changeList:
+      - dialogueId: 160
+        changeType: 0
+        actorName: Pudding
+        formKey: normal
+        expressionKey: surprised
+    - id: 161
+      actorName: Baphomet
+      dialogueText: He may not be the most... deep person on first glance, but I
+        figured I'd give him a chance.
+      nextLineIdsString: 162
+      dialogueType: 0
+      nextLineIds: a2000000
+      changeList: []
+    - id: 162
+      actorName: Baphomet
+      dialogueText: 'I''m certainly not getting any younger. '
+      nextLineIdsString: 163
+      dialogueType: 0
+      nextLineIds: a3000000
+      changeList:
+      - dialogueId: 162
+        changeType: 0
+        actorName: Baphomet
+        formKey: cryptid
+        expressionKey: lidded
+    - id: 163
+      actorName: Pudding
+      dialogueText: 'Hey! Nothing wrong with putting yourself out there '
+      nextLineIdsString: 164
+      dialogueType: 0
+      nextLineIds: a4000000
+      changeList:
+      - dialogueId: 163
+        changeType: 0
+        actorName: Pudding
+        formKey: normal
+        expressionKey: smile
+    - id: 164
+      actorName: Pudding
+      dialogueText: And people are more than their profiles after all.
+      nextLineIdsString: 165
+      dialogueType: 0
+      nextLineIds: a5000000
+      changeList: []
+    - id: 165
+      actorName: Pudding
+      dialogueText: 'Approach dating with an open mind, but also listen to your gut. '
+      nextLineIdsString: 166
+      dialogueType: 0
+      nextLineIds: a6000000
+      changeList: []
+    - id: 166
+      actorName: Pudding
+      dialogueText: 'And don''t try to be someone you''re not '
+      nextLineIdsString: 167
+      dialogueType: 0
+      nextLineIds: a7000000
+      changeList: []
+    - id: 167
+      actorName: Pudding
+      dialogueText: And don't drink too much and tell them you love them through
+        crocodile tears!
+      nextLineIdsString: 168
+      dialogueType: 0
+      nextLineIds: a8000000
+      changeList:
+      - dialogueId: 167
+        changeType: 0
+        actorName: Pudding
+        formKey: normal
+        expressionKey: lidded_left
+    - id: 168
+      actorName: Baphomet
+      dialogueText: Speaking from your wealth of personal experience of course.
+      nextLineIdsString: 169
+      dialogueType: 0
+      nextLineIds: a9000000
+      changeList:
+      - dialogueId: 168
+        changeType: 0
+        actorName: Baphomet
+        formKey: cryptid
+        expressionKey: neutral
+    - id: 169
+      actorName: Pudding
+      dialogueText: ...Noooooooo ...
+      nextLineIdsString: 170
+      dialogueType: 0
+      nextLineIds: aa000000
+      changeList: []
+    - id: 170
+      actorName: Pudding
+      dialogueText: Maybe
+      nextLineIdsString: 171
+      dialogueType: 0
+      nextLineIds: ab000000
+      changeList: []
+    - id: 171
+      actorName: Pudding
+      dialogueText: ...Yes.
+      nextLineIdsString: 222
+      dialogueType: 0
+      nextLineIds: de000000
+      changeList:
+      - dialogueId: 171
+        changeType: 0
+        actorName: Pudding
+        formKey: normal
+        expressionKey: lidded
+    - id: 172
+      actorName: Pudding
+      dialogueText: Now let's see your profile.
+      nextLineIdsString: 173
+      dialogueType: 0
+      nextLineIds: ad000000
+      changeList:
+      - dialogueId: 172
+        changeType: 0
+        actorName: Pudding
+        formKey: normal
+        expressionKey: smile
+    - id: 173
+      actorName: Baphomet
+      dialogueText: Only if you promise not to laugh
+      nextLineIdsString: 174
+      dialogueType: 0
+      nextLineIds: ae000000
+      changeList:
+      - dialogueId: 173
+        changeType: 0
+        actorName: Baphomet
+        formKey: cryptid
+        expressionKey: sad
+    - id: 174
+      actorName: Pudding
+      dialogueText: 'Cross my heart and hope to..... Yeah maybe not that last part.
+        But I won''t laugh, promise '
+      nextLineIdsString: 175
+      dialogueType: 0
+      nextLineIds: af000000
+      changeList:
+      - dialogueId: 174
+        changeType: 0
+        actorName: Baphomet
+        formKey: cryptid
+        expressionKey: neutral
+    - id: 175
+      actorName: Baphomet
+      dialogueText: Ok here goes.
+      nextLineIdsString: 176
+      dialogueType: 0
+      nextLineIds: b0000000
+      changeList: []
+    - id: 176
+      actorName: Pudding
+      dialogueText: 'Aww ok that''s a great photo of you the festive shirt is a nice
+        touch. '
+      nextLineIdsString: 177
+      dialogueType: 0
+      nextLineIds: b1000000
+      changeList: []
+    - id: 177
+      actorName: Pudding
+      dialogueText: 'Here''s you at the farmers market, very wholesome. Shows you
+        shop local and care about your carbon footprint '
+      nextLineIdsString: 178
+      dialogueType: 0
+      nextLineIds: b2000000
+      changeList: []
+    - id: 178
+      actorName: Pudding
+      dialogueText: 'Now this one of you dragging the screaming person to hell shows
+        your dedication to your job, but the lighting kinda sucks '
+      nextLineIdsString: 179
+      dialogueType: 0
+      nextLineIds: b3000000
+      changeList:
+      - dialogueId: 178
+        changeType: 0
+        actorName: Pudding
+        formKey: normal
+        expressionKey: surprised_forward
+    - id: 179
+      actorName: Baphomet
+      dialogueText: What would you suggest as an alternative?
+      nextLineIdsString: 180
+      dialogueType: 0
+      nextLineIds: b4000000
+      changeList: []
+    - id: 180
+      actorName: Pudding
+      dialogueText: Hmm. Maybe something where you're still looking professional
+        but not as... in the tick of it shall we say?
+      nextLineIdsString: 181
+      dialogueType: 0
+      nextLineIds: b5000000
+      changeList:
+      - dialogueId: 180
+        changeType: 0
+        actorName: Pudding
+        formKey: normal
+        expressionKey: smile
+    - id: 181
+      actorName: Pudding
+      dialogueText: 'A candid of you at a work mixer could do! I love seeing unstaged
+        but still well executed pics. You get a real feel for the person. '
+      nextLineIdsString: 182
+      dialogueType: 0
+      nextLineIds: b6000000
+      changeList: []
+    - id: 182
+      actorName: Pudding
+      dialogueText: 'It also implies you''re well adjusted and pleasant enough to
+        have friends that will take candids of you '
+      nextLineIdsString: 183
+      dialogueType: 0
+      nextLineIds: b7000000
+      changeList: []
+    - id: 183
+      actorName: Baphomet
+      dialogueText: What if I don't have any friends that like to take photos?
+      nextLineIdsString: 185
+      dialogueType: 0
+      nextLineIds: b9000000
+      changeList:
+      - dialogueId: 183
+        changeType: 0
+        actorName: Baphomet
+        formKey: cryptid
+        expressionKey: sad
+    - id: 185
+      actorName: Pudding
+      dialogueText: Tell you what, if you bring me as a plus one to a Hell Mixer
+        I'll take all kinds of candids of you
+      nextLineIdsString: 186
+      dialogueType: 0
+      nextLineIds: ba000000
+      changeList: []
+    - id: 186
+      actorName: Baphomet
+      dialogueText: I may just take you up on that, Thank you
+      nextLineIdsString: 222
+      dialogueType: 0
+      nextLineIds: de000000
+      changeList:
+      - dialogueId: 186
+        changeType: 0
+        actorName: Baphomet
+        formKey: cryptid
+        expressionKey: squint
+    - id: 187
+      actorName: Pudding
+      dialogueText: Tell me about yourself
+      nextLineIdsString: 188
+      dialogueType: 0
+      nextLineIds: bc000000
+      changeList:
+      - dialogueId: 187
+        changeType: 0
+        actorName: Baphomet
+        formKey: cryptid
+        expressionKey: neutral
+    - id: 188
+      actorName: Pudding
+      dialogueText: 'I''m curious. '
+      nextLineIdsString: 189
+      dialogueType: 0
+      nextLineIds: bd000000
+      changeList: []
+    - id: 189
+      actorName: Baphomet
+      dialogueText: 'What do you want to know? '
+      nextLineIdsString: 190
+      dialogueType: 0
+      nextLineIds: be000000
+      changeList: []
+    - id: 190
+      actorName: Pudding
+      dialogueText: Hm... Let me think...
+      nextLineIdsString: 191, 208
+      dialogueType: 0
+      nextLineIds: bf000000d0000000
+      changeList: []
+    - id: 191
+      actorName: Pudding
+      dialogueText: If you were on death row, what would your last meal be?
+      nextLineIdsString: 192
+      dialogueType: 0
+      nextLineIds: c0000000
+      changeList: []
+    - id: 192
+      actorName: Baphomet
+      dialogueText: 'Pancakes. whole stack of blueberry ones. With plenty of syrup,
+        and a side of honey butter '
+      nextLineIdsString: 193
+      dialogueType: 0
+      nextLineIds: c1000000
+      changeList:
+      - dialogueId: 192
+        changeType: 0
+        actorName: Baphomet
+        formKey: cryptid
+        expressionKey: closed_eyes
+    - id: 193
+      actorName: Pudding
+      dialogueText: That.. sounds amazing. And also incredibly sweet
+      nextLineIdsString: 194
+      dialogueType: 0
+      nextLineIds: c2000000
+      changeList: []
+    - id: 194
+      actorName: Baphomet
+      dialogueText: 'It is VERY sweet indeed. Most folks find they like sweet stuff
+        less as the get older '
+      nextLineIdsString: 195
+      dialogueType: 0
+      nextLineIds: c3000000
+      changeList:
+      - dialogueId: 194
+        changeType: 0
+        actorName: Baphomet
+        formKey: cryptid
+        expressionKey: neutral
+    - id: 195
+      actorName: Baphomet
+      dialogueText: 'But I can''t seem to get enough. All I ever want is sugar '
+      nextLineIdsString: 196
+      dialogueType: 0
+      nextLineIds: c4000000
+      changeList: []
+    - id: 196
+      actorName: Baphomet
+      dialogueText: 'How about you, do you enjoy sweets? '
+      nextLineIdsString: 197, 203
+      dialogueType: 0
+      nextLineIds: c5000000cb000000
+      changeList: []
+    - id: 197
+      actorName: Pudding
+      dialogueText: 'I love em. '
+      nextLineIdsString: 198
+      dialogueType: 0
+      nextLineIds: c6000000
+      changeList: []
+    - id: 198
+      actorName: Pudding
+      dialogueText: 'If I could eat nothing but dessert for the rest of my life I
+        would. '
+      nextLineIdsString: 199
+      dialogueType: 0
+      nextLineIds: c7000000
+      changeList: []
+    - id: 199
+      actorName: Baphomet
+      dialogueText: 'That could be arranged '
+      nextLineIdsString: 200
+      dialogueType: 0
+      nextLineIds: c8000000
+      changeList: []
+    - id: 200
+      actorName: Baphomet
+      dialogueText: ...for a price of course.
+      nextLineIdsString: 201
+      dialogueType: 0
+      nextLineIds: c9000000
+      changeList:
+      - dialogueId: 200
+        changeType: 0
+        actorName: Pudding
+        formKey: normal
+        expressionKey: surprised
+    - id: 201
+      actorName: Pudding
+      dialogueText: 'I think I''ll pass. '
+      nextLineIdsString: 202
+      dialogueType: 0
+      nextLineIds: ca000000
+      changeList: []
+    - id: 202
+      actorName: Pudding
+      dialogueText: 'I appreciate the offer though '
+      nextLineIdsString: 232
+      dialogueType: 0
+      nextLineIds: e8000000
+      changeList: []
+    - id: 203
+      actorName: Pudding
+      dialogueText: 'I''m not a fan '
+      nextLineIdsString: 206
+      dialogueType: 0
+      nextLineIds: ce000000
+      changeList:
+      - dialogueId: 203
+        changeType: 0
+        actorName: Pudding
+        formKey: normal
+        expressionKey: lidded_left
+    - id: 204
+      actorName: Pudding
+      dialogueText: I really wish I had the gene that makes me crave cocolate and
+        deserts. My parents definitely do.
+      nextLineIdsString: 205
+      dialogueType: 0
+      nextLineIds: cd000000
+      changeList:
+      - dialogueId: 204
+        changeType: 0
+        actorName: Pudding
+        formKey: normal
+        expressionKey: pensive
+    - id: 205
+      actorName: Pudding
+      dialogueText: 'But I''m more of a crunchy, salty, savoury kind of cat. I only
+        get boba if they offer unsweetened tea. '
+      nextLineIdsString: 232
+      dialogueType: 0
+      nextLineIds: e8000000
+      changeList:
+      - dialogueId: 205
+        changeType: 0
+        actorName: Pudding
+        formKey: normal
+        expressionKey: surpised
+      - dialogueId: 205
+        changeType: 0
+        actorName: Pudding
+        formKey: normal
+        expressionKey: smile
+    - id: 206
+      actorName: Baphomet
+      dialogueText: 'If you don''t mind me saying, there''s a little irony there '
+      nextLineIdsString: 207
+      dialogueType: 0
+      nextLineIds: cf000000
+      changeList: []
+    - id: 207
+      actorName: Baphomet
+      dialogueText: 'Your name being Pudding while you yourself don''t care for sweets '
+      nextLineIdsString: 204
+      dialogueType: 0
+      nextLineIds: cc000000
+      changeList: []
+    - id: 208
+      actorName: Pudding
+      dialogueText: 'What kind of hobbies do you have? '
+      nextLineIdsString: 209
+      dialogueType: 0
+      nextLineIds: d1000000
+      changeList:
+      - dialogueId: 208
+        changeType: 0
+        actorName: Pudding
+        formKey: normal
+        expressionKey: smile
+    - id: 209
+      actorName: Pudding
+      dialogueText: Do you have anything you like to do for fun?
+      nextLineIdsString: 210
+      dialogueType: 0
+      nextLineIds: d2000000
+      changeList: []
+    - id: 210
+      actorName: Baphomet
+      dialogueText: 'Well, '
+      nextLineIdsString: 211
+      dialogueType: 0
+      nextLineIds: d3000000
+      changeList: []
+    - id: 211
+      actorName: Baphomet
+      dialogueText: 'I do, when I get the chance, quite enjoy quilting '
+      nextLineIdsString: 212
+      dialogueType: 0
+      nextLineIds: d4000000
+      changeList: []
+    - id: 212
+      actorName: Baphomet
+      dialogueText: 'The cutting and measuring and sewing, I find it all rather soothing. '
+      nextLineIdsString: 213
+      dialogueType: 0
+      nextLineIds: d5000000
+      changeList: []
+    - id: 213
+      actorName: Baphomet
+      dialogueText: I also like to paint allong with old Bob Ross tapes.
+      nextLineIdsString: 214
+      dialogueType: 0
+      nextLineIds: d6000000
+      changeList: []
+    - id: 214
+      actorName: Baphomet
+      dialogueText: Doing creative things is so enjoyable, sometimes I wonder what
+        it would have been like to pursue a career in the arts instead of making
+        deals for people's eternal souls...
+      nextLineIdsString: 215
+      dialogueType: 0
+      nextLineIds: d7000000
+      changeList:
+      - dialogueId: 214
+        changeType: 0
+        actorName: Baphomet
+        formKey: cryptid
+        expressionKey: sad
+    - id: 215
+      actorName: Pudding
+      dialogueText: 'Do you not like the work you do now? '
+      nextLineIdsString: 216
+      dialogueType: 0
+      nextLineIds: d8000000
+      changeList: []
+    - id: 216
+      actorName: Baphomet
+      dialogueText: 'No that''s not it, I do relish the cries of agony and the pay
+        is nothing to sneaze at, but I often feel like I cannot properly call myself
+        an artist. '
+      nextLineIdsString: 217
+      dialogueType: 0
+      nextLineIds: d9000000
+      changeList: []
+    - id: 217
+      actorName: Pudding
+      dialogueText: Do you do art?
+      nextLineIdsString: 218
+      dialogueType: 0
+      nextLineIds: da000000
+      changeList: []
+    - id: 218
+      actorName: Baphomet
+      dialogueText: Yes, but it's just a hobby.
+      nextLineIdsString: 219
+      dialogueType: 0
+      nextLineIds: db000000
+      changeList: []
+    - id: 219
+      actorName: Pudding
+      dialogueText: That doesn't matter! You're still an artist. Just because it's
+        not your living doesn't make it any less valid or valuable.
+      nextLineIdsString: 220
+      dialogueType: 0
+      nextLineIds: dc000000
+      changeList: []
+    - id: 220
+      actorName: Pudding
+      dialogueText: 'Just enjoy yourself! '
+      nextLineIdsString: 221
+      dialogueType: 0
+      nextLineIds: dd000000
+      changeList: []
+    - id: 221
+      actorName: Baphomet
+      dialogueText: 'Ahh, that is quite heartening. '
+      nextLineIdsString: 232
+      dialogueType: 0
+      nextLineIds: e8000000
+      changeList:
+      - dialogueId: 221
+        changeType: 0
+        actorName: Baphomet
+        formKey: cryptid
+        expressionKey: blush
+    - id: 222
+      actorName: Baphomet
+      dialogueText: Thank you very much for the advice, I've been out of the dating
+        game for quite a while now.
+      nextLineIdsString: 223
+      dialogueType: 0
+      nextLineIds: df000000
+      changeList:
+      - dialogueId: 222
+        changeType: 0
+        actorName: Baphomet
+        formKey: cryptid
+        expressionKey: neutral
+    - id: 223
+      actorName: Baphomet
+      dialogueText: 'I was starting to doubt it was a good idea in the first place. '
+      nextLineIdsString: 224
+      dialogueType: 0
+      nextLineIds: e0000000
+      changeList: []
+    - id: 224
+      actorName: Baphomet
+      dialogueText: But now I feel rather reassured.
+      nextLineIdsString: 225
+      dialogueType: 0
+      nextLineIds: e1000000
+      changeList: []
+    - id: 225
+      actorName: Pudding
+      dialogueText: I'm glad I could help!
+      nextLineIdsString: 226
+      dialogueType: 0
+      nextLineIds: e2000000
+      changeList:
+      - dialogueId: 225
+        changeType: 0
+        actorName: Pudding
+        formKey: normal
+        expressionKey: smile
+    - id: 226
+      actorName: Pudding
+      dialogueText: I do wanna know how your date goes though, do you have social
+        media at all? Maybe we could keep in touch
+      nextLineIdsString: 227
+      dialogueType: 0
+      nextLineIds: e3000000
+      changeList:
+      - dialogueId: 226
+        changeType: 0
+        actorName: Baphomet
+        formKey: cryptid
+        expressionKey: neutral
+      - dialogueId: 226
+        changeType: 0
+        actorName: Pudding
+        formKey: normal
+        expressionKey: smile
+    - id: 227
+      actorName: Baphomet
+      dialogueText: Ah I sadly do not. All the app developers are from around here,
+        and they do not have the strongest of moral characters.
+      nextLineIdsString: 228
+      dialogueType: 0
+      nextLineIds: e4000000
+      changeList:
+      - dialogueId: 227
+        changeType: 0
+        actorName: Baphomet
+        formKey: cryptid
+        expressionKey: lidded
+    - id: 228
+      actorName: Pudding
+      dialogueText: 'Totally fair, now I''m thinking I might need to go about deleting
+        some of these accounts '
+      nextLineIdsString: 229
+      dialogueType: 0
+      nextLineIds: e5000000
+      changeList:
+      - dialogueId: 228
+        changeType: 0
+        actorName: Pudding
+        formKey: normal
+        expressionKey: surprised_left
+    - id: 229
+      actorName: Baphomet
+      dialogueText: 'Bahaha fair enough. '
+      nextLineIdsString: 230
+      dialogueType: 0
+      nextLineIds: e6000000
+      changeList:
+      - dialogueId: 229
+        changeType: 0
+        actorName: Baphomet
+        formKey: cryptid
+        expressionKey: squint
+    - id: 230
+      actorName: Baphomet
+      dialogueText: 'How about I give you my number instead? It''s always nice to
+        get to spend time with a friend '
+      nextLineIdsString: 231
+      dialogueType: 0
+      nextLineIds: e7000000
+      changeList:
+      - dialogueId: 230
+        changeType: 0
+        actorName: Baphomet
+        formKey: cryptid
+        expressionKey: neutral
+      - dialogueId: 230
+        changeType: 0
+        actorName: Pudding
+        formKey: normal
+        expressionKey: smile
+    - id: 231
+      actorName: Pudding
+      dialogueText: 'I''d like that very much '
+      nextLineIdsString: 235
+      dialogueType: 0
+      nextLineIds: eb000000
+      changeList: []
+    - id: 235
+      actorName: 
+      dialogueText: GoodEnd
+      nextLineIdsString: 
+      dialogueType: 2
+      nextLineIds: 
+      changeList: []
+    - id: 232
+      actorName: Baphomet
+      dialogueText: 'Thank you very much for the conversation '
+      nextLineIdsString: 233
+      dialogueType: 0
+      nextLineIds: e9000000
+      changeList:
+      - dialogueId: 232
+        changeType: 0
+        actorName: Baphomet
+        formKey: cryptid
+        expressionKey: squint
+    - id: 233
+      actorName: Baphomet
+      dialogueText: 'I was feeling rather nervous, this being the first date I''ve
+        been on in a solid half-century. '
+      nextLineIdsString: 234
+      dialogueType: 0
+      nextLineIds: ea000000
+      changeList:
+      - dialogueId: 233
+        changeType: 0
+        actorName: Baphomet
+        formKey: cryptid
+        expressionKey: blush
+    - id: 234
+      actorName: Baphomet
+      dialogueText: 'But talking with you has really calmed my nerves. '
+      nextLineIdsString: 226
+      dialogueType: 0
+      nextLineIds: e2000000
+      changeList: []
     changeList: []

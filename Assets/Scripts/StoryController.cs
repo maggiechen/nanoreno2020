@@ -66,6 +66,9 @@ public class StoryController : MonoBehaviour {
         currentChapter = chapterContainer.chapter;
         currentChapter.PrepareStories();
         Debug.Log(currentChapter);
+        
+        // Uncomment to debug
+        // currentChapter.PrintFromNode(currentChapter.currentLine);
         foreach (ActorController actor in actors) {
             actorMap[actor.actorName] = actor;
         }

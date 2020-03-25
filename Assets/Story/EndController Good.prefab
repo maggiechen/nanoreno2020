@@ -230,24 +230,27 @@ PrefabInstance:
     - target: {fileID: 1931936638149238282, guid: f8bc161ed9945db4aa9e3a8b16d5cd86,
         type: 3}
       propertyPath: m_text
-      value: Once it's your station, you bid Baphomet farewell. He says his destination
-        is a few more stops ahead. On the walk home, you remember that you live at
-        the last station. Perhaps he was confused?
+      value: 'After Baphomet departs, you doze off for a bit and by the time you
+        wake up, it''s King George station. Looks like the train does loop back around
+        after all. You smile at the number in your Contacts list and walk contentedly
+        home.
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 1931936638149238282, guid: f8bc161ed9945db4aa9e3a8b16d5cd86,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 192
+      value: 229
       objectReference: {fileID: 0}
     - target: {fileID: 1931936638149238282, guid: f8bc161ed9945db4aa9e3a8b16d5cd86,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 34
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: 1931936638149238282, guid: f8bc161ed9945db4aa9e3a8b16d5cd86,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 35
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: 1931936638149238282, guid: f8bc161ed9945db4aa9e3a8b16d5cd86,
         type: 3}
@@ -263,7 +266,7 @@ PrefabInstance:
     - target: {fileID: 1931936638149238282, guid: f8bc161ed9945db4aa9e3a8b16d5cd86,
         type: 3}
       propertyPath: m_firstOverflowCharacterIndex
-      value: 154
+      value: 156
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8bc161ed9945db4aa9e3a8b16d5cd86, type: 3}
