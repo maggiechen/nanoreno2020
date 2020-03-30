@@ -25,7 +25,7 @@ public class EndController : MonoBehaviour {
         Invoke("PlayEnding", 2);
     }
     void PlayEnding() {
-        endText.DORevealText(endText.text, 4).OnComplete(() => {
+        endText.DORevealText(endText.text, 0.02f * endText.text.Length).OnComplete(() => {
             buttonCanvasGroup.DOFade(1, 0.2f);
             buttonCanvasGroup.interactable = true;
         });

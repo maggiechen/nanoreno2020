@@ -17,7 +17,11 @@ public class AnimationController: MonoBehaviour {
     AnimationSequenceController hellTransitionSequence = null;    
     [SerializeField]
     AnimationSequenceController hellRevealSequence = null;
-
+    [SerializeField]
+    ItemRevealSequence itemRevealSequence = null;
+    [SerializeField]
+    ItemHideSequence itemHideSequence = null;
+    
     Dictionary<string, AnimationSequenceController> animationMap = new Dictionary<string, AnimationSequenceController>();
 
     public static AnimationController Instance;
@@ -30,6 +34,8 @@ public class AnimationController: MonoBehaviour {
         animationMap["intro"] = introAnimationSequence;
         animationMap["trigger_hell_transition"] = hellTransitionSequence;
         animationMap["trigger_hell_reveal"] = hellRevealSequence;
+        animationMap["trigger_item_phone_reveal"] = itemRevealSequence;
+        animationMap["trigger_item_phone_hide"] = itemHideSequence;
     }
 
     public void BeginAnimationSequence(string sequenceId, Action onAnimationComplete) {

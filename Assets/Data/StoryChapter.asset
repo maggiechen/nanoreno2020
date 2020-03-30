@@ -1711,16 +1711,24 @@ MonoBehaviour:
     - id: 149
       actorName: Baphomet
       dialogueText: 'If.. you insist '
-      nextLineIdsString: 150
+      nextLineIdsString: 236
       dialogueType: 0
       storyPointType: 1
-      nextLineIds: 96000000
+      nextLineIds: ec000000
       changeList:
       - dialogueId: 149
         changeType: 0
         actorName: Baphomet
         formKey: cryptid
         expressionKey: neutral
+    - id: 236
+      actorName: 
+      dialogueText: trigger_item_phone_reveal
+      nextLineIdsString: 150
+      dialogueType: 1
+      storyPointType: 0
+      nextLineIds: 96000000
+      changeList: []
     - id: 150
       actorName: Pudding
       dialogueText: Wow three guys?
@@ -1782,8 +1790,16 @@ MonoBehaviour:
     - id: 156
       actorName: Baphomet
       dialogueText: Okay, here you go.
-      nextLineIdsString: 157
+      nextLineIdsString: 237
       dialogueType: 0
+      storyPointType: 0
+      nextLineIds: ed000000
+      changeList: []
+    - id: 237
+      actorName: 
+      dialogueText: trigger_item_phone_hide
+      nextLineIdsString: 157
+      dialogueType: 1
       storyPointType: 0
       nextLineIds: 9d000000
       changeList: []
@@ -1942,16 +1958,24 @@ MonoBehaviour:
     - id: 172
       actorName: Pudding
       dialogueText: Now let's see your profile.
-      nextLineIdsString: 173
+      nextLineIdsString: 238
       dialogueType: 0
       storyPointType: 0
-      nextLineIds: ad000000
+      nextLineIds: ee000000
       changeList:
       - dialogueId: 172
         changeType: 0
         actorName: Pudding
         formKey: normal
         expressionKey: smile
+    - id: 238
+      actorName: 
+      dialogueText: trigger_item_phone_hide
+      nextLineIdsString: 173
+      dialogueType: 1
+      storyPointType: 0
+      nextLineIds: ad000000
+      changeList: []
     - id: 173
       actorName: Baphomet
       dialogueText: Only if you promise not to laugh

@@ -1,0 +1,136 @@
+{
+    "dialogueLines": [
+        {
+            "id": 1,
+            "actorname": "Pudding",
+            "dialoguetext": "...",
+            "nextlineidsstring": 2,
+            "dialoguetype": 0,
+            "storypointtype": 0
+        },
+        {
+            "id": 2,
+            "actorname": "Pudding",
+            "dialoguetext": "...",
+            "nextlineidsstring": 13,
+            "dialoguetype": 0,
+            "storypointtype": 0
+        },
+        {
+            "id": 3,
+            "actorname": "Pudding",
+            "nextlineidsstring": 4,
+            "dialoguetype": 0,
+            "storypointtype": 0
+        },
+        {
+            "id": 4,
+            "actorname": "Pudding",
+            "nextlineidsstring": 5,
+            "dialoguetype": 0,
+            "storypointtype": 0
+        },
+        {
+            "id": 5,
+            "actorname": "Pudding",
+            "nextlineidsstring": 6,
+            "dialoguetype": 0,
+            "storypointtype": 0
+        },
+        {
+            "id": 6,
+            "actorname": "Pudding",
+            "nextlineidsstring": 7,
+            "dialoguetype": 0,
+            "storypointtype": 0
+        },
+        {
+            "id": 7,
+            "actorname": "Pudding",
+            "nextlineidsstring": 8,
+            "dialoguetype": 0,
+            "storypointtype": 0
+        },
+        {
+            "id": 8,
+            "actorname": "Pudding",
+            "nextlineidsstring": 9,
+            "dialoguetype": 0,
+            "storypointtype": 0
+        },
+        {
+            "id": 9,
+            "actorname": "Pudding",
+            "nextlineidsstring": 10,
+            "dialoguetype": 0,
+            "storypointtype": 0
+        },
+        {
+            "id": 10,
+            "actorname": "Pudding",
+            "nextlineidsstring": 11,
+            "dialoguetype": 0,
+            "storypointtype": 0
+        },
+        {
+            "id": 11,
+            "actorname": "Pudding",
+            "nextlineidsstring": 12,
+            "dialoguetype": 0,
+            "storypointtype": 0
+        },
+        {
+            "id": 12,
+            "actorname": "Pudding",
+            "nextlineidsstring": 13,
+            "dialoguetype": 0,
+            "storypointtype": 0
+        },
+        {
+            "id": 13,
+            "actorname": "Pudding",
+            "dialoguetext": "I'm sure lucky I caught this one.",
+            "nextlineidsstring": 14,
+            "dialoguetype": 0,
+            "storypointtype": 0
+        },
+        {
+            "id": 14,
+            "dialoguetext": "trigger_item_phone_reveal",
+            "nextlineidsstring": 15,
+            "dialoguetype": 1,
+            "storypointtype": 0
+        },
+        {
+            "id": 15,
+            "actorname": "Baphomet",
+            "dialoguetext": "wowowo",
+            "nextlineidsstring": 16,
+            "dialoguetype": 0,
+            "storypointtype": 0
+        },
+        {
+            "id": 16,
+            "actorname": "Pudding",
+            "dialoguetext": "wwjffj",
+            "nextlineidsstring": 17,
+            "dialoguetype": 0,
+            "storypointtype": 0
+        },
+        {
+            "id": 17,
+            "dialoguetext": "trigger_item_phone_hide",
+            "nextlineidsstring": 18,
+            "dialoguetype": 1,
+            "storypointtype": 0
+        },
+        {
+            "id": 18,
+            "actorname": "Pudding",
+            "dialoguetext": "lkjlk",
+            "dialoguetype": 0,
+            "storypointtype": 0
+        }
+    ],
+    "changeList": []
+}

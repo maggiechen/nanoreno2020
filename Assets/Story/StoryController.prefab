@@ -881,6 +881,7 @@ MonoBehaviour:
       dialogueText: 
       nextLineIdsString: 
       dialogueType: 0
+      storyPointType: 0
       nextLineIds: 
       changeList: []
     choices: []
@@ -902,6 +903,7 @@ MonoBehaviour:
   actors:
   - {fileID: 0}
   - {fileID: 0}
+  musicSource: {fileID: 0}
 --- !u!225 &7419948026249563033
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1423,12 +1425,12 @@ PrefabInstance:
     - target: {fileID: 3329748291177230351, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3329748291177230351, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3329748291177230351, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
@@ -1649,12 +1651,12 @@ PrefabInstance:
     - target: {fileID: 8864391713188351229, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 270
       objectReference: {fileID: 0}
     - target: {fileID: 8864391713188351229, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 540
       objectReference: {fileID: 0}
     - target: {fileID: 8864391713188351229, guid: 52505045bdcb2134d89e54f6b9624c88,
         type: 3}

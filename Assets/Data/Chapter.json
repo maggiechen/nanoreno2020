@@ -1172,9 +1172,16 @@
             "id": 149,
             "actorname": "Baphomet",
             "dialoguetext": "If.. you insist ",
-            "nextlineidsstring": 150,
+            "nextlineidsstring": 236,
             "dialoguetype": 0,
             "storypointtype": 1
+        },
+        {
+            "id": 236,
+            "dialoguetext": "trigger_item_phone_reveal",
+            "nextlineidsstring": 150,
+            "dialoguetype": 1,
+            "storypointtype": 0
         },
         {
             "id": 150,
@@ -1228,8 +1235,15 @@
             "id": 156,
             "actorname": "Baphomet",
             "dialoguetext": "Okay, here you go.",
-            "nextlineidsstring": 157,
+            "nextlineidsstring": 237,
             "dialoguetype": 0,
+            "storypointtype": 0
+        },
+        {
+            "id": 237,
+            "dialoguetext": "trigger_item_phone_hide",
+            "nextlineidsstring": 157,
+            "dialoguetype": 1,
             "storypointtype": 0
         },
         {
@@ -1356,8 +1370,15 @@
             "id": 172,
             "actorname": "Pudding",
             "dialoguetext": "Now let's see your profile.",
-            "nextlineidsstring": 173,
+            "nextlineidsstring": 238,
             "dialoguetype": 0,
+            "storypointtype": 0
+        },
+        {
+            "id": 238,
+            "dialoguetext": "trigger_item_phone_hide",
+            "nextlineidsstring": 173,
+            "dialoguetype": 1,
             "storypointtype": 0
         },
         {

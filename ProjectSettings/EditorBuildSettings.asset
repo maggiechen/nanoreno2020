@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FriendEnd.unity
     guid: e265de24f60f22b49bcda395cf358fd1
+  - enabled: 1
+    path: Assets/Scenes/RomanceEnd.unity
+    guid: a3b29a31278fb11498ea1ac814ed6f24
   m_configObjects: {}
