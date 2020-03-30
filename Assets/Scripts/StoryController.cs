@@ -256,7 +256,7 @@ public class StoryController : MonoBehaviour {
         DisableAll();
         musicSource.DOFade(0, SceneTransitionController.tweenSpeed);
         SceneTransitionController.Instance.StartSceneTransition(() => {
-            SceneManager.LoadScene(currentChapter.currentDialogueText);
+            SceneManager.LoadScene(currentChapter.GetEndSceneName());
         });
 
         nextTextButtonArea.enabled = false;
@@ -308,6 +308,4 @@ public class StoryController : MonoBehaviour {
             SceneManager.LoadScene("Load");
         });
     }
-
-
 }

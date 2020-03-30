@@ -4,7 +4,7 @@ using UnityEngine;
 
 [Serializable]
 public class Chapter {
-
+    public Dictionary<StoryPointType, int> points = new Dictionary<StoryPointType, int>();
     public Dialogue currentLine;
     public List<Dialogue> choices = new List<Dialogue>();
     public DialogueState state;
@@ -85,8 +85,14 @@ public class Chapter {
     }
 
     public void Reset() {
-        currentLine = dialogueLines[0];
+        points[StoryPointType.NONE] = 0;
+        points[StoryPointType.FRIENDSHIP] = 0;
+        points[StoryPointType.ROMANCE] = 0;
+        points[StoryPointType.BAD] = 0;
+        SetCurrentLine(dialogueLines[0]);
+
     }
+
 
     void UpdateState() {
         Debug.Log($"Currently on dialogue {currentLine.id}");
@@ -106,9 +112,37 @@ public class Chapter {
 
     public void JumpTo(int dialogueId) {
         choices.Clear();
-        currentLine = dialogueLinesDict[dialogueId];
+        SetCurrentLine(dialogueLinesDict[dialogueId]);
         UpdateState();
     }
+
+    void SetCurrentLine(Dialogue line) {
+        currentLine = line;
+        points[currentLine.storyPointType] += 1;
+    }
+    
+    public string GetEndSceneName() {
+        int maxPoints = 0;
+        StoryPointType winningType = StoryPointType.NONE;
+        foreach (KeyValuePair<StoryPointType, int> pair in points) {
+            if (pair.Key != StoryPointType.NONE && pair.Value > maxPoints) {
+                maxPoints = pair.Value;
+                winningType = pair.Key;
+            }
+        }
+
+        switch (winningType) {
+            case StoryPointType.BAD:
+                return "BadEnd";
+            case StoryPointType.FRIENDSHIP:
+                return "FriendEnd";
+            case StoryPointType.ROMANCE:
+                return "RomanceEnd";
+            default:
+                throw new Exception("No scene available for this story point type: " + winningType);
+        }
+    }
+
 
     public void MoveNext() {
         choices.Clear();
@@ -117,7 +151,7 @@ public class Chapter {
                 choices.Add(dialogueLinesDict[lineId]);
             }
         } else if (currentLine.nextLineIds.Count == 1) {
-            currentLine = dialogueLinesDict[currentLine.nextLineIds[0]];
+            SetCurrentLine(dialogueLinesDict[currentLine.nextLineIds[0]]);
         } else {
             Debug.LogError("End of story");
         }
