@@ -31,7 +31,7 @@ public class CharacterForm {
     [SerializeField]
     private List<CharacterExpression> expressions = null;
     public Sprite bodySprite;
-
+    public Sprite accessorySprite; // optional
     private Dictionary<string, CharacterExpression> expressionMap = new Dictionary<string, CharacterExpression>();
 
     public void PopulateMap() {

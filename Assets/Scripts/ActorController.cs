@@ -9,6 +9,10 @@ public class ActorController : MonoBehaviour {
     [SerializeField]
     private SpriteRenderer headSpriteRenderer = null;
     [SerializeField]
+    private SpriteRenderer accessoryRenderer = null;
+
+
+    [SerializeField]
     private CharacterData characterData = null;
 
     private string formKey = "normal";
@@ -36,5 +40,8 @@ public class ActorController : MonoBehaviour {
         bodySpriteRenderer.sprite = form.bodySprite;
         CharacterExpression expression = form.GetExpression(expressionKey);
         headSpriteRenderer.sprite = expression.expressionSprite;
+        if (accessoryRenderer != null) {
+            accessoryRenderer.sprite = form.accessorySprite;
+        }
     }
 }

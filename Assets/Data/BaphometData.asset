@@ -34,6 +34,7 @@ MonoBehaviour:
       expressionSprite: {fileID: 21300000, guid: 3319bfd2569e7fb40922ff98592d191f,
         type: 3}
     bodySprite: {fileID: 21300000, guid: e56e928902685e143bf69aed8705694f, type: 3}
+    accessorySprite: {fileID: 21300000, guid: 53a692b101c2a5249890d5ed361ba0da, type: 3}
   - formKey: cryptid
     expressions:
     - expressionKey: blush
@@ -55,5 +56,6 @@ MonoBehaviour:
       expressionSprite: {fileID: 21300000, guid: 22d151488e5eb7d45bebea0618b044a9,
         type: 3}
     bodySprite: {fileID: 21300000, guid: fe3534729723be14283cb80087993474, type: 3}
+    accessorySprite: {fileID: 21300000, guid: 4deee6fcc34086242a9e99eaf24482e5, type: 3}
   textContainerSprite: {fileID: 21300000, guid: b7ec31ec446f8b04d970b47ee9895aea,
     type: 3}

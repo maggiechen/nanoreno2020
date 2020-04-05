@@ -28,6 +28,8 @@ public class HellRevealSequence : AnimationSequenceController {
     private AudioSource audioSource = null;
     [SerializeField]
     private AudioClip audioClip = null;
+    [SerializeField]
+    List<PassengerController> passengers = null;
 
     public override void Prep() {
 
@@ -49,6 +51,11 @@ public class HellRevealSequence : AnimationSequenceController {
         lensFlare.transform.SetParent(hellLight.transform); // we switched suns, lol
         lensFlare.transform.localPosition = Vector3.zero;
         lensFlare.SetColours(Color.red);
+
+        foreach (PassengerController passenger in passengers) {
+            passenger.UseHellSprites();
+        }
+
         insideLight.DOFade(insideLightIntensity, 3f).OnComplete(() => {
             onAnimationComplete();
         });
